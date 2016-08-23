@@ -17,6 +17,12 @@ pre {
 .qa-wrap:hover {
   background-color: #f5f5f5;
 }
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px 'Lato', Arial, sans-serif;
+  width: 100%;
+}
 #contentCover #performanceTable {
   margin-top: 10px;
   margin-bottom: 0px;
