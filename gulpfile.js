@@ -4,6 +4,7 @@ var rename = require('gulp-rename')
 var data = require('gulp-data')
 var connect = require('gulp-connect')
 var replace = require('gulp-replace')
+var ghPages = require('gulp-gh-pages')
 
 gulp.task('connect', function () {
   connect.server({
@@ -14,7 +15,7 @@ gulp.task('connect', function () {
 
 var articles = require('./dev-v1.1.json').data // or path to file
 
-var build_dir = 'squad-explore/'
+var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 var tasks = []
 
 articles.forEach(function (article) {
@@ -43,6 +44,11 @@ gulp.task('correct_link_paths', ['generate'], function () {
   return gulp.src('./' + build_dir + '**/*.html')
     .pipe(replace(/(href="\/)([^\'\"]+)(")/g, '$1' + build_dir + '$2$3'))
     .pipe(gulp.dest('./' + build_dir))
+})
+
+gulp.task('deploy', function () {
+  return gulp.src('./' + build_dir + '**/*')
+    .pipe(ghPages())
 })
 
 gulp.task('generate_articles', tasks)
