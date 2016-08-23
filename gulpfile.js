@@ -16,7 +16,7 @@ var articles = require('./dev-v1.1.json').data // or path to file
 var build_dir = basedir = 'squad-explore'
 var tasks = []
 
-articles.forEach(article => {
+articles.forEach(function(article) {
   gulp.task(article['title'], function () {
     return gulp.src('views/article.pug')
       .pipe(data(function () {
