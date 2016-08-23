@@ -5,6 +5,21 @@ var data = require('gulp-data')
 var connect = require('gulp-connect')
 var replace = require('gulp-replace')
 var ghPages = require('gulp-gh-pages')
+var bower = require('gulp-bower')
+var image = require('gulp-image');
+
+var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
+
+gulp.task('bower', function () {
+  return bower()
+    .pipe(gulp.dest('./' + build_dir + 'bower_components/'))
+})
+
+gulp.task('image', function () {
+  gulp.src('./assets/*')
+    .pipe(image())
+    .pipe(gulp.dest('./' + build_dir))
+})
 
 gulp.task('connect', function () {
   connect.server({
@@ -14,8 +29,6 @@ gulp.task('connect', function () {
 })
 
 var articles = require('./dev-v1.1.json').data // or path to file
-
-var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 var tasks = []
 
 articles.forEach(function (article) {
@@ -53,4 +66,4 @@ gulp.task('deploy', function () {
 
 gulp.task('generate_articles', tasks)
 gulp.task('generate', ['generate_articles', 'generate_list'])
-gulp.task('default', ['generate', 'correct_link_paths'])
+gulp.task('default', ['generate', 'correct_link_paths', 'image'])

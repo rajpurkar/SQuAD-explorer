@@ -4,14 +4,15 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-bower": "^0.0.13",
-    "gulp-data": "^1.2.1",
     "gulp": "^3.9.1",
+    "gulp-bower": "^0.0.13",
     "gulp-connect": "^5.0.0",
+    "gulp-data": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-image": "^2.5.0",
     "gulp-pug": "^3.0.4",
-    "gulp-replace": "^0.5.4",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4"
   },
   "devDependencies": {},
   "scripts": {
