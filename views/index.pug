@@ -1,0 +1,7 @@
+html
+  body
+    h1 Explore Squad
+    div
+      each article in articles
+        p
+          a(href='/' + basedir + '/' + article + '.html') #{article}
