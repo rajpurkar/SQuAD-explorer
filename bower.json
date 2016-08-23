@@ -1,0 +1,21 @@
+{
+  "name": "squad-explorer",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Pranav Rajpurkar"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rajpurkar/SQuAD-explorer",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

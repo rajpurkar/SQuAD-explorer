@@ -1,3 +1,4 @@
 node_modules/
 SQuAD-explorer/
 .publish/
+bower_components/
