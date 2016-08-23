@@ -1,0 +1,30 @@
+{
+  "name": "squad-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-bower": "^0.0.13",
+    "gulp-data": "^1.2.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-pug": "^3.0.4",
+    "gulp-replace": "^0.5.4",
+    "gulp-rename": "^1.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajpurkar/SQuAD-explorer.git"
+  },
+  "author": "Pranav Rajpurkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajpurkar/SQuAD-explorer/issues"
+  },
+  "homepage": "https://github.com/rajpurkar/SQuAD-explorer#readme"
+}
