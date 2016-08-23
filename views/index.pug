@@ -1,7 +1,32 @@
-html
-  body
-    h1 Explore Squad
-    div
-      each article in articles
-        p
-          a(href='/' + article + '.html') #{article}
+extends layout
+
+block title
+  title SQuAD - the Stanford Question Answering Dataset
+
+block description
+  meta(name='description', content='SQuAD is the Stanford Question Answering Dataset')
+
+block extralinks
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block extrascripts
+
+block content
+  .cover
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 Explore SQuAD
+              p This set contains #{articles.length} articles covering a wide range of topics, from musical celebrities to abstract concepts. Here you can explore the dataset.
+              table
+                thead
+                  tr
+                    th Title
+                each article in articles
+                  tr
+                    td 
+                      a(href='/' + article + '.html')
+                        | #{decodeURIComponent(article)}

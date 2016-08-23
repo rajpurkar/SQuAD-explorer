@@ -1,0 +1,49 @@
+@require 'vendor/lato'
+@require 'layout/theme'
+@require 'layout/errorMessage'
+@require 'layout/cover'
+@require 'layout/infoCard'
+@require 'layout/button'
+@require 'layout/nav'
+@require 'layout/topCover'
+@require 'layout/footer'
+
+html,
+body
+  width 100%
+  height 100%
+
+body
+  padding-top: 50px
+  letter-spacing 0.005em
+
+body, h1, h2, h3, h4, h5, p, li, a, span, pre
+  font-family 'Lato', Arial, sans-serif
+  font-weight 400
+
+p
+  margin 0px
+
+body
+  background-color white
+
+a
+  color $theme-color
+
+a:hover, a:active, a:focus
+  text-decoration none !important
+  color $theme-color-dark
+
+ul
+  margin 0px
+
+hr
+  margin 20px auto
+
+@media(max-width: 768px)
+  .pad-side
+    padding 0px 10px
+
+@media(max-width: 768px)
+  [class*='col-']
+    padding 0px 0px

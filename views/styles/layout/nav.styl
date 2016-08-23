@@ -1,0 +1,65 @@
+@media(max-width:768px)
+  #topNavbar
+    position static
+  body
+    padding-top 0px !important
+
+#topNavbar
+  border none
+  background  $theme-color-dark
+  margin-bottom 0px
+
+  // idea from http://stackoverflow.com/questions/5540485/how-to-make-an-inline-block-element-fill-the-remainder-of-the-line
+  .leftNav
+    overflow visible
+    padding 0px
+    padding-right 10px
+
+  .brandDiv
+    float: left;
+    line-height 100%
+
+  .navbar-brand 
+    color #fff
+
+  #navbar
+    border none
+
+  .navBtn
+    line-height: 20px
+    background none
+    border none
+    position: relative
+    display: block
+    padding: 10px 15px
+    font-weight 400
+    color white
+
+  .navbar-toggle
+    line-height 30px
+    margin 9px 0px
+    border 0px
+    color white
+    padding 1px 4px
+    margin-left 5px
+
+  #navContainer
+    padding-left 0px
+
+  .navbar-right
+    a, a:hover
+      color #fff !important
+
+  .navbar-toggle:focus
+    background none
+
+  @media(max-width:768px)
+    #brand
+      font-size 1.2em
+
+  @media(min-width:768px)
+    .rightNav
+      float right
+    .navBtn
+      padding-top: 15px
+      padding-bottom: 15px

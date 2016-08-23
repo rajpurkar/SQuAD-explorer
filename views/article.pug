@@ -1,11 +1,39 @@
-html
-  body
-    div
-      if title
-        h1=title
-      each paragraph in paragraphs
-        h2 #{paragraph.context}
-        each qa in paragraph.qas
-          h3 #{qa.question}
-          each answer in qa.answers
-            p #{answer.text}
+extends layout
+
+block title
+  title SQuAD - the Stanford Question Answering Dataset
+
+block description
+  meta(name='description', content='SQuAD is the Stanford Question Answering Dataset')
+
+block extralinks
+  link(rel='stylesheet', href='/stylesheets/article.css')
+
+block extrascripts
+
+block content
+  .cover
+    .container
+      .row
+        .col-md-12
+          .infoCard
+            .infoBody
+              h1#title #{decodeURIComponent(title)}
+              h2#subtitle The Stanford Question Answering Dataset 
+              div         
+                each paragraph in paragraphs
+                  .para-wrap
+                    .row
+                      .col-md-6
+                        pre #{paragraph.context}
+                      .col-md-6.rightCol
+                        each qa in paragraph.qas
+                          .qa-wrap
+                            p 
+                              strong.question #{qa.question}
+                            ol.list-unstyled
+                              each answer, index in qa.answers
+                                li
+                                  p
+                                    i Answer #{index+1}:
+                                    span.answer  #{answer.text}

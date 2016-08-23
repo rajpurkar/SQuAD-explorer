@@ -6,7 +6,8 @@ var connect = require('gulp-connect')
 var replace = require('gulp-replace')
 var ghPages = require('gulp-gh-pages')
 var bower = require('gulp-bower')
-var image = require('gulp-image');
+var image = require('gulp-image')
+var stylus = require('gulp-stylus')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
@@ -59,6 +60,12 @@ gulp.task('correct_link_paths', ['generate'], function () {
     .pipe(gulp.dest('./' + build_dir))
 })
 
+gulp.task('stylus', function () {
+  return gulp.src('./views/styles/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./' + build_dir + 'stylesheets'))
+})
+
 gulp.task('deploy', function () {
   return gulp.src('./' + build_dir + '**/*')
     .pipe(ghPages())
@@ -66,4 +73,4 @@ gulp.task('deploy', function () {
 
 gulp.task('generate_articles', tasks)
 gulp.task('generate', ['generate_articles', 'generate_list'])
-gulp.task('default', ['generate', 'correct_link_paths', 'image'])
+gulp.task('default', ['generate', 'correct_link_paths', 'image', 'stylus'])
