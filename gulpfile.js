@@ -8,6 +8,7 @@ var ghPages = require('gulp-gh-pages')
 var bower = require('gulp-bower')
 var image = require('gulp-image')
 var stylus = require('gulp-stylus')
+var minify = require('gulp-minify')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
@@ -17,9 +18,15 @@ gulp.task('bower', function () {
 })
 
 gulp.task('image', function () {
-  gulp.src('./assets/*')
+  return gulp.src('./views/images/*')
     .pipe(image())
     .pipe(gulp.dest('./' + build_dir))
+})
+
+gulp.task('js', function () {
+  return gulp.src('./views/js/*')
+    .pipe(minify())
+    .pipe(gulp.dest('./' + build_dir + 'javascripts/'))
 })
 
 gulp.task('connect', function () {
@@ -31,6 +38,7 @@ gulp.task('connect', function () {
 
 var articles = require('./dev-v1.1.json').data // or path to file
 var tasks = []
+var prefix = 'article/'
 
 articles.forEach(function (article) {
   gulp.task(article['title'], function () {
@@ -40,7 +48,7 @@ articles.forEach(function (article) {
       }))
       .pipe(pug())
       .pipe(rename(article['title'] + '.html'))
-      .pipe(gulp.dest('./' + build_dir))
+      .pipe(gulp.dest('./' + build_dir + prefix))
   })
   tasks.push(article['title'])
 })
@@ -48,7 +56,7 @@ articles.forEach(function (article) {
 gulp.task('generate_list', function () {
   return gulp.src('views/explore.pug')
     .pipe(data(function () {
-      return {'articles': tasks}
+      return {'articles': tasks, 'prefix': prefix}
     }))
     .pipe(pug())
     .pipe(gulp.dest('./' + build_dir))
@@ -62,11 +70,11 @@ gulp.task('generate_index', function () {
 
 gulp.task('correct_link_paths', ['generate'], function () {
   return gulp.src('./' + build_dir + '**/*.html')
-    .pipe(replace(/(href="\/)([^\'\"]*)(")/g, '$1' + build_dir + '$2$3'))
+    .pipe(replace(/((?:href|src)=[\'\"]\/)([^\'\"]*)([\'\"])/g, '$1' + build_dir + '$2$3'))
     .pipe(gulp.dest('./' + build_dir))
 })
 
-gulp.task('stylus', function () {
+gulp.task('css', function () {
   return gulp.src('./views/styles/*.styl')
     .pipe(stylus())
     .pipe(gulp.dest('./' + build_dir + 'stylesheets'))
@@ -79,4 +87,4 @@ gulp.task('deploy', function () {
 
 gulp.task('generate_articles', tasks)
 gulp.task('generate', ['bower', 'generate_articles', 'generate_list', 'generate_index'])
-gulp.task('default', ['generate', 'correct_link_paths', 'image', 'stylus'])
+gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css'])

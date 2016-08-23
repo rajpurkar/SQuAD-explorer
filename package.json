@@ -10,6 +10,7 @@
     "gulp-data": "^1.2.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-image": "^2.5.0",
+    "gulp-minify": "0.0.14",
     "gulp-pug": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
