@@ -8,10 +8,10 @@ block description
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
+  link(href='https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', rel='stylesheet', type='text/css')
 
 block extrascripts
   script(async defer src="https://buttons.github.io/buttons.js")
-  script(src="/javascripts/index.js")
 
 block content
   .cover#contentCover
@@ -70,12 +70,7 @@ block content
                     | Dev Set (5 MB)
               p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
               p To keep up to date with major changes to the dataset, please subscribe:
-              .registerMessage
-              form#registerForm(action='/register', method='post', autocomplete='off')
-                .input-group
-                  input#email.form-control(type='email', name='email', placeholder='Email Address', required='required')
-                  .input-group-btn
-                    button.btn#subscribeBtn(type='submit') Subscribe
+              include includes/mailchimp
               p 
                 | The dataset is distributed under the  
                 a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
