@@ -1,7 +1,39 @@
-.table
-  margin-top 10px
-  td
-    max-width 350px
-    overflow hidden
-    a
-      word-break break-all
+@require 'layout/theme'
+@require 'app/passage'
+@require 'app/qa'
+
+#contentCover
+  #performanceTable
+    margin-top 10px
+    margin-bottom 0px
+  #example
+    margin 10px auto
+    width 80%
+    pre
+      background-color #f5f5f5
+      border 1px solid #f5f5f5
+      border-radius 0px
+      margin-bottom -10px
+  ul.list-inline
+    margin-left 0px
+    text-align center
+    li
+      padding-left 2px
+      padding-right 2px
+  #registerForm
+    margin 10px 0px
+    .input-group
+      max-width 305px
+      margin 0px auto
+    #subscribeBtn
+      background $theme-gray
+      color white
+      text-transform uppercase
+    #subscribeBtn:hover
+      opacity 0.9
+      color white
+  .table >tbody > tr.active > td
+    font-style italic
+
+.spacer
+  padding 15px 0px

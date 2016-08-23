@@ -1,32 +1,130 @@
 extends layout
 
 block title
-  title SQuAD - the Stanford Question Answering Dataset
+  title The Stanford Question Answering Dataset
 
 block description
-  meta(name='description', content='SQuAD is the Stanford Question Answering Dataset')
+  meta(name='description', content='Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 107,785 question-answer pairs on 536 articles, SQuAD is significantly larger than previous reading comprehension datasets.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
 
 block extrascripts
+  script(async defer src="https://buttons.github.io/buttons.js")
 
 block content
-  .cover
+  .cover#contentCover
     .container
       .row
         .col-md-8.col-md-offset-2
           .infoCard
             .infoBody
               .infoHeadline
-                h2 Explore SQuAD
-              p This set contains #{articles.length} articles covering a wide range of topics, from musical celebrities to abstract concepts. Here you can explore the dataset.
-              table
-                thead
-                  tr
-                    th Title
-                each article in articles
-                  tr
-                    td 
-                      a(href='/' + article + '.html')
-                        | #{decodeURIComponent(article)}
+                h2 What is SQuAD?
+              p 
+                span(style='white-space: nowrap;')
+                  b S
+                  |tanford 
+                  b Qu
+                  |estion 
+                  b A
+                  |nswering 
+                  b D
+                  |ataset (SQuAD) 
+                | is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
+                i span
+                | , from the corresponding reading passage. With 107,785 question-answer pairs on 536 articles, SQuAD is significantly larger than previous reading comprehension datasets.
+              ul.list-inline
+                li
+                  a.btn.actionBtn.inverseBtn(href="http://arxiv.org/abs/1606.05250")
+                    | Read Our Paper
+              .spacer
+              .infoHeadline
+                h2 What does SQuAD look like?
+              //- p We show an example question-answer pair from the development set, posed on a paragraph from the Wikipedia article on computational complexity theory.
+              //-div#example
+                pre #{question.paragraph.text}
+                .qa-wrap
+                  p 
+                    strong.question #{question.text}
+                  p
+                    i Answer: 
+                    span.answer #{question.answers[0].text}
+              p You can also browse through the full development and training sets.
+              ul.list-inline
+                li
+                  a.btn.actionBtn.inverseBtn(href="/explore.html")
+                    | Explore Dev / Train Sets
+              .spacer
+              .infoHeadline
+                h2 How do I get the dataset?
+              p You can download v1.0 of the training and development sets. 
+              p We also have a hidden test set. To evaluate your models on the test set, please get in contact with us.
+              //-ul.list-inline#downloadList
+                li
+                  a.btn.actionBtn.inverseBtn(href="/train-v1.0.json", download)
+                    | Training Set (30 MB)
+                li
+                  a.btn.actionBtn.inverseBtn(href="/dev-v1.0.json", download)
+                    | Dev Set (5 MB)
+              p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
+              p To keep up to date with major changes to the dataset, please subscribe:
+              .registerMessage
+              form#registerForm(action='/register', method='post', autocomplete='off')
+                .input-group
+                  input#email.form-control(type='email', name='email', placeholder='Email Address', required='required')
+                  .input-group-btn
+                    button.btn#subscribeBtn(type='submit') Subscribe
+              p 
+                | The dataset is distributed under the  
+                a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
+                |  license.
+              .spacer
+              .infoHeadline
+                h2 What is the best model performance? 
+              p
+                | Our best model (detailed in our  
+                a(href="http://arxiv.org/abs/1606.05250") paper
+                | ) achieves an F1 score of 
+                b 51.0%
+                | .
+                br 
+                | We expect future models to close the gap to the human performance of 
+                b 86.8%
+                |  .
+              ul.list-inline
+                li
+                  a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x62eefc3e64e04430a1a24785a9293fff/")
+                    | CodaLab Worksheet
+              table.table#performanceTable
+                tr
+                  th Model
+                  th Dev F1
+                  th Test F1
+                tr.active
+                  td
+                    | Human Performance
+                  td 90.5%
+                  td 86.8%
+                tr
+                  td
+                    a(href="http://arxiv.org/abs/1606.05250") Rajpurkar et al. '16
+                    |  Logistic Regression
+                  td 51.0% 
+                  td 51.0%
+                tr
+                  td
+                    b Beat our model?
+                    |  Contact us to get on the leaderboard.
+                  td ?
+                  td ?
+              .spacer
+              .infoHeadline
+                h2 Have Questions?
+              p 
+                | Contact us at 
+                a(href="mailto:pranavsr@stanford.edu") pranavsr@stanford.edu
+                | .
+            .infoSubheadline
+              include includes/tweet
+              include includes/github

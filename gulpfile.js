@@ -46,10 +46,16 @@ articles.forEach(function (article) {
 })
 
 gulp.task('generate_list', function () {
-  return gulp.src('views/index.pug')
+  return gulp.src('views/explore.pug')
     .pipe(data(function () {
       return {'articles': tasks}
     }))
+    .pipe(pug())
+    .pipe(gulp.dest('./' + build_dir))
+})
+
+gulp.task('generate_index', function () {
+  return gulp.src('views/index.pug')
     .pipe(pug())
     .pipe(gulp.dest('./' + build_dir))
 })
@@ -72,5 +78,5 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('generate_articles', tasks)
-gulp.task('generate', ['bower', 'generate_articles', 'generate_list'])
+gulp.task('generate', ['bower', 'generate_articles', 'generate_list', 'generate_index'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'stylus'])
