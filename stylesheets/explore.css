@@ -1,0 +1,10 @@
+.table {
+  margin-top: 10px;
+}
+.table td {
+  max-width: 350px;
+  overflow: hidden;
+}
+.table td a {
+  word-break: break-all;
+}
