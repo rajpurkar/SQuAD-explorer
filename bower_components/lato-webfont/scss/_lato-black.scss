@@ -1,0 +1,15 @@
+//
+// Lato Black
+// http://www.latofonts.com/
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$lato-font-path}/lato-black.eot');
+  src: url('#{$lato-font-path}/lato-black.eot?#iefix') format('embedded-opentype'),
+       url('#{$lato-font-path}/lato-black.woff2') format('woff2'),
+       url('#{$lato-font-path}/lato-black.woff') format('woff'),
+       url('#{$lato-font-path}/lato-black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}

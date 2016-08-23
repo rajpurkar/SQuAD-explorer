@@ -1,0 +1,15 @@
+//
+// Lato Thin
+// http://www.latofonts.com/
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$lato-font-path}/lato-thin.eot');
+  src: url('#{$lato-font-path}/lato-thin.eot?#iefix') format('embedded-opentype'),
+       url('#{$lato-font-path}/lato-thin.woff2') format('woff2'),
+       url('#{$lato-font-path}/lato-thin.woff') format('woff'),
+       url('#{$lato-font-path}/lato-thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}

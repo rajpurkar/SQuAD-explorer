@@ -1,0 +1,15 @@
+//
+// Lato Medium
+// http://www.latofonts.com/
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$lato-font-path}/lato-medium.eot');
+  src: url('#{$lato-font-path}/lato-medium.eot?#iefix') format('embedded-opentype'),
+       url('#{$lato-font-path}/lato-medium.woff2') format('woff2'),
+       url('#{$lato-font-path}/lato-medium.woff') format('woff'),
+       url('#{$lato-font-path}/lato-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

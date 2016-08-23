@@ -1,0 +1,15 @@
+//
+// Lato Semi Bold Italic
+// http://www.latofonts.com/
+// ------------------------------------------------------
+
+@font-face {
+  font-family: 'Lato';
+  src: url('#{$lato-font-path}/lato-semibolditalic.eot');
+  src: url('#{$lato-font-path}/lato-semibolditalic.eot?#iefix') format('embedded-opentype'),
+       url('#{$lato-font-path}/lato-semibolditalic.woff2') format('woff2'),
+       url('#{$lato-font-path}/lato-semibolditalic.woff') format('woff'),
+       url('#{$lato-font-path}/lato-semibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
