@@ -56,7 +56,7 @@ gulp.task('generate_list', function () {
 
 gulp.task('correct_link_paths', ['generate'], function () {
   return gulp.src('./' + build_dir + '**/*.html')
-    .pipe(replace(/(href="\/)([^\'\"]+)(")/g, '$1' + build_dir + '$2$3'))
+    .pipe(replace(/(href="\/)([^\'\"]*)(")/g, '$1' + build_dir + '$2$3'))
     .pipe(gulp.dest('./' + build_dir))
 })
 
@@ -72,5 +72,5 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('generate_articles', tasks)
-gulp.task('generate', ['generate_articles', 'generate_list'])
+gulp.task('generate', ['bower', 'generate_articles', 'generate_list'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'stylus'])
