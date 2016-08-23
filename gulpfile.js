@@ -3,6 +3,7 @@ var gulp = require('gulp')
 var rename = require('gulp-rename')
 var data = require('gulp-data')
 var connect = require('gulp-connect')
+var replace = require('gulp-replace')
 
 gulp.task('connect', function () {
   connect.server({
@@ -13,10 +14,10 @@ gulp.task('connect', function () {
 
 var articles = require('./dev-v1.1.json').data // or path to file
 
-var build_dir = basedir = 'squad-explore'
+var build_dir = 'squad-explore/'
 var tasks = []
 
-articles.forEach(function(article) {
+articles.forEach(function (article) {
   gulp.task(article['title'], function () {
     return gulp.src('views/article.pug')
       .pipe(data(function () {
@@ -24,19 +25,26 @@ articles.forEach(function(article) {
       }))
       .pipe(pug())
       .pipe(rename(article['title'] + '.html'))
-      .pipe(gulp.dest(build_dir))
+      .pipe(gulp.dest('./' + build_dir))
   })
   tasks.push(article['title'])
 })
 
-gulp.task('list_articles', function () {
+gulp.task('generate_list', function () {
   return gulp.src('views/index.pug')
     .pipe(data(function () {
-      return {'articles': tasks, 'basedir': basedir}
+      return {'articles': tasks}
     }))
     .pipe(pug())
-    .pipe(gulp.dest(build_dir))
+    .pipe(gulp.dest('./' + build_dir))
+})
+
+gulp.task('correct_link_paths', ['generate'], function () {
+  return gulp.src('./' + build_dir + '**/*.html')
+    .pipe(replace(/(href="\/)([^\'\"]+)(")/g, '$1' + build_dir + '$2$3'))
+    .pipe(gulp.dest('./' + build_dir))
 })
 
 gulp.task('generate_articles', tasks)
-gulp.task('default', ['generate_articles', 'list_articles'])
+gulp.task('generate', ['generate_articles', 'generate_list'])
+gulp.task('default', ['generate', 'correct_link_paths'])
