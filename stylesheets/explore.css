@@ -1,10 +1,7 @@
-.table {
-  margin-top: 10px;
+li {
+  padding: 2px 0px;
 }
-.table td {
-  max-width: 350px;
-  overflow: hidden;
-}
-.table td a {
-  word-break: break-all;
+li a {
+  font-weight: 600;
+  text-decoration: underline;
 }

@@ -1,1 +1,0 @@
-!function(e){e("body").on("submit","#registerForm",function(t){var r=this;t.preventDefault();var a=e(t.target);return e.ajax({type:a.attr("method"),url:a.attr("action"),data:a.serialize(),success:function(t){e(r).slideUp(),e(".registerMessage").text("Successful. We will keep you notified of major updates through email.")}}),!1})}(window.$);
