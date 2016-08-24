@@ -9,6 +9,7 @@ var bower = require('gulp-bower')
 var image = require('gulp-image')
 var stylus = require('gulp-stylus')
 var minify = require('gulp-minify')
+var path = require('path')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
@@ -31,35 +32,56 @@ gulp.task('js', function () {
 
 gulp.task('connect', function () {
   connect.server({
-    root: '.',
-    livereload: true
+    root: '.'
   })
 })
 
-var articles = require('./dev-v1.1.json').data // or path to file
-var tasks = []
-var prefix = 'article/'
+var dataset_folder = './dataset/'
+var filepaths = [
+  dataset_folder + 'dev-v1.1.json',
+  // dataset_folder + 'train-v1.1.json',
+  dataset_folder + 'dev-v1.0.json',
+// dataset_folder + 'train-v1.0.json'
+]
 
-articles.forEach(function (article) {
-  gulp.task(article['title'], function () {
-    return gulp.src('views/article.pug')
+var exploration_tasks = []
+
+filepaths.forEach(function (filename) {
+  var article_generations = []
+  var build_prefix = 'explore/'
+
+  var json_file = require(filename)
+  var version = json_file.version
+  var split = path.basename(filename, '.json').split('-')[0]
+  var json_data = json_file.data
+  var version_and_split = version + '/' + split
+
+  json_data.forEach(function (article) {
+    var name = version_and_split + '/' + article['title']
+    gulp.task(name, function () {
+      return gulp.src('views/article.pug')
+        .pipe(data(function () {
+          return article
+        }))
+        .pipe(pug())
+        .pipe(rename(name + '.html'))
+        .pipe(gulp.dest('./' + build_dir + build_prefix))
+    })
+    article_generations.push(name)
+    exploration_tasks.push(name)
+  })
+
+  var list_task_name = version_and_split + '/' + 'index'
+  exploration_tasks.push(list_task_name)
+  gulp.task(list_task_name, function () {
+    return gulp.src('views/explore.pug')
       .pipe(data(function () {
-        return article
+        return {'articles': article_generations, 'prefix': build_prefix}
       }))
       .pipe(pug())
-      .pipe(rename(article['title'] + '.html'))
-      .pipe(gulp.dest('./' + build_dir + prefix))
+      .pipe(rename(list_task_name + '.html'))
+      .pipe(gulp.dest('./' + build_dir + build_prefix))
   })
-  tasks.push(article['title'])
-})
-
-gulp.task('generate_list', function () {
-  return gulp.src('views/explore.pug')
-    .pipe(data(function () {
-      return {'articles': tasks, 'prefix': prefix}
-    }))
-    .pipe(pug())
-    .pipe(gulp.dest('./' + build_dir))
 })
 
 gulp.task('generate_index', function () {
@@ -85,6 +107,6 @@ gulp.task('deploy', function () {
     .pipe(ghPages())
 })
 
-gulp.task('generate_articles', tasks)
-gulp.task('generate', ['bower', 'generate_articles', 'generate_list', 'generate_index'])
+gulp.task('generate_exploration', exploration_tasks)
+gulp.task('generate', ['bower', 'generate_exploration', 'generate_index'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css'])
