@@ -34,7 +34,7 @@ block content
                   |ataset (SQuAD) 
                 | is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
                 i span
-                | , from the corresponding reading passage. With 107,785 question-answer pairs on 536 articles, SQuAD is significantly larger than previous reading comprehension datasets.
+                | , from the corresponding reading passage. With over 100k question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.
               ul.list-inline
                 li
                   a.btn.actionBtn.inverseBtn(href="http://arxiv.org/abs/1606.05250")
@@ -42,56 +42,38 @@ block content
               .spacer
               .infoHeadline
                 h2 What does SQuAD look like?
-              //- p We show an example question-answer pair from the development set, posed on a paragraph from the Wikipedia article on computational complexity theory.
-              //-div#example
-                pre #{question.paragraph.text}
-                .qa-wrap
-                  p 
-                    strong.question #{question.text}
-                  p
-                    i Answer: 
-                    span.answer #{question.answers[0].text}
-              p You can also browse through the full development and training sets.
+              p You can browse through v1.1 of the development and training sets.
               ul.list-inline
                 li
-                  a.btn.actionBtn.inverseBtn(href="/explore.html")
-                    | Explore Dev / Train Sets
+                  a.btn.actionBtn(href="/explore/1.1/train")
+                    | Explore v1.1 Train Set
+                li
+                  a.btn.actionBtn(href="/explore/1.1/dev")
+                    | Explore v1.1 Dev Set
               .spacer
               .infoHeadline
-                h2 How do I get the dataset?
-              p You can download v1.0 of the training and development sets. 
+                h2 How do I download the dataset?
+              p You can download v1.1 of the training and development sets. 
+              ul.list-inline#downloadList
+                li
+                  a.btn.actionBtn.inverseBtn(href="/dataset/train-v1.1.json", download)
+                    | Training Set v1.1 (30 MB)
+                li
+                  a.btn.actionBtn.inverseBtn(href="/dataset/dev-v1.1.json", download)
+                    | Dev Set v1.1 (5 MB)
               p We also have a hidden test set. To evaluate your models on the test set, please get in contact with us.
-              //-ul.list-inline#downloadList
-                li
-                  a.btn.actionBtn.inverseBtn(href="/train-v1.0.json", download)
-                    | Training Set (30 MB)
-                li
-                  a.btn.actionBtn.inverseBtn(href="/dev-v1.0.json", download)
-                    | Dev Set (5 MB)
-              p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
-              p To keep up to date with major changes to the dataset, please subscribe:
-              include includes/mailchimp
-              p 
-                | The dataset is distributed under the  
-                a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
-                |  license.
               .spacer
               .infoHeadline
-                h2 What is the best model performance? 
+                h2 What is the best model performance?
               p
                 | Our best model (detailed in our  
                 a(href="http://arxiv.org/abs/1606.05250") paper
                 | ) achieves an F1 score of 
                 b 51.0%
                 | .
-                br 
                 | We expect future models to close the gap to the human performance of 
                 b 86.8%
-                |  .
-              ul.list-inline
-                li
-                  a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x62eefc3e64e04430a1a24785a9293fff/")
-                    | CodaLab Worksheet
+                |  . Note that these results are on v1.0 of the dataset.
               table.table#performanceTable
                 tr
                   th Model
@@ -114,9 +96,20 @@ block content
                     |  Contact us to get on the leaderboard.
                   td ?
                   td ?
+              ul.list-inline
+                li
+                  a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x62eefc3e64e04430a1a24785a9293fff/")
+                    | CodaLab Worksheet
               .spacer
               .infoHeadline
                 h2 Have Questions?
+              p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
+              p To keep up to date with major changes to the dataset, please subscribe:
+              include includes/mailchimp
+              p 
+                | The dataset is distributed under the  
+                a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
+                |  license.
               p 
                 | Contact us at 
                 a(href="mailto:pranavsr@stanford.edu") pranavsr@stanford.edu
