@@ -76,7 +76,12 @@ filepaths.forEach(function (filename) {
   gulp.task(list_task_name, function () {
     return gulp.src('views/explore.pug')
       .pipe(data(function () {
-        return {'articles': article_generations, 'prefix': build_prefix}
+        return {
+          'articles': article_generations,
+          'prefix': build_prefix,
+          'version': version,
+          'split': split
+        }
       }))
       .pipe(pug())
       .pipe(rename(list_task_name + '.html'))

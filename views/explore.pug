@@ -7,7 +7,7 @@ block description
   meta(name='description', content='SQuAD is the Stanford Question Answering Dataset')
 
 block extralinks
-  link(rel='stylesheet', href='/stylesheets/index.css')
+  link(rel='stylesheet', href='/stylesheets/explore.css')
 
 block extrascripts
 
@@ -19,14 +19,10 @@ block content
           .infoCard
             .infoBody
               .infoHeadline
-                h2 Explore SQuAD
-              p This set contains #{articles.length} articles covering a wide range of topics, from musical celebrities to abstract concepts. Here you can explore the dataset.
-              table
-                thead
-                  tr
-                    th Title
+                h1 Explore SQuAD
+                h2 Version #{version}. Split #{split}.
+              ul.list-unstyled
                 each article in articles
-                  tr
-                    td 
-                      a(href='/' + prefix + article + '.html')
-                        | #{decodeURIComponent(article)}
+                  li
+                    a(href='/' + prefix + article + '.html')
+                      | #{decodeURIComponent(article)}
