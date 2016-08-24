@@ -1,7 +1,7 @@
-li {
+#articleList li {
   padding: 2px 0px;
 }
-li a {
+#articleList li a {
   font-weight: 600;
   text-decoration: underline;
 }
