@@ -30,6 +30,12 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./' + build_dir + 'javascripts/'))
 })
 
+gulp.task('copy_dataset', function () {
+  gulp
+    .src('dataset/*')
+    .pipe(gulp.dest('./' + build_dir + 'dataset/'))
+})
+
 gulp.task('connect', function () {
   connect.server({
     root: '.'
@@ -114,4 +120,4 @@ gulp.task('deploy', function () {
 
 gulp.task('generate_exploration', exploration_tasks)
 gulp.task('generate', ['bower', 'generate_exploration', 'generate_index'])
-gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css'])
+gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset'])
