@@ -4,14 +4,14 @@ block title
   title The Stanford Question Answering Dataset
 
 block description
-  meta(name='description', content='Stanford Question Answering Dataset (SQuAD) is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 107,785 question-answer pairs on 536 articles, SQuAD is significantly larger than previous reading comprehension datasets.')
+  meta(name='description', content='Stanford Question Answering Dataset (SQuAD) is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.')
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
   link(href='https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', rel='stylesheet', type='text/css')
+  script(async defer src="https://buttons.github.io/buttons.js")
 
 block extrascripts
-  script(async defer src="https://buttons.github.io/buttons.js")
 
 block content
   .cover#contentCover
@@ -23,7 +23,7 @@ block content
               .infoHeadline
                 h2 What is SQuAD?
               p 
-                span(style='white-space: nowrap;')
+                span
                   b S
                   |tanford 
                   b Qu
@@ -32,88 +32,106 @@ block content
                   |nswering 
                   b D
                   |ataset (SQuAD) 
-                | is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
+                | is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
                 i span
-                | , from the corresponding reading passage. With over 100k question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.
-              ul.list-inline
-                li
-                  a.btn.actionBtn.inverseBtn(href="http://arxiv.org/abs/1606.05250")
-                    | Read Our Paper
-              .spacer
+                | , from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.
               .infoHeadline
-                h2 What does SQuAD look like?
-              p You can browse through v1.1 of the development and training sets.
-              ul.list-inline
-                li
-                  a.btn.actionBtn(href="/explore/1.1/train/")
-                    | Explore v1.1 Train Set
-                li
-                  a.btn.actionBtn(href="/explore/1.1/dev/")
-                    | Explore v1.1 Dev Set
-              .spacer
-              .infoHeadline
-                h2 How do I download the dataset?
-              p You can download v1.1 of the training and development sets. 
-              ul.list-inline#downloadList
-                li
-                  a.btn.actionBtn.inverseBtn(href="/dataset/train-v1.1.json", download)
-                    | Training Set v1.1 (30 MB)
-                li
-                  a.btn.actionBtn.inverseBtn(href="/dataset/dev-v1.1.json", download)
-                    | Dev Set v1.1 (5 MB)
-              p We also have a hidden test set. To evaluate your models on the test set, please get in contact with us.
-              .spacer
-              .infoHeadline
-                h2 What is the best model performance?
-              p
-                | Our best model (detailed in our  
-                a(href="http://arxiv.org/abs/1606.05250") paper
-                | ) achieves an F1 score of 
-                b 51.0%
-                | .
-                | We expect future models to close the gap to the human performance of 
-                b 86.8%
-                |  . Note that these results are on v1.0 of the dataset.
+                h2 Leaderboard
+              p 
+                | Since the release of our dataset (
+                a(href="http://arxiv.org/abs/1606.05250") and paper
+                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform the human benchmark at the QA task?
               table.table#performanceTable
                 tr
                   th Model
-                  th Dev F1
+                  th Test EM
                   th Test F1
-                tr.active
-                  td
-                    | Human Performance
-                  td 90.5%
-                  td 86.8%
+                  th Dev EM
+                  th Dev F1
                 tr
                   td
-                    a(href="http://arxiv.org/abs/1606.05250") Rajpurkar et al. '16
-                    |  Logistic Regression
-                  td 51.0% 
-                  td 51.0%
+                    |  Human Performance Benchmark <br> (Stanford University) 
+                    a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
+                  td 82.3
+                  td 91.2
+                  td 81.4
+                  td 91.0
                 tr
                   td
-                    b Beat our model?
-                    |  Contact us to get on the leaderboard.
-                  td ?
-                  td ?
-              ul.list-inline
-                li
-                  a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x62eefc3e64e04430a1a24785a9293fff/")
-                    | CodaLab Worksheet
-              .spacer
+                    | LSTM with Attention and Pointer Network <br> (Singapore Management University)
+                  td 59.4
+                  td 70.0
+                  td 60.4
+                  td 70.7
+                tr
+                  td
+                    | Trained Chunker and Neural Chunk Ranker <br> (IBM)
+                  td TBD
+                  td TBD
+                  td 58.7
+                  td 68.4
+                tr
+                  td
+                    | Memory LSTM with Pointer Network <br> (Singapore Management University)
+                  td 54.5
+                  td 67.7
+                  td 54.8
+                  td 68.0
+                tr
+                  td
+                    | Attention and Chunking Single Model<br> (IBM)
+                  td TBD
+                  td TBD
+                  td 48.0
+                  td 64.5
+                tr
+                  td
+                    |  Logistic Regression Baseline<br> (Stanford University) 
+                    a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
+                  td 40.4
+                  td 51.0
+                  td 39.8
+                  td 51.0
               .infoHeadline
-                h2 Have Questions?
+                h2 Getting Started
+              p
+                | We've built a few resources to help you get started with the dataset.
+              p To get a feel of the dataset, first browse around the dataset: 
+              a.btn.actionBtn.inverseBtn(href="/explore/1.1/dev/") Explore SQuAD
+              p 
+                | Download a copy of the dataset (distributed under the  
+                a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
+                |  license):
+                ul.list-unstyled
+                  li
+                    a.btn.actionBtn.inverseBtn(href="/dataset/train-v1.1.json", download)
+                      | Training Set v1.1 (30 MB)
+                  li
+                    a.btn.actionBtn.inverseBtn(href="/dataset/dev-v1.1.json", download)
+                      | Dev Set v1.1 (5 MB)
+              p To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
+                code
+                  | python evaluation-v1.1.py &lt;path_to_dev-v1.1&gt; &lt;path_to_predictions&gt;
+                |.
+                ul.list-unstyled
+                  li
+                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0xbcd57bee090b421c982906709c8c27e1/contents/blob/", download)
+                      | Evaluation Script v1.1
+                  li
+                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0xc83bf36cf8714819ba11802b59cb809e/contents/blob/", download)
+                      | Sample Prediction File (on Dev v1.1)
+              p The test set is hidden for use in official evaluation purposes. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to upload your model onto CodaLab so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation on both the dev and test sets.
+              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8403d867f9a3444685c344f4f0bc8d34/")
+                | Submission Tutorial
               p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
               p To keep up to date with major changes to the dataset, please subscribe:
               include includes/mailchimp
+              .infoHeadline
+                h2 Have Questions?
               p 
-                | The dataset is distributed under the  
-                a(href="http://creativecommons.org/licenses/by-sa/4.0/legalcode") CC BY-SA 4.0
-                |  license.
-              p 
-                | Ask us questions through  
-                a(href="https://groups.google.com/forum/#!forum/squad-stanford-qa") google groups 
-                | or at 
+                | Ask us questions at our   
+                a(href="https://groups.google.com/forum/#!forum/squad-stanford-qa") google group
+                |  or at 
                 a(href="mailto:pranavsr@stanford.edu") pranavsr@stanford.edu
                 | .
             .infoSubheadline
