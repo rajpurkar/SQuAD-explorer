@@ -126,7 +126,7 @@
 }
 .alert {
   color: #fff;
-  background-color: #ef9a9a;
+  background-color: #ea4141;
   font-weight: 600;
   padding: 10px;
   border: none;
@@ -138,7 +138,7 @@
 }
 .cover {
   min-height: 100%;
-  background: #fdfdfd;
+  background: #eee;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -160,11 +160,11 @@
 }
 .cover h2 {
   font-weight: 300;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin: 8px 0px;
 }
 .cover p {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 .cover .vertical-center {
@@ -210,10 +210,10 @@
 }
 .infoCard .infoSubheadline h2,
 .infoCard .infoSubheadline p {
-  font-weight: 300;
+  font-weight: 400;
 }
 .infoCard .infoSubheadline.backgrounded {
-  background: #ef9a9a;
+  background: #ea4141;
 }
 .infoCard .infoSubheadline.backgrounded h1,
 .infoCard .infoSubheadline.backgrounded h2,
@@ -221,7 +221,7 @@
   color: #fff;
 }
 .infoCard .actLink {
-  background: #ef9a9a;
+  background: #ea4141;
 }
 .infoCard .actLink h1,
 .infoCard .actLink h2,
@@ -236,7 +236,7 @@
   padding: 30px;
 }
 .infoCard .infoBody >.infoHeadline {
-  margin-bottom: 10px;
+  margin: 15px 0px;
 }
 .infoCard .infoBody >.infoHeadline h1,
 .infoCard .infoBody >.infoHeadline h2,
@@ -251,7 +251,7 @@
 .infoCard .infoBody >.infoHeadline h2 {
   font-size: 1.4em;
   padding-bottom: 2px;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 2px solid #ddd;
 }
 .infoCard .infoBody h2 {
   font-weight: 600;
@@ -259,26 +259,27 @@
   font-size: 1.6em;
 }
 .actionBtn:hover {
-  background-color: #c62828;
-  border-color: #c62828;
+  background-color: #cc4242;
+  border-color: #cc4242;
 }
 .actionBtn {
   display: block;
-  margin: 10px 0px;
+  margin: 10px auto;
+  max-width: 350px;
   width: 100%;
-  background-color: #f44336;
+  background-color: #ea4141;
   color: #fff !important;
   text-align: center;
   font-size: 1em;
   font-weight: 600;
-  border: 2px solid #f44336;
+  border: 2px solid #ea4141;
   border-radius: 20px;
-  text-transform: uppercase;
   transition: all 0.5s;
+  white-space: normal;
 }
 .inverseBtn {
   background-color: #fff;
-  color: #f44336 !important;
+  color: #ea4141 !important;
 }
 .inverseBtn:hover {
   color: #fff !important;
@@ -302,7 +303,7 @@ button:focus {
 }
 #topNavbar {
   border: none;
-  background: #c62828;
+  background: #cc4242;
   margin-bottom: 0px;
 }
 #topNavbar .leftNav {
@@ -363,7 +364,7 @@ button:focus {
   }
 }
 #topCover {
-  background: linear-gradient(#c62828, #f44336);
+  background: #ea4141;
   box-shadow: 0px -10px 20px 2px rgba(120,120,120,0.2) inset;
   min-height: initial;
 }
@@ -438,13 +439,13 @@ body {
   background-color: #fff;
 }
 a {
-  color: #f44336;
+  color: #ea4141;
 }
 a:hover,
 a:active,
 a:focus {
   text-decoration: none !important;
-  color: #c62828;
+  color: #cc4242;
 }
 ul {
   margin: 0px;
