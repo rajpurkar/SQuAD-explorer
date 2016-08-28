@@ -40,7 +40,7 @@ block content
               p 
                 | Since the release of our dataset (
                 a(href="http://arxiv.org/abs/1606.05250") and paper
-                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform the human benchmark at the QA task?
+                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform human performance at the QA task?
               table.table#performanceTable
                 tr
                   th Model
@@ -50,7 +50,7 @@ block content
                   th Dev F1
                 tr
                   td
-                    |  Human Performance Benchmark <br> (Stanford University) 
+                    |  Human Performance <br> (Stanford University) 
                     a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
                   td 82.3
                   td 91.2
@@ -96,7 +96,7 @@ block content
                 h2 Getting Started
               p
                 | We've built a few resources to help you get started with the dataset.
-              p To get a feel of the dataset, first browse around the dataset: 
+              p To get a feel of the dataset, you can explore it visually. 
               a.btn.actionBtn.inverseBtn(href="/explore/1.1/dev/") Explore SQuAD
               p 
                 | Download a copy of the dataset (distributed under the  
@@ -111,7 +111,7 @@ block content
                       | Dev Set v1.1 (5 MB)
               p To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
                 code
-                  | python evaluation-v1.1.py &lt;path_to_dev-v1.1&gt; &lt;path_to_predictions&gt;
+                  | python evaluate-v1.1.py &lt;path_to_dev-v1.1&gt; &lt;path_to_predictions&gt;
                 |.
                 ul.list-unstyled
                   li
@@ -120,7 +120,7 @@ block content
                   li
                     a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0xc83bf36cf8714819ba11802b59cb809e/contents/blob/", download)
                       | Sample Prediction File (on Dev v1.1)
-              p The test set is hidden for use in official evaluation purposes. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to upload your model onto CodaLab so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation on both the dev and test sets.
+              p Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
               a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8403d867f9a3444685c344f4f0bc8d34/")
                 | Submission Tutorial
               p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
