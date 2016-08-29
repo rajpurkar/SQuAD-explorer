@@ -6,6 +6,7 @@
 - Removed questions marked unanswerable by two or more answer reviewers.
 - Fixed answer spans to be whole words, surrounded by space or punctuation characters.
 - Fixed evaluation script to improve text normalization before scoring.
+- Fixed space issues in answers and contexts.
 - Added additional review answers for some questions.
 
 #### Stats (On the development set)
