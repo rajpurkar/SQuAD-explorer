@@ -3,3 +3,5 @@ SQuAD-explorer/
 .publish/
 bower_components/
 dataset/
+
+*.DS_Store
