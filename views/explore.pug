@@ -25,4 +25,4 @@ block content
                 each article in articles
                   li
                     a(href='/' + prefix + article + '.html')
-                      | #{decodeURIComponent(article)}
+                      | #{decodeURIComponent(article.split('/').pop())}
