@@ -46,8 +46,8 @@ var dataset_folder = './dataset/'
 var filepaths = [
   dataset_folder + 'dev-v1.1.json',
   // dataset_folder + 'train-v1.1.json',
-  dataset_folder + 'dev-v1.0.json',
-// dataset_folder + 'train-v1.0.json'
+  // dataset_folder + 'dev-v1.0.json',
+  // dataset_folder + 'train-v1.0.json'
 ]
 
 var exploration_tasks = []
@@ -103,7 +103,7 @@ gulp.task('generate_index', function () {
 
 gulp.task('correct_link_paths', ['generate'], function () {
   return gulp.src('./' + build_dir + '**/*.html')
-    .pipe(replace(/((?:href|src)=[\'\"]\/)([^\'\"]*)([\'\"])/g, '$1' + build_dir + '$2$3'))
+    .pipe(replace(/([^-](?:href|src)=[\'\"]\/)([^\'\"]*)([\'\"])/g, '$1' + build_dir + '$2$3'))
     .pipe(gulp.dest('./' + build_dir))
 })
 
