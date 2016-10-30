@@ -23,21 +23,13 @@ pre {
   font: 14px 'Lato', Arial, sans-serif;
   width: 100%;
 }
-#contentCover #performanceTable {
+#contentCover .performanceTable {
   margin: 10px 0px;
 }
-#contentCover #performanceTable td:nth-child(3),
-#contentCover #performanceTable th:nth-child(3) {
-  border-right: 1px solid #ddd;
-}
-#contentCover #performanceTable td,
-#contentCover #performanceTable th {
+#contentCover .performanceTable td,
+#contentCover .performanceTable th {
   text-align: center;
   max-width: 250px;
-}
-#contentCover #performanceTable td:nth-child(1),
-#contentCover #performanceTable th:nth-child(1) {
-  text-align: left;
 }
 #contentCover ul.list-inline {
   margin-left: 0px;
