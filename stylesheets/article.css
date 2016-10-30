@@ -32,3 +32,7 @@ pre {
 .listContainer .infoBody {
   padding: 10px 20px;
 }
+.qas-wrap {
+  max-height: 500px;
+  overflow: scroll;
+}

@@ -1,7 +1,7 @@
-#articleList li {
-  padding: 2px 0px;
+ul.list-inline {
+  margin: auto;
+  text-align: center;
 }
-#articleList li a {
-  font-weight: 600;
-  text-decoration: underline;
+ul.list-inline li a.actionBtn {
+  margin: 5px auto;
 }
