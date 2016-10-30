@@ -21,8 +21,8 @@ block content
               .infoHeadline
                 h1 Explore SQuAD
                 h2 Version #{version}, #{split} set
-              ul.list-unstyled
+              ul.list-inline
                 each article in articles
                   li
-                    a(href='/' + prefix + article + '.html')
+                    a(href='/' + prefix + article + '.html').btn.actionBtn.inverseBtn
                       | #{decodeURIComponent(article.split('/').pop())}
