@@ -54,7 +54,7 @@ window.Hilitor = function Hilitor (dom_object, tag) {
         match.style.fontStyle = 'inherit'
         match.style.color = '#000'
         if (dont_split) {
-          match.style.textDecoration = 'underline'
+          // match.style.textDecoration = 'underline'
         }
 
         var after = node.splitText(regs.index)

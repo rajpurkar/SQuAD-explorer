@@ -13,6 +13,7 @@ block extrascripts
   script(src='/javascripts/hilitorModified.js')
   script(src='/javascripts/removeStopWords.js')
   script(src='/javascripts/highlighting.js')
+  script(src='/javascripts/model.js')
 
 block content
   .cover
@@ -32,12 +33,16 @@ block content
                       .col-md-6
                         .qas-wrap
                           each qa in paragraph.qas
-                            .qa-wrap
+                            .qa-wrap(data-id=qa.id)
                               p 
                                 strong.question #{qa.question}
-                              ol.list-unstyled
-                                each answer, index in qa.answers
-                                  li
-                                    p
-                                      i Answer #{index+1}: 
+                              ul.list-unstyled
+                                li
+                                  p
+                                    i Ground Truth Answers: 
+                                    each answer, index in qa.answers
                                       span.answer #{answer.text}
+                                li.prediction-holder
+                                  p
+                                    i Prediction: 
+                                    span.prediction
