@@ -87,8 +87,16 @@ block content
               p 
                 | Since the release of our dataset (
                 a(href="http://arxiv.org/abs/1606.05250") and paper
-                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform humans on the QA task?
+                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1.
               include includes/test-leaderboard
+              p Will your model outperform humans on the QA task?
+              table.table.performanceTable
+                tr
+                  td
+                    | Human Performance (Stanford University) <br> 
+                    a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
+                  td 82.3 
+                  td 91.2
               .infoHeadline
                 h2 Development Set Leaderboard
               p While you are iterating on models, use the development set to get an indicator of your model's performance.
