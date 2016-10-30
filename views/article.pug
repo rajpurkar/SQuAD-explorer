@@ -29,14 +29,15 @@ block content
                     .row
                       .col-md-6
                         pre #{paragraph.context}
-                      .col-md-6.rightCol
-                        each qa in paragraph.qas
-                          .qa-wrap
-                            p 
-                              strong.question #{qa.question}
-                            ol.list-unstyled
-                              each answer, index in qa.answers
-                                li
-                                  p
-                                    i Answer #{index+1}: 
-                                    span.answer #{answer.text}
+                      .col-md-6
+                        .qas-wrap
+                          each qa in paragraph.qas
+                            .qa-wrap
+                              p 
+                                strong.question #{qa.question}
+                              ol.list-unstyled
+                                each answer, index in qa.answers
+                                  li
+                                    p
+                                      i Answer #{index+1}: 
+                                      span.answer #{answer.text}
