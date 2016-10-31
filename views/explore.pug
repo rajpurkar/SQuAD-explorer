@@ -11,18 +11,32 @@ block extralinks
 
 block extrascripts
 
+mixin model_showcase(model)
+  if model
+    h2 #{model}
+  ul.list-inline
+    each article in articles
+      li
+        if !model
+          a(href='/' + prefix + article + '.html').btn.actionBtn.inverseBtn
+            | #{decodeURIComponent(article.split('/').pop())}
+        else
+          a(href='/' + prefix + article + '.html' + '?model=' + model).btn.actionBtn.inverseBtn
+            | #{decodeURIComponent(article.split('/').pop())}
+
 block content
   .cover
     .container
       .row
-        .col-md-8.col-md-offset-2
+        .col-md-12
           .infoCard
             .infoBody
               .infoHeadline
                 h1 Explore SQuAD
                 h2 Version #{version}, #{split} set
-              ul.list-inline
-                each article in articles
-                  li
-                    a(href='/' + prefix + article + '.html').btn.actionBtn.inverseBtn
-                      | #{decodeURIComponent(article.split('/').pop())}
+              +model_showcase()
+              hr
+              h1 Visualize Model Predictions
+              each model in models
+                +model_showcase(model)
+                    

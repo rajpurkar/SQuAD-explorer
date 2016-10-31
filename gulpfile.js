@@ -10,6 +10,7 @@ var image = require('gulp-image')
 var stylus = require('gulp-stylus')
 var minify = require('gulp-minify')
 var path = require('path')
+var fs = require('fs')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
@@ -57,6 +58,7 @@ var filepaths = [
   // dataset_folder + 'train-v1.0.json'
 ]
 
+
 var exploration_tasks = []
 
 filepaths.forEach(function (filename) {
@@ -84,6 +86,11 @@ filepaths.forEach(function (filename) {
     exploration_tasks.push(name)
   })
 
+  // models
+  var models_folder = './models/'
+  var models = fs.readdirSync(models_folder).map(
+    function (a) { return a.slice(0, -5)})
+
   var list_task_name = version_and_split + '/' + 'index'
   exploration_tasks.push(list_task_name)
   gulp.task(list_task_name, function () {
@@ -93,7 +100,8 @@ filepaths.forEach(function (filename) {
           'articles': article_generations,
           'prefix': build_prefix,
           'version': version,
-          'split': split
+          'split': split,
+          'models': models
         }
       }))
       .pipe(pug())
