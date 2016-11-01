@@ -1,5 +1,5 @@
 function normalize_answer (text) {
-  /* Lower text and remove punctuation, articles and extra whitespace. */
+  // Lower text and remove punctuation, articles and extra whitespace.
 
   function remove_punc (s) {
     var to_exclude = /[.^/|#*(-=>:;?{&<[!'_+`)@$\]"~\\%},]/g
@@ -70,7 +70,7 @@ function metric_max_over_ground_truths (metric_fn, prediction, ground_truths) {
     var score = metric_fn(prediction, ground_truths[i])
     scores_for_ground_truths.push(score)
   }
-  return Math.max(...scores_for_ground_truths)
+  return Math.max.apply(null, scores_for_ground_truths)
 }
 
 window.exact_match_score = exact_match_score
