@@ -73,6 +73,11 @@ function metric_max_over_ground_truths (metric_fn, prediction, ground_truths) {
   return Math.max.apply(null, scores_for_ground_truths)
 }
 
-window.exact_match_score = exact_match_score
-window.f1_score = f1_score
-window.metric_max_over_ground_truths = metric_max_over_ground_truths
+function evaluate_on_metrics (prediction, ground_truths) {
+  return [
+    metric_max_over_ground_truths(exact_match_score, prediction, ground_truths),
+    metric_max_over_ground_truths(f1_score, prediction, ground_truths)
+  ]
+}
+
+window.evaluate_on_metrics = evaluate_on_metrics
