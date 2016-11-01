@@ -21,6 +21,20 @@
       $('.qa-wrap').each(function () {
         var id = $(this).attr('data-id')
         $(this).find('.prediction').text(data[id])
+        var prediction = data[id]
+        var ground_truths = []
+        $(this).closest('.qa-wrap')
+          .find('.answer').each(function () {
+            ground_truths.push($(this).text())
+          })
+        var f1_score = window.evaluate_on_metrics(prediction, ground_truths)[1]
+        if (f1_score === 1.0) {
+          $(this).addClass('correct-qa')
+        } else if (f1_score > 0.5) {
+          $(this).addClass('partial-qa')
+        } else {
+          $(this).addClass('wrong-qa')
+        }
       })
     })
   }

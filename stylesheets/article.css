@@ -33,6 +33,15 @@ pre {
   max-height: 500px;
   overflow: scroll;
 }
+.qas-wrap .correct-qa {
+  border-left: 5px solid #29e21f;
+}
+.qas-wrap .wrong-qa {
+  border-left: 5px solid #e2461f;
+}
+.qas-wrap .partial-qa {
+  border-left: 5px solid #e2c62f;
+}
 .qas-wrap .prediction-holder {
   display: none;
 }
