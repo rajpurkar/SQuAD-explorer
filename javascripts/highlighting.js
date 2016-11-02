@@ -24,26 +24,29 @@
   .mouseenter(function () {
     var outer = this // reference to this object
     highlight = new Hilitor($(this).closest('.para-wrap').find('pre')[0])
-    highlight_question_words(this)
-    var first_answer = $(this).find('.answer').first() // default
-    highlight_answer(first_answer)
-    add_answer_style(first_answer)
+
+    var apply_highlight = function (answer) {
+      if (answer) {
+        highlight_answer(answer)
+        add_answer_style(answer)
+      }
+      highlight_question_words(outer)
+    }
+    apply_highlight($(this).find('.answer').first()) // first answer
 
     $(this).find('.answer, .prediction')
     .mouseenter(function () {
-      remove_answer_style(first_answer) // remove default
-      highlight_answer(this)
-      add_answer_style(this)
-    })
-    .mouseleave(function () {
       if (highlight) highlight.remove()
-      highlight_question_words(outer)
-      remove_answer_style(this)
+      $(outer).find('.answer, .prediction').each(function () {
+        remove_answer_style(this)
+      })
+      apply_highlight(this)
     })
   })
   .mouseleave(function () {
-    var first_answer = $(this).find('.answer').first()
     if (highlight) highlight.remove()
-    remove_answer_style(first_answer)
+    $(this).find('.answer, .prediction').each(function () {
+      remove_answer_style(this)
+    })
   })
 })(window.$, window.TextHighlighter, window.Hilitor)
