@@ -46,7 +46,6 @@
   .mouseleave(function () {
     if (highlight) highlight.remove()
     $(this).find('.answer, .prediction').each(function () {
-      console.log(this)
       remove_answer_style(this)
     })
   })
