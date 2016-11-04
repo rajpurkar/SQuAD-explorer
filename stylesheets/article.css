@@ -20,6 +20,9 @@ pre {
 #title {
   word-break: break-all;
 }
+.model-title-holder {
+  display: none;
+}
 .para-wrap {
   padding: 20px 0px;
 }
