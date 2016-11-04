@@ -16,7 +16,9 @@
   }
   var model_name = getUrlParameter('model')
   if (model_name) {
-    $.getJSON('/SQuAD-explorer/models/' + model_name + '.json', function (data) {
+    $.getJSON('/SQuAD-explorer/models/' + model_name, function (data) {
+      $('.model-title-holder > h1').text('Predictions by ' + model_name)
+      $('.model-title-holder').show()
       $('.prediction-holder').show()
       $('.qa-wrap').each(function () {
         var id = $(this).attr('data-id')
