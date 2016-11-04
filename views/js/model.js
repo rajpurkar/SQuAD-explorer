@@ -29,9 +29,14 @@
         var ground_truths = []
         $(this).closest('.qa-wrap')
           .find('.answer').each(function () {
-          ground_truths.push($(this).text())
-        })
-        var scores = window.evaluate_on_metrics(prediction, ground_truths)
+            ground_truths.push($(this).text())
+          })
+        var scores
+        if (prediction && prediction.length > 0 && ground_truths.length > 0) {
+          scores = window.evaluate_on_metrics(prediction, ground_truths)
+        } else {
+          scores = [0, 0]
+        }
         exact_scores.push(scores[0])
         var f1_score = scores[1]
         f1_scores.push(f1_score)
