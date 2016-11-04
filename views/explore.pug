@@ -31,11 +31,11 @@ block content
         .col-md-12
           .infoCard
             .infoBody
-              .infoHeadline
-                h1 Explore SQuAD
-                h2 Version #{version}, #{split} set
+              h1 Explore SQuAD
+              h2 Version #{version}, #{split} set
               +model_showcase()
-              hr
+          .infoCard
+            .infoBody
               h1 Visualize Model Predictions
               each model in models
                 +model_showcase(model)
