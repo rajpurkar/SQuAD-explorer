@@ -88,7 +88,8 @@ filepaths.forEach(function (filename) {
 
   // models
   var models_folder = './models/'
-  var models = fs.readdirSync(models_folder)
+  var models = fs.readdirSync(models_folder).map(
+    function (a) { return a.slice(0, -5)})
 
   var list_task_name = version_and_split + '/' + 'index'
   exploration_tasks.push(list_task_name)
