@@ -14,7 +14,8 @@
     "gulp-pug": "^3.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.5.4",
-    "gulp-stylus": "^2.5.0"
+    "gulp-stylus": "^2.5.0",
+    "nightmare": "^2.9.1"
   },
   "devDependencies": {},
   "scripts": {
