@@ -111,7 +111,15 @@ filepaths.forEach(function (filename) {
 })
 
 gulp.task('generate_index', function () {
+  var development_file = require('./development.json')
+  var test_file = require('./test.json')
   return gulp.src('views/index.pug')
+      .pipe(data(function () {
+        return {
+          'test': test_file,
+          'development': development_file
+        }
+      }))
     .pipe(pug())
     .pipe(gulp.dest('./' + build_dir))
 })

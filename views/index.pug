@@ -17,7 +17,7 @@ block content
   .cover#contentCover
     .container
       .row
-        .col-md-6
+        .col-md-5
           .infoCard
             .infoBody
               .infoHeadline
@@ -79,7 +79,7 @@ block content
             .infoSubheadline
               include includes/tweet
               include includes/github
-        .col-md-6
+        .col-md-7
           .infoCard
             .infoBody
               .infoHeadline
@@ -88,7 +88,18 @@ block content
                 | Since the release of our dataset (
                 a(href="http://arxiv.org/abs/1606.05250") and paper
                 | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1.
-              include includes/test-leaderboard
+              table.table.performanceTable
+                tr
+                  th Rank
+                  th Model
+                  th Test EM
+                  th Test F1
+                each model in test
+                  tr
+                    td #{model.rank}
+                    td #{model.description}
+                    td #{model.em}
+                    td #{model.f1}
               p Will your model outperform humans on the QA task?
               table.table.performanceTable
                 tr
@@ -100,4 +111,13 @@ block content
               .infoHeadline
                 h2 Development Set Leaderboard
               p While you are iterating on models, use the development set to get an indicator of your model's performance.
-              include includes/dev-leaderboard
+              table.table.performanceTable
+                tr
+                  th Model
+                  th Test EM
+                  th Test F1
+                each model in development
+                  tr
+                    td #{model.description}
+                    td #{model.em}
+                    td #{model.f1}
