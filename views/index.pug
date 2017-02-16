@@ -19,8 +19,8 @@ mixin model_display(group, is_test)
       if is_test
         th Rank
       th Model
-      th Test EM
-      th Test F1
+      th EM
+      th F1
     each model in group
       tr
         if is_test
@@ -30,6 +30,15 @@ mixin model_display(group, is_test)
           p.institution #{model.institution}
         td #{model.em}
         td #{model.f1}
+    if is_test
+      tr.human-row
+        td
+        td
+          | Human Performance
+          p.institution Stanford University
+          a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
+        td 82.304
+        td 91.221
 
 
 block content
@@ -105,16 +114,8 @@ block content
               .infoHeadline
                 h2 Test Set Leaderboard
               p 
-                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1.
+                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform humans on the QA task?
               +model_display(test, true)
-              p Will your model outperform humans on the QA task?
-              table.table.performanceTable
-                tr
-                  td
-                    | Human Performance <br> Stanford University <br> 
-                    a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
-                  td 82.3 
-                  td 91.2
               .infoHeadline
                 h2 Development Set Leaderboard
               p While you are iterating on models, use the development set to get an indicator of your model's performance.
