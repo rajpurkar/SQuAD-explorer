@@ -10,6 +10,10 @@ function getEntries (split) {
     var entry = {}
     var cells = $(this).find('td')
     entry.description = cells.eq(1).text().trim()
+    var instIndex = entry.description.lastIndexOf('(')
+    entry.model_name = entry.description.substr(0, instIndex - 1)
+    entry.institution = entry.description.substr(instIndex + 1).slice(0, -1)
+    delete entry.description
     entry.f1 = parseFloat(cells.eq(4).text())
     entry.em = parseFloat(cells.eq(3).text())
     entry.date = cells.eq(2).text().trim()

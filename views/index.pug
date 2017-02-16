@@ -13,6 +13,25 @@ block extralinks
 
 block extrascripts
 
+mixin model_display(group, is_test)
+  table.table.performanceTable
+    tr
+      if is_test
+        th Rank
+      th Model
+      th Test EM
+      th Test F1
+    each model in group
+      tr
+        if is_test
+          td #{model.rank}
+        td 
+          | #{model.model_name}
+          p.institution #{model.institution}
+        td #{model.em}
+        td #{model.f1}
+
+
 block content
   .cover#contentCover
     .container
@@ -36,6 +55,7 @@ block content
                 i span
                 | , from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.
               a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD and model predictions
+              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") Read the paper (Rajpurkar et. al, 2016)
               .infoHeadline
                 h2 Getting Started
               p
@@ -85,21 +105,8 @@ block content
               .infoHeadline
                 h2 Test Set Leaderboard
               p 
-                | Since the release of our dataset (
-                a(href="http://arxiv.org/abs/1606.05250") and paper
-                | ), the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1.
-              table.table.performanceTable
-                tr
-                  th Rank
-                  th Model
-                  th Test EM
-                  th Test F1
-                each model in test
-                  tr
-                    td #{model.rank}
-                    td #{model.description}
-                    td #{model.em}
-                    td #{model.f1}
+                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1.
+              +model_display(test, true)
               p Will your model outperform humans on the QA task?
               table.table.performanceTable
                 tr
@@ -111,13 +118,4 @@ block content
               .infoHeadline
                 h2 Development Set Leaderboard
               p While you are iterating on models, use the development set to get an indicator of your model's performance.
-              table.table.performanceTable
-                tr
-                  th Model
-                  th Test EM
-                  th Test F1
-                each model in development
-                  tr
-                    td #{model.description}
-                    td #{model.em}
-                    td #{model.f1}
+              +model_display(development)

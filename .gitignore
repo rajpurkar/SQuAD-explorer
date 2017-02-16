@@ -4,3 +4,9 @@ SQuAD-explorer/
 bower_components/
 dataset/
 *.DS_Store
+
+development.json
+
+saved.html
+
+test.json
