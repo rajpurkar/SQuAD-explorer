@@ -11,8 +11,50 @@ var stylus = require('gulp-stylus')
 var minify = require('gulp-minify')
 var path = require('path')
 var fs = require('fs')
+var cheerio = require('cheerio')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
+
+var parseEntries = function (htmlStr) {
+  var $ = cheerio.load(htmlStr)
+  var parent = $('h1#leaderboard').closest('.ws-item').next()
+  var entries = []
+  $(parent).find('tbody > tr').each(function () {
+    var entry = {}
+    var cells = $(this).find('td')
+    entry.description = cells.eq(1).text().trim()
+    var instIndex = entry.description.lastIndexOf('(')
+    entry.model_name = entry.description.substr(0, instIndex - 1)
+    entry.institution = entry.description.substr(instIndex + 1).slice(0, -1)
+    delete entry.description
+    entry.f1 = parseFloat(cells.eq(4).text())
+    entry.em = parseFloat(cells.eq(3).text())
+    entry.date = cells.eq(2).text().trim()
+    entries.push(entry)
+  })
+  entries.sort(function (a, b) {
+    var f1Diff = b.f1 - a.f1
+    if (f1Diff === 0) {
+      var emDiff = b.em - a.em
+      return emDiff
+    } else {
+      return f1Diff
+    }
+  })
+
+  for (var i = 0; i < entries.length; i++) {
+    var entry = entries[i]
+    if (i === 0) {
+      entry.rank = 1
+    } else {
+      var prevEntry = entries[i - 1]
+      var rank = prevEntry.rank
+      if (entry.em < prevEntry.em && entry.f1 < prevEntry.f1) rank++
+      entry.rank = rank
+    }
+  }
+  return entries
+}
 
 gulp.task('bower', function () {
   return bower()
@@ -37,6 +79,26 @@ gulp.task('copy_dataset', function () {
     .pipe(gulp.dest('./' + build_dir + 'dataset/'))
 })
 
+gulp.task('scrape_website', function (cb) {
+  var Nightmare = require('nightmare')
+  var fs = require('fs')
+  var parse 
+  var nightmare = new Nightmare({
+    switches: {
+      'ignore-certificate-errors': true
+    }
+  })
+  nightmare.goto('https://worksheets.codalab.org/worksheets/0x62eefc3e64e04430a1a24785a9293fff/')
+  .wait(2000)
+  .evaluate(function () {
+    return document.body.innerHTML
+  })
+  .end()
+  .then(function (result) {
+    var jsonfile = require('jsonfile')
+    jsonfile.writeFile('./test.json', parseEntries(result), cb)
+  })
+})
 
 gulp.task('copy_models', function () {
   gulp
@@ -110,7 +172,7 @@ filepaths.forEach(function (filename) {
   })
 })
 
-gulp.task('generate_index', function () {
+gulp.task('generate_index', ['scrape_website'], function () {
   var test_file = require('./test.json')
   return gulp.src('views/index.pug')
       .pipe(data(function () {
@@ -138,5 +200,5 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('generate_exploration', exploration_tasks)
-gulp.task('generate', ['bower', 'generate_exploration', 'generate_index'])
+gulp.task('generate', ['bower', 'generate_exploration', 'generate_index', 'scrape_website'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset', 'copy_models'])
