@@ -112,11 +112,7 @@ block content
           .infoCard
             .infoBody
               .infoHeadline
-                h2 Test Set Leaderboard
+                h2 Leaderboard
               p 
                 | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform humans on the QA task?
               +model_display(test, true)
-              .infoHeadline
-                h2 Development Set Leaderboard
-              p While you are iterating on models, use the development set to get an indicator of your model's performance.
-              +model_display(development)
