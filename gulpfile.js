@@ -23,9 +23,13 @@ var parseEntries = function (htmlStr) {
     var entry = {}
     var cells = $(this).find('td')
     entry.description = cells.eq(1).text().trim()
-    var instIndex = entry.description.lastIndexOf('(')
-    entry.model_name = entry.description.substr(0, instIndex - 1)
-    entry.institution = entry.description.substr(instIndex + 1).slice(0, -1)
+    entry.model_name = entry.description.substr(0, entry.description.lastIndexOf('(')).trim()
+    var firstPart = entry.description.substr(entry.description.lastIndexOf('(') + 1)
+    entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
+    var httpPos = entry.description.lastIndexOf('http')
+    if (httpPos !== -1) {
+      entry.link = entry.description.substr(entry.description.lastIndexOf('http')).trim()
+    }
     delete entry.description
     entry.f1 = parseFloat(cells.eq(4).text())
     entry.em = parseFloat(cells.eq(3).text())
@@ -96,7 +100,8 @@ gulp.task('scrape_website', function (cb) {
   .end()
   .then(function (result) {
     var jsonfile = require('jsonfile')
-    jsonfile.writeFile('./test.json', parseEntries(result), cb)
+    var after = parseEntries(result)
+    jsonfile.writeFile('./test.json', after, cb)
   })
 })
 

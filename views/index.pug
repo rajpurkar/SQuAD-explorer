@@ -28,6 +28,8 @@ mixin model_display(group, is_test)
         td 
           | #{model.model_name}
           p.institution #{model.institution}
+          if model.link
+            a.link(href=model.link) #{model.link}
         td #{model.em}
         td #{model.f1}
     if is_test
