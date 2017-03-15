@@ -24,7 +24,9 @@ mixin model_display(group, is_test)
     each model in group
       tr
         if is_test
-          td #{model.rank}
+          td 
+            p #{model.rank}
+            span.date.label.label-default #{moment(model.date, "YY-MM-DD").fromNow()}
         td 
           | #{model.model_name}
           p.institution #{model.institution}

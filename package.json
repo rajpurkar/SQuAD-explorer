@@ -16,6 +16,7 @@
     "gulp-replace": "^0.5.4",
     "gulp-stylus": "^2.5.0",
     "jsonfile": "^2.4.0",
+    "moment": "^2.17.1",
     "nightmare": "^2.9.1"
   },
   "devDependencies": {},
