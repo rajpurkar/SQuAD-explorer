@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "cheerio": "^0.22.0",
     "gulp": "^3.9.1",
     "gulp-bower": "^0.0.13",
     "gulp-connect": "^5.0.0",
