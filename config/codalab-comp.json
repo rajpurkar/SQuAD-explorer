@@ -1,0 +1,49 @@
+{
+    "max_submissions_per_period": 5,
+    "max_submissions_total": 20,
+    "host": "https://worksheets.codalab.org",
+    "submission_tag": "squad-test-submit-old",
+    "log_worksheet_uuid": "0x92c72554679e40f2b4d9a27d79b703a4",
+    "predict": {
+        "mimic": [
+            {
+                "old": "0x8f29fe78ffe545128caccab74eb06c57",
+                "new": "0x9ee64ab986174e62a23cbe54a2b875fd"
+            }
+        ],
+        "depth": 10,
+        "tag": "dauqs-test-predict"
+    },
+    "evaluate": {
+        "dependencies": [
+            {
+                "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1",
+                "child_path": "evaluate.py"
+            },
+            {
+                "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd",
+                "child_path": "dev.json"
+            },
+            {
+                "parent_uuid": "{predict}",
+                "parent_path": "",
+                "child_path": "predictions.json"
+            }
+        ],
+        "command": "python evaluate.py dev.json predictions.json",
+        "tag": "dauqs-test-eval"
+    },
+    "score_specs": [
+        {
+            "name": "f1",
+            "key": "/stdout:f1"
+        },
+        {
+            "name": "exact_match",
+            "key": "/stdout:exact_match"
+        }
+    ],
+    "metadata": {
+        "name": "SQuAD Competition Leaderboard"
+    }
+}
