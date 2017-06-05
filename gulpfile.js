@@ -15,27 +15,7 @@ var cheerio = require('cheerio')
 
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
-var parseEntries = function (htmlStr) {
-  var $ = cheerio.load(htmlStr)
-  var parent = $('h1#leaderboard').closest('.ws-item').next()
-  var entries = []
-  $(parent).find('tbody > tr').each(function () {
-    var entry = {}
-    var cells = $(this).find('td')
-    entry.description = cells.eq(1).text().trim()
-    entry.model_name = entry.description.substr(0, entry.description.lastIndexOf('(')).trim()
-    var firstPart = entry.description.substr(entry.description.lastIndexOf('(') + 1)
-    entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
-    var httpPos = entry.description.lastIndexOf('http')
-    if (httpPos !== -1) {
-      entry.link = entry.description.substr(entry.description.lastIndexOf('http')).trim()
-    }
-    delete entry.description
-    entry.f1 = parseFloat(cells.eq(4).text())
-    entry.em = parseFloat(cells.eq(3).text())
-    entry.date = cells.eq(2).text().trim()
-    entries.push(entry)
-  })
+var rankEntries = function (entries) {
   entries.sort(function (a, b) {
     var f1Diff = b.f1 - a.f1
     if (f1Diff === 0) {
@@ -57,6 +37,54 @@ var parseEntries = function (htmlStr) {
       entry.rank = rank
     }
   }
+  return entries
+}
+
+var parseCompEntries = function (comp_file) {
+  var leaderboard = require(comp_file).leaderboard
+  var entries = []
+
+  for (var i = 0; i < leaderboard.length; i++){
+      var o_entry = leaderboard[i]
+      var entry = {}
+      var description = o_entry.submission.description.trim()
+      entry.model_name = description.substr(0, description.lastIndexOf('(')).trim()
+      var firstPart = description.substr(description.lastIndexOf('(') + 1)
+      entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
+      if (description.lastIndexOf('http') !== -1) {
+        entry.link = description.substr(description.lastIndexOf('http')).trim()
+      }
+      entry.date = o_entry.submission.created
+      entry.em = parseFloat(o_entry.scores.exact_match)
+      entry.f1 = parseFloat(o_entry.scores.f1)
+      entries.push(entry)
+  }
+  entries = rankEntries(entries)
+  return entries
+}
+
+var parseEntries = function (htmlStr) {
+  var $ = cheerio.load(htmlStr)
+  var parent = $('h1#leaderboard').closest('.ws-item').next()
+  var entries = []
+  $(parent).find('tbody > tr').each(function () {
+    var entry = {}
+    var cells = $(this).find('td')
+    entry.description = cells.eq(1).text().trim()
+    entry.model_name = entry.description.substr(0, entry.description.lastIndexOf('(')).trim()
+    var firstPart = entry.description.substr(entry.description.lastIndexOf('(') + 1)
+    entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
+    var httpPos = entry.description.lastIndexOf('http')
+    if (httpPos !== -1) {
+      entry.link = entry.description.substr(entry.description.lastIndexOf('http')).trim()
+    }
+    delete entry.description
+    entry.f1 = parseFloat(cells.eq(4).text())
+    entry.em = parseFloat(cells.eq(3).text())
+    entry.date = cells.eq(2).text().trim()
+    entries.push(entry)
+  })
+  entries = rankEntries(entries)
   return entries
 }
 
@@ -177,7 +205,13 @@ filepaths.forEach(function (filename) {
   })
 })
 
-gulp.task('generate_index', ['scrape_website'], function () {
+gulp.task('process_comp_output', function (cb) {
+  var jsonfile = require('jsonfile')
+  var entries = parseCompEntries('./out.json')
+  jsonfile.writeFile('./test.json', entries, cb)
+})
+
+gulp.task('generate_index', ['process_comp_output'], function () {
   var test_file = require('./test.json')
   var moment = require('moment')
   return gulp.src('views/index.pug')
@@ -207,5 +241,5 @@ gulp.task('deploy', function () {
 })
 
 gulp.task('generate_exploration', exploration_tasks)
-gulp.task('generate', ['bower', 'generate_exploration', 'generate_index', 'scrape_website'])
+gulp.task('generate', ['bower', 'generate_exploration', 'generate_index', 'process_comp_output'])
 gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset', 'copy_models'])
