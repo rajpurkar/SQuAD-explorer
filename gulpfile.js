@@ -40,11 +40,18 @@ var rankEntries = function (entries) {
   return entries
 }
 
+function assert (condition, message) {
+  if (!condition) {
+    throw message || 'Assertion failed'
+  }
+}
+
 var parseCompEntries = function (comp_file) {
   var leaderboard = require(comp_file).leaderboard
   var entries = []
 
-  for (var i = 0; i < leaderboard.length; i++){
+  for (var i = 0; i < leaderboard.length; i++) {
+    try {
       var o_entry = leaderboard[i]
       var entry = {}
       var description = o_entry.submission.description.trim()
@@ -57,7 +64,16 @@ var parseCompEntries = function (comp_file) {
       entry.date = o_entry.submission.created
       entry.em = parseFloat(o_entry.scores.exact_match)
       entry.f1 = parseFloat(o_entry.scores.f1)
-      entries.push(entry)
+      if (entry.em > 50 && entry.f1 > 60) {
+        entries.push(entry)
+      } else {
+        console.log('Failed entry')
+        console.log(entry)
+      }
+    } catch (err) {
+      console.log('Failed entry')
+      console.log(err)
+    }
   }
   entries = rankEntries(entries)
   return entries
@@ -114,7 +130,7 @@ gulp.task('copy_dataset', function () {
 gulp.task('scrape_website', function (cb) {
   var Nightmare = require('nightmare')
   var fs = require('fs')
-  var parse 
+  var parse
   var nightmare = new Nightmare({
     switches: {
       'ignore-certificate-errors': true
@@ -147,12 +163,11 @@ gulp.task('connect', function () {
 
 var dataset_folder = './dataset/'
 var filepaths = [
-  dataset_folder + 'dev-v1.1.json',
+  dataset_folder + 'dev-v1.1.json'
   // dataset_folder + 'train-v1.1.json',
   // dataset_folder + 'dev-v1.0.json',
   // dataset_folder + 'train-v1.0.json'
 ]
-
 
 var exploration_tasks = []
 
@@ -184,7 +199,7 @@ filepaths.forEach(function (filename) {
   // models
   var models_folder = './models/'
   var models = fs.readdirSync(models_folder).map(
-    function (a) { return a.slice(0, -5)})
+    function (a) { return a.slice(0, -5) })
 
   var list_task_name = version_and_split + '/' + 'index'
   exploration_tasks.push(list_task_name)
@@ -217,7 +232,7 @@ gulp.task('generate_index', ['process_comp_output'], function () {
   return gulp.src('views/index.pug')
       .pipe(data(function () {
         return { 'test': test_file,
-                 'moment': moment}
+          'moment': moment}
       }))
     .pipe(pug())
     .pipe(gulp.dest('./' + build_dir))
