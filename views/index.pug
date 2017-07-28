@@ -8,7 +8,6 @@ block description
 
 block extralinks
   link(rel='stylesheet', href='/stylesheets/index.css')
-  link(href='https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css', rel='stylesheet', type='text/css')
   script(async defer src="https://buttons.github.io/buttons.js")
 
 block extrascripts
@@ -27,7 +26,7 @@ mixin model_display(group, is_test)
           td 
             p #{model.rank}
             span.date.label.label-default #{moment.unix(model.date).format('MMM YYYY')}
-        td 
+        td(style="word-break:break-word;")
           | #{model.model_name}
           p.institution #{model.institution}
           if model.link
