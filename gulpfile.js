@@ -54,6 +54,7 @@ var parseCompEntries = function (comp_file) {
     try {
       var o_entry = leaderboard[i]
       var entry = {}
+      entry.user = o_entry.submission.user_name
       var description = o_entry.submission.description.trim()
       entry.model_name = description.substr(0, description.lastIndexOf('(')).trim()
       var firstPart = description.substr(description.lastIndexOf('(') + 1)
@@ -64,15 +65,16 @@ var parseCompEntries = function (comp_file) {
       entry.date = o_entry.submission.created
       entry.em = parseFloat(o_entry.scores.exact_match)
       entry.f1 = parseFloat(o_entry.scores.f1)
-      if (entry.em > 50 && entry.f1 > 60) {
-        entries.push(entry)
-      } else {
-        console.log('Failed entry')
-        console.log(entry)
+      if (!(entry.em >= 0)) throw 'Score invalid'
+      if (entry.em < 50) throw 'Score too low'
+      if (entry.model_name === '') {
+        entry.model_name = 'Unnamed submission by ' + entry.user
       }
+      // if (entry.em > 50 && entry.f1 > 60) {
+      entries.push(entry)
     } catch (err) {
-      console.log('Failed entry')
-      console.log(err)
+      console.error(err)
+      console.error(entry)
     }
   }
   entries = rankEntries(entries)
