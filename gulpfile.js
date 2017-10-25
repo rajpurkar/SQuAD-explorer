@@ -17,13 +17,9 @@ var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo n
 
 var rankEntries = function (entries) {
   entries.sort(function (a, b) {
-    var f1Diff = b.f1 - a.f1
-    if (f1Diff === 0) {
-      var emDiff = b.em - a.em
-      return emDiff
-    } else {
-      return f1Diff
-    }
+    var f1Diff = Math.sign(b.f1 - a.f1)
+    var emDiff = Math.sign(b.em - a.em)
+    return f1Diff + emDiff
   })
 
   for (var i = 0; i < entries.length; i++) {
