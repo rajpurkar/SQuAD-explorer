@@ -23,6 +23,8 @@ mixin model_display(group, is_test)
     - var human_em = 82.304
     - var human_f1 = 91.221
     - var is_human_performance_printed = false
+    - var largest_em = Math.max.apply(null, group.map(function (model) { return model.em; }))
+    - var largest_f1 = Math.max.apply(null, group.map(function (model) { return model.f1; }))
     each model in group
       if !is_human_performance_printed
         - is_human_performance_printed = true
@@ -44,9 +46,16 @@ mixin model_display(group, is_test)
           p.institution #{model.institution}
           if model.link
             a.link(href=model.link) #{model.link}
-        td #{model.em.toPrecision(5)}
-        td #{model.f1.toPrecision(5)}
-
+        td
+          if model.em == largest_em
+            b #{model.em.toPrecision(5)}
+          else
+            | #{model.em.toPrecision(5)}
+        td
+          if model.f1 == largest_f1
+            b #{model.f1.toPrecision(5)}
+          else
+            | #{model.f1.toPrecision(5)}
 block content
   .cover#contentCover
     .container
