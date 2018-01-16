@@ -20,7 +20,20 @@ mixin model_display(group, is_test)
       th Model
       th EM
       th F1
+    - var human_em = 82.304
+    - var human_f1 = 91.221
+    - var is_human_performance_printed = false
     each model in group
+      if !is_human_performance_printed
+        - is_human_performance_printed = true
+        tr.human-row
+          td
+          td
+            | Human Performance
+            p.institution Stanford University
+            a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
+          td #{human_em}
+          td #{human_f1}
       tr
         if is_test
           td 
@@ -33,16 +46,6 @@ mixin model_display(group, is_test)
             a.link(href=model.link) #{model.link}
         td #{model.em.toPrecision(5)}
         td #{model.f1.toPrecision(5)}
-    if is_test
-      tr.human-row
-        td
-        td
-          | Human Performance
-          p.institution Stanford University
-          a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar et al. '16)
-        td 82.304
-        td 91.221
-
 
 block content
   .cover#contentCover
@@ -117,5 +120,5 @@ block content
               .infoHeadline
                 h2 Leaderboard
               p 
-                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test and development sets of v1.1. Will your model outperform humans on the QA task?
+                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test set of v1.1. Will your model outperform humans on the QA task?
               +model_display(test, true)
