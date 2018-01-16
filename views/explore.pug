@@ -13,7 +13,7 @@ block extrascripts
 
 mixin model_showcase(model)
   if model
-    h2 #{model}
+    h2(id=model) #{model}
   ul.list-inline
     each article in articles
       li
@@ -21,22 +21,23 @@ mixin model_showcase(model)
           a(href='/' + prefix + article + '.html').btn.actionBtn.inverseBtn
             | #{decodeURIComponent(article.split('/').pop())}
         else
-          a(href='/' + prefix + article + '.html' + '?model=' + model).btn.actionBtn.inverseBtn
+          a(href='/' + prefix + article + '.html' + '?model=' + model).btn.actionBtn
             | #{decodeURIComponent(article.split('/').pop())}
 
 block content
   .cover
     .container
       .row
-        .col-md-12
+        .col-md-4
+          h1 Explore SQuAD
           .infoCard
             .infoBody
-              h1 Explore SQuAD
               h2 Version #{version}, #{split} set
               +model_showcase()
-          .infoCard
-            .infoBody
-              h1 Visualize Model Predictions
-              each model in models
-                +model_showcase(model)
-                    
+        .col-md-8
+          h1 Visualize Model Predictions
+          each model in models.sort().reverse()
+              .infoCard
+                .infoBody
+                    +model_showcase(model)
+                        
