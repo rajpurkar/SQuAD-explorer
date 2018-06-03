@@ -12,7 +12,49 @@ block extralinks
 
 block extrascripts
 
-mixin model_display(group, is_test)
+mixin squad_2_model_display(group, is_test)
+  table.table.performanceTable
+    tr
+      if is_test
+        th Rank
+      th Model
+      th EM
+      th F1
+    - var human_em = 86.9
+    - var human_f1 = 89.5
+    - var largest_em = Math.max.apply(null, group.map(function (model) { return model.em; }))
+    - var largest_f1 = Math.max.apply(null, group.map(function (model) { return model.f1; }))
+      tr.human-row
+        td
+        td
+          | Human Performance
+          p.institution Stanford University
+          a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar & Jia et al. '18)
+        td #{human_em}
+        td #{human_f1}
+    each model in group
+      tr
+        if is_test
+          td 
+            p #{model.rank}
+            span.date.label.label-default #{moment.unix(model.date).format('MMM DD, YYYY')}
+        td(style="word-break:break-word;")
+          | #{model.model_name}
+          p.institution #{model.institution}
+          if model.link
+            a.link(href=model.link) #{model.link}
+        td
+          if model.em == largest_em
+            b #{model.em.toPrecision(5)}
+          else
+            | #{model.em.toPrecision(5)}
+        td
+          if model.f1 == largest_f1
+            b #{model.f1.toPrecision(5)}
+          else
+            | #{model.f1.toPrecision(5)}
+
+mixin squad_1_model_display(group, is_test)
   table.table.performanceTable
     tr
       if is_test
@@ -75,11 +117,19 @@ block content
                   |nswering 
                   b D
                   |ataset (SQuAD) 
-                | is a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
+                | is a reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or 
                 i span
                 | , from the corresponding reading passage. With 100,000+ question-answer pairs on 500+ articles, SQuAD is significantly larger than previous reading comprehension datasets.
-              a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD and model predictions
-              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") Read the paper (Rajpurkar et al. '16)
+              hr
+              p
+                span.label.label-default New
+                b  SQuAD2.0
+                |  is a new dataset that combines the existing questions in SQuAD with over 50,000 new, unanswerable questions written adversarially by crowdworkers to look similar to answerable ones. To do well on SQuAD2.0, systems must not only answer questions when possible, but also determine when no answer is supported by the paragraph and abstain from answering.
+                | SQuAD2.0 is a challenging natural language understanding task for existing models, and we release SQuAD2.0 to the community as the successor to SQuAD. 
+                | We are optimistic that this new dataset will encourage the development of reading comprehension systems that know what they don't know.
+              //-a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD and model predictions
+              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD 2.0 paper (Rajpurkar & Jia et al. '18)
+              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD1.0 paper (Rajpurkar et al. '16)
               .infoHeadline
                 h2 Getting Started
               p
@@ -128,6 +178,13 @@ block content
             .infoBody
               .infoHeadline
                 h2 Leaderboard
+              p SQuAD2.0 tests the ability of a system to answer reading comprehension questions and to know what it doesn't know. How will your model compare to humans on this socratic test of wisdom?
+              +squad_2_model_display([], true)
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 SQuAD1.0 Leaderboard 
               p 
-                | Since the release of our dataset, the community has made rapid progress! Here are the ExactMatch (EM) and F1 scores of the best models evaluated on the test set of v1.1. Will your model outperform humans on the QA task?
-              +model_display(test, true)
+                span.label.label-default Upto May 2018
+                |  Since the release of SQuAD1.0, the community made rapid progress, with the best models rivaling human performance on the task. Here were the ExactMatch (EM) and F1 scores of the best models evaluated on the test set of v1.1.
+              +squad_1_model_display(test, true)
