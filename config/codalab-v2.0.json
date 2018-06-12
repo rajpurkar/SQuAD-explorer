@@ -1,0 +1,53 @@
+{
+    "max_submissions_per_period": 5,
+    "max_submissions_total": 20,
+    "host": "https://worksheets.codalab.org",
+    "submission_tag": "squadrun-test-submit",
+    "log_worksheet_uuid": "0x75a2fb819f364b0f9453d5d63585b878",
+    "allow_multiple_models": true,
+    "predict": {
+        "mimic": [
+            {
+                "old": "0xb30d937a18574073903bb38b382aab03",
+                "new": "0x4fd2e12372a444ed90ba3f186794777c"
+            }
+        ],
+        "depth": 10,
+        "tag": "nurdauqs-test-predict"
+    },
+    "evaluate": {
+        "dependencies": [
+            {
+                "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e",
+                "child_path": "evaluate-v2.0.py"
+            },
+            {
+                "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c",
+                "child_path": "data.json"
+            },
+            {
+                "parent_uuid": "{predict}",
+                "parent_path": "",
+                "child_path": "predictions.json"
+            }
+        ],
+        "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+        "metadata": {
+          "request_docker_image": "codalab/ubuntu:1.9"
+        },
+        "tag": "nurdauqs-test-eval"
+    },
+    "score_specs": [
+        {
+            "name": "f1",
+            "key": "/eval.json:f1"
+        },
+        {
+            "name": "exact_match",
+            "key": "/eval.json:exact"
+        }
+    ],
+    "metadata": {
+        "name": "SQuAD v2.0 Competition Leaderboard"
+    }
+}

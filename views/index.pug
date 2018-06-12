@@ -20,8 +20,8 @@ mixin squad_2_model_display(group, is_test)
       th Model
       th EM
       th F1
-    - var human_em = 86.9
-    - var human_f1 = 89.5
+    - var human_em = 86.831
+    - var human_f1 = 89.452
     - var largest_em = Math.max.apply(null, group.map(function (model) { return model.em; }))
     - var largest_f1 = Math.max.apply(null, group.map(function (model) { return model.f1; }))
       tr.human-row
@@ -128,7 +128,7 @@ block content
                 | SQuAD2.0 is a challenging natural language understanding task for existing models, and we release SQuAD2.0 to the community as the successor to SQuAD. 
                 | We are optimistic that this new dataset will encourage the development of reading comprehension systems that know what they don't know.
               //-a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD and model predictions
-              a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD 2.0 paper (Rajpurkar & Jia et al. '18)
+              a.btn.actionBtn(href="http://arxiv.org/abs/1806.03822") SQuAD 2.0 paper (Rajpurkar & Jia et al. '18)
               a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD1.0 paper (Rajpurkar et al. '16)
               .infoHeadline
                 h2 Getting Started
@@ -140,24 +140,24 @@ block content
                 |  license):
                 ul.list-unstyled
                   li
-                    a.btn.actionBtn.inverseBtn(href="/dataset/train-v1.1.json", download)
-                      | Training Set v1.1 (30 MB)
+                    a.btn.actionBtn.inverseBtn(href="/dataset/train-v2.0.json", download)
+                      | Training Set v2.0 (40 MB)
                   li
-                    a.btn.actionBtn.inverseBtn(href="/dataset/dev-v1.1.json", download)
-                      | Dev Set v1.1 (5 MB)
+                    a.btn.actionBtn.inverseBtn(href="/dataset/dev-v2.0.json", download)
+                      | Dev Set v2.0 (4 MB)
               p To evaluate your models, we have also made available the evaluation script we will use for official evaluation, along with a sample prediction file that the script will take as input. To run the evaluation, use 
                 code
-                  | python evaluate-v1.1.py &lt;path_to_dev-v1.1&gt; &lt;path_to_predictions&gt;
+                  | python evaluate-v2.0.py &lt;path_to_dev-v2.0&gt; &lt;path_to_predictions&gt;
                 |.
                 ul.list-unstyled
                   li
-                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0xbcd57bee090b421c982906709c8c27e1/contents/blob/", download)
-                      | Evaluation Script v1.1
+                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0x6b567e1cf2e041ec80d7098f031c5c9e/contents/blob/", download)
+                      | Evaluation Script v2.0
                   li
-                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/rest/bundles/0xc83bf36cf8714819ba11802b59cb809e/contents/blob/", download)
-                      | Sample Prediction File (on Dev v1.1)
+                    a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/bundles/0x8731effab84f41b7b874a070e40f61e2/", download)
+                      | Sample Prediction File (on Dev v2.0)
               p Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
-              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8403d867f9a3444685c344f4f0bc8d34/")
+              a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8212d84ca41c4150b555a075b19ccc05/")
                 | Submission Tutorial
               p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
               p To keep up to date with major changes to the dataset, please subscribe:
@@ -169,6 +169,8 @@ block content
                 a(href="https://groups.google.com/forum/#!forum/squad-stanford-qa") google group
                 |  or at 
                 a(href="mailto:pranavsr@stanford.edu") pranavsr@stanford.edu
+                |  and 
+                a(href="mailto:robinjia@stanford.edu") robinjia@stanford.edu
                 | .
             .infoSubheadline
               include includes/tweet
@@ -178,7 +180,7 @@ block content
             .infoBody
               .infoHeadline
                 h2 Leaderboard
-              p SQuAD2.0 tests the ability of a system to answer reading comprehension questions and to know what it doesn't know. How will your model compare to humans on this socratic test of wisdom?
+              p SQuAD 2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.  How will your system compare to humans on this task? 
               +squad_2_model_display([], true)
           .infoCard
             .infoBody
