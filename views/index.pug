@@ -128,7 +128,7 @@ block content
                 | SQuAD2.0 is a challenging natural language understanding task for existing models, and we release SQuAD2.0 to the community as the successor to SQuAD. 
                 | We are optimistic that this new dataset will encourage the development of reading comprehension systems that know what they don't know.
               //-a.btn.actionBtn(href="/explore/1.1/dev/") Explore SQuAD and model predictions
-              a.btn.actionBtn(href="http://arxiv.org/abs/1806.03822") SQuAD 2.0 paper (Rajpurkar & Jia et al. '18)
+              a.btn.actionBtn(href="http://arxiv.org/abs/1806.03822") SQuAD2.0 paper (Rajpurkar & Jia et al. '18)
               a.btn.actionBtn(href="http://arxiv.org/abs/1606.05250") SQuAD1.0 paper (Rajpurkar et al. '16)
               .infoHeadline
                 h2 Getting Started
@@ -180,13 +180,13 @@ block content
             .infoBody
               .infoHeadline
                 h2 Leaderboard
-              p SQuAD 2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.  How will your system compare to humans on this task? 
-              +squad_2_model_display([], true)
+              p SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.  How will your system compare to humans on this task? 
+              +squad_2_model_display(test2, true)
           .infoCard
             .infoBody
               .infoHeadline
-                h2 SQuAD1.0 Leaderboard 
+                h2 SQuAD1.1 Leaderboard 
               p 
                 span.label.label-default Upto May 2018
                 |  Since the release of SQuAD1.0, the community made rapid progress, with the best models rivaling human performance on the task. Here were the ExactMatch (EM) and F1 scores of the best models evaluated on the test set of v1.1.
-              +squad_1_model_display(test, true)
+              +squad_1_model_display(test1, true)
