@@ -126,7 +126,7 @@
 }
 .alert {
   color: #fff;
-  background-color: #ea4141;
+  background-color: #8970ef;
   font-weight: 600;
   padding: 10px;
   border: none;
@@ -213,7 +213,7 @@
   font-weight: 400;
 }
 .infoCard .infoSubheadline.backgrounded {
-  background: #ea4141;
+  background: #8970ef;
 }
 .infoCard .infoSubheadline.backgrounded h1,
 .infoCard .infoSubheadline.backgrounded h2,
@@ -221,7 +221,7 @@
   color: #fff;
 }
 .infoCard .actLink {
-  background: #ea4141;
+  background: #8970ef;
 }
 .infoCard .actLink h1,
 .infoCard .actLink h2,
@@ -259,27 +259,27 @@
   font-size: 1.6em;
 }
 .actionBtn:hover {
-  background-color: #cc4242;
-  border-color: #cc4242;
+  background-color: #463494;
+  border-color: #463494;
 }
 .actionBtn {
   display: block;
   margin: 10px auto;
   max-width: 350px;
   width: 100%;
-  background-color: #ea4141;
+  background-color: #6e54da;
   color: #fff !important;
   text-align: center;
   font-size: 1em;
   font-weight: 600;
-  border: 2px solid #ea4141;
+  border: 2px solid #6e54da;
   border-radius: 20px;
   transition: all 0.5s;
   white-space: normal;
 }
 .inverseBtn {
   background-color: #fff;
-  color: #ea4141 !important;
+  color: #6e54da !important;
 }
 .inverseBtn:hover {
   color: #fff !important;
@@ -303,7 +303,7 @@ button:focus {
 }
 #topNavbar {
   border: none;
-  background: #cc4242;
+  background: #463494;
   margin-bottom: 0px;
 }
 #topNavbar .leftNav {
@@ -364,7 +364,7 @@ button:focus {
   }
 }
 #topCover {
-  background: #ea4141;
+  background: #6e54da;
   box-shadow: 0px -10px 20px 2px rgba(120,120,120,0.2) inset;
   min-height: initial;
 }
@@ -375,6 +375,9 @@ button:focus {
   padding: 0px;
   font-weight: 100;
   text-align: center;
+}
+#topCover #appTitle b {
+  font-weight: 400;
 }
 #topCover #appSubtitle {
   color: #fff;
@@ -439,13 +442,13 @@ body {
   background-color: #fff;
 }
 a {
-  color: #ea4141;
+  color: #6e54da;
 }
 a:hover,
 a:active,
 a:focus {
   text-decoration: none !important;
-  color: #cc4242;
+  color: #463494;
 }
 ul {
   margin: 0px;
