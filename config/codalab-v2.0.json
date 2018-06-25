@@ -2,7 +2,7 @@
     "max_submissions_per_period": 5,
     "max_submissions_total": 20,
     "host": "https://worksheets.codalab.org",
-    "submission_tag": "squadrun-test-submit",
+    "submission_tag": "squad-2.0-test-submit",
     "log_worksheet_uuid": "0x75a2fb819f364b0f9453d5d63585b878",
     "allow_multiple_models": true,
     "predict": {
