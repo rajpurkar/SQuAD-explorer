@@ -299,7 +299,7 @@
             "submission": {
                 "created": 1530099993,
                 "description": "",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "RachelK"
@@ -549,5 +549,5 @@
             }
         }
     ],
-    "updated": 1530509187.677178
+    "updated": 1530595784.727179
 }
