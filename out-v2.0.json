@@ -298,7 +298,7 @@
             },
             "submission": {
                 "created": 1530099993,
-                "description": "",
+                "description": "BSAE AddText (single model) (reciTAL.ai)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
@@ -549,5 +549,5 @@
             }
         }
     ],
-    "updated": 1530595784.727179
+    "updated": 1530745580.984779
 }
