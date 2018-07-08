@@ -2,7 +2,6 @@ define( [
 	"./core",
 	"./var/document",
 	"./var/documentElement",
-	"./var/isFunction",
 	"./var/rnothtmlwhite",
 	"./var/slice",
 	"./data/var/dataPriv",
@@ -10,8 +9,7 @@ define( [
 
 	"./core/init",
 	"./selector"
-], function( jQuery, document, documentElement, isFunction, rnothtmlwhite,
-	slice, dataPriv, nodeName ) {
+], function( jQuery, document, documentElement, rnothtmlwhite, slice, dataPriv, nodeName ) {
 
 "use strict";
 
@@ -420,7 +418,7 @@ jQuery.event = {
 			enumerable: true,
 			configurable: true,
 
-			get: isFunction( hook ) ?
+			get: jQuery.isFunction( hook ) ?
 				function() {
 					if ( this.originalEvent ) {
 							return hook( this.originalEvent );
@@ -555,7 +553,7 @@ jQuery.Event = function( src, props ) {
 	}
 
 	// Create a timestamp if incoming event doesn't have one
-	this.timeStamp = src && src.timeStamp || Date.now();
+	this.timeStamp = src && src.timeStamp || jQuery.now();
 
 	// Mark it as fixed
 	this[ jQuery.expando ] = true;
