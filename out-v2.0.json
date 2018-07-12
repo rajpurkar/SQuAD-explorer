@@ -226,6 +226,87 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xeded19aa3de644d58e18ee78ec404ca7 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x607f5bd7e2447855503621a68501532ca74765ad",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x0e4c747a68814b15960cb9a3de176f16",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x0e4c747a68814b15960cb9a3de176f16",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x0e4c747a68814b15960cb9a3de176f16",
+                        "parent_name": "TONYZHOU96-predictions-abcNet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xeded19aa3de644d58e18ee78ec404ca7"
+                    }
+                ],
+                "id": "0x0e4c747a68814b15960cb9a3de176f16",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1531322419,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x0e9a5b1f7d664d50b3a3a26077442c22\", \"predict_id\": \"0xeded19aa3de644d58e18ee78ec404ca7\", \"submitter_id\": \"0x2dbf46df01814e81863c14e5a4e54935\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1531323226,
+                    "memory_max": 0.0,
+                    "name": "TONYZHOU96-predictions-abcNet-results",
+                    "remote": "vm-clws-prod-surgeworker-4",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1531323222,
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ],
+                    "time": 3.9549779892
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x0e4c747a68814b15960cb9a3de176f16"
+            },
+            "scores": {
+                "exact_match": 65.25614985330625,
+                "f1": 69.1980300691472
+            },
+            "submission": {
+                "created": 1531312744,
+                "description": "abcNet (single model) (Fudan University & Liulishuo AI Lab)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "TONYZHOU96"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0x495abaf8d6874d9ea476ae19407d93b3 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -547,7 +628,89 @@
                 "public": false,
                 "user_name": "robinjia"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xddc5f398777f46e1ae3afd4e4dd16df6 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xb4649162b735bbc2bd4571c4fffe66323e453328",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xfcbbf9c3fc034c6a9e67cbd0831f76b0",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xfcbbf9c3fc034c6a9e67cbd0831f76b0",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xfcbbf9c3fc034c6a9e67cbd0831f76b0",
+                        "parent_name": "TONYZHOU96-predictions-FSNet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xddc5f398777f46e1ae3afd4e4dd16df6"
+                    }
+                ],
+                "id": "0xfcbbf9c3fc034c6a9e67cbd0831f76b0",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1531206773,
+                    "data_size": 429823,
+                    "description": "{\"submit_id\": \"0x0edaef8d2e8649eaaa72b9ca2b2b6ffa\", \"predict_id\": \"0xddc5f398777f46e1ae3afd4e4dd16df6\", \"submitter_id\": \"0x2dbf46df01814e81863c14e5a4e54935\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 1,
+                    "failure_message": "Exit code 1",
+                    "last_updated": 1531207970,
+                    "memory_max": 0.0,
+                    "name": "TONYZHOU96-predictions-FSNet-results",
+                    "remote": "vm-clws-prod-surgeworker-6",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1531207967,
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ],
+                    "time": 2.9417719841
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0xfcbbf9c3fc034c6a9e67cbd0831f76b0"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1531108036,
+                "description": "FSNet (single model) Fudan University",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "TONYZHOU96"
+            }
         }
     ],
-    "updated": 1531200252.891726
+    "updated": 1531375662.695555
 }
