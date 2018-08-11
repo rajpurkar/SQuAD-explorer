@@ -137,7 +137,7 @@
             "submission": {
                 "created": 1531500555,
                 "description": "VS^3-NET (single model) (Kangwon National University in South Korea)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": false,
                 "user_name": "parkce_knu"
@@ -222,6 +222,86 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "dgr1026"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0x4b12ce5f8945441baa9a828d435d60a3 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xf49172519988c55f881e16e466b975032d22f90e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x7f4a31d52e8a4860b161f7284b8d2421",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x7f4a31d52e8a4860b161f7284b8d2421",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x7f4a31d52e8a4860b161f7284b8d2421",
+                        "parent_name": "ehfehf-predictions-Candi-Net-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x4b12ce5f8945441baa9a828d435d60a3"
+                    }
+                ],
+                "id": "0x7f4a31d52e8a4860b161f7284b8d2421",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1533827772,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0xd220b6c05e304d098faee5b7d5feffff\", \"predict_id\": \"0x4b12ce5f8945441baa9a828d435d60a3\", \"submitter_id\": \"0x690900fa366f4693a0bc02df9db1873b\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1533928350,
+                    "name": "ehfehf-predictions-Candi-Net-single-model-results",
+                    "remote": "vm-clws-prod-worker-1",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Upload started",
+                    "started": 1533928278,
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ],
+                    "time": 11.4515190125
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x7f4a31d52e8a4860b161f7284b8d2421"
+            },
+            "scores": {
+                "exact_match": 67.27600993003837,
+                "f1": 69.53917142794312
+            },
+            "submission": {
+                "created": 1533615236,
+                "description": "Candi-Net (single model) (42Maru NLP Team)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "ehfehf"
             }
         },
         {
@@ -745,7 +825,7 @@
                     "actions": [],
                     "allow_failed_dependencies": false,
                     "created": 1531505629,
-                    "description": "{\"submit_id\": \"0xa5628eaca9604f3482ed0bc3c6413a03\", \"predict_id\": \"0x73f5c4951ff1450cbb5d81aba4d709d8\", \"submitter_id\": \"0x5c9d161f8396435c9d5e1df4192d9a98\"}",
+                    "description": "",
                     "failure_message": "Parent bundles failed: 0x73f5c4951ff1450cbb5d81aba4d709d8",
                     "name": "ehfehf79-predictions-Candi-Net-single-model-results",
                     "request_cpus": 1,
@@ -775,12 +855,164 @@
                 "f1": null
             },
             "submission": {
-                "created": 1531406254,
-                "description": "Candi-Net (single model) (42MARU NLP Team)",
-                "num_period_submissions": 1,
+                "created": 1531505629,
+                "description": "",
+                "num_period_submissions": 0,
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xa434f125b24d47de873f40a01e87963a \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x1be286c5998a4fa89e2cde62fae88285",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x1be286c5998a4fa89e2cde62fae88285",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x1be286c5998a4fa89e2cde62fae88285",
+                        "parent_name": "ewrfcas-predictions-qanet_elmo-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xa434f125b24d47de873f40a01e87963a"
+                    }
+                ],
+                "id": "0x1be286c5998a4fa89e2cde62fae88285",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1533827746,
+                    "description": "{\"submit_id\": \"0x40dccf80edcf4be4ad6655438f5cb6f3\", \"predict_id\": \"0xa434f125b24d47de873f40a01e87963a\", \"submitter_id\": \"0xa4388236e0c24315853e033b84c4c817\"}",
+                    "failure_message": " Parent bundles failed: 0xa434f125b24d47de873f40a01e87963a (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
+                    "name": "ewrfcas-predictions-qanet_elmo-results",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0x1be286c5998a4fa89e2cde62fae88285"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1533604950,
+                "description": "qanet+elmo (single model) (GammaLab)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "ewrfcas"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xc051d4f7f0a44ba0b319ed1dc063109e \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xf50cf41086b9325bc4195508f2e202c85e08c647",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x745f9719538445c5a4209d73dbad9d6c",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x745f9719538445c5a4209d73dbad9d6c",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x745f9719538445c5a4209d73dbad9d6c",
+                        "parent_name": "ehfehf7979-predictions-Candi-Net-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xc051d4f7f0a44ba0b319ed1dc063109e"
+                    }
+                ],
+                "id": "0x745f9719538445c5a4209d73dbad9d6c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1532753516,
+                    "data_size": 4096,
+                    "description": "{\"submit_id\": \"0x62a480aabc754213b18f7fdcffa5c9df\", \"predict_id\": \"0xc051d4f7f0a44ba0b319ed1dc063109e\", \"submitter_id\": \"0x4c86e80b9e7c42e1ba0b20f5639a35e3\"}",
+                    "failure_message": "Unable to get bundle contents from bundle service: Not Found - Invalid path \"\" in bundle with UUID (0xc051d4f7f0a44ba0b319ed1dc063109e)",
+                    "last_updated": 1532754379,
+                    "name": "ehfehf7979-predictions-Candi-Net-single-model-results",
+                    "remote": "vm-clws-prod-gpuworker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1532754378,
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ],
+                    "time": 1.49126911163
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0x745f9719538445c5a4209d73dbad9d6c"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1532701392,
+                "description": "Candi-Net (single model) (42Maru NLP Team)",
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": false,
-                "user_name": "ehfehf79"
+                "user_name": "ehfehf7979"
             }
         },
         {
@@ -866,5 +1098,5 @@
             }
         }
     ],
-    "updated": 1531553695.527003
+    "updated": 1533969381.216775
 }
