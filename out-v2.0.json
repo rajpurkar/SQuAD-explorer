@@ -549,6 +549,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xe0653a535a164f34928dddd4f42e95d4 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x1b62eb95d7efae78a07d61f0b5ae123586283231",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
+                        "parent_name": "liu4lin-predictions-eeAttNet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xe0653a535a164f34928dddd4f42e95d4"
+                    }
+                ],
+                "id": "0xba3fb1d590c041fbb09bfc5c28d117d2",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1534478629,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0xb09c645a7b7648de8e4dd17214a424e1\", \"predict_id\": \"0xe0653a535a164f34928dddd4f42e95d4\", \"submitter_id\": \"0xdf02e76eb0384fa1b4268719ebf577c5\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1534499912,
+                    "name": "liu4lin-predictions-eeAttNet-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Upload started",
+                    "started": 1534498667,
+                    "tags": [
+                        "nurdauqs-test-eval"
+                    ],
+                    "time": 15.2562520504
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2"
+            },
+            "scores": {
+                "exact_match": 63.36041525614986,
+                "f1": 66.63767336005667
+            },
+            "submission": {
+                "created": 1534239909,
+                "description": "eeAttNet (single model) (BBD NLP Team) https://www.bbdservice.com",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "liu4lin"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0x956116485acb487693217147e2c8c99c \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -1103,87 +1183,7 @@
                 "public": true,
                 "user_name": "TONYZHOU96"
             }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0x4fd2e12372a444ed90ba3f186794777c predictions.json:0xe0653a535a164f34928dddd4f42e95d4 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0x1b62eb95d7efae78a07d61f0b5ae123586283231",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2",
-                        "parent_name": "liu4lin-predictions-eeAttNet-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xe0653a535a164f34928dddd4f42e95d4"
-                    }
-                ],
-                "id": "0xba3fb1d590c041fbb09bfc5c28d117d2",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1534478629,
-                    "data_size": 4337,
-                    "description": "{\"submit_id\": \"0xb09c645a7b7648de8e4dd17214a424e1\", \"predict_id\": \"0xe0653a535a164f34928dddd4f42e95d4\", \"submitter_id\": \"0xdf02e76eb0384fa1b4268719ebf577c5\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1534499912,
-                    "name": "liu4lin-predictions-eeAttNet-results",
-                    "remote": "vm-clws-prod-worker-0",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "run_status": "Upload started",
-                    "started": 1534498667,
-                    "tags": [
-                        "nurdauqs-test-eval"
-                    ],
-                    "time": 15.2562520504
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xba3fb1d590c041fbb09bfc5c28d117d2"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1534239909,
-                "description": "eeAttNet (single model) (BBD NLP Team) https://www.bbdservice.com",
-                "num_period_submissions": 0,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "liu4lin"
-            }
         }
     ],
-    "updated": 1534612444.213825
+    "updated": 1534866343.21179
 }
