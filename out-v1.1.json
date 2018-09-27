@@ -144,86 +144,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x4a0a5acb53424e01a0b27e179ac38758 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": "0xfbc2b9da69c7cd7c725a623d3b056b31b1f0d996",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xf41b610524c044eaa90615ea3712d250",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xf41b610524c044eaa90615ea3712d250",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xf41b610524c044eaa90615ea3712d250",
-                        "parent_name": "fnwymr-predictions-nlnet-ensemble-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x4a0a5acb53424e01a0b27e179ac38758"
-                    }
-                ],
-                "id": "0xf41b610524c044eaa90615ea3712d250",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1537265969,
-                    "data_size": 4155,
-                    "description": "{\"submit_id\": \"0xd80bc983592b4ebaa357d96e6e4185c7\", \"predict_id\": \"0x4a0a5acb53424e01a0b27e179ac38758\", \"submitter_id\": \"0x40570297eb4a472bbf77e203ab24b43a\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1537274985,
-                    "name": "fnwymr-predictions-nlnet-ensemble-results",
-                    "remote": "vm-clws-prod-gpuworker-2",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Upload started",
-                    "started": 1537274970,
-                    "tags": [
-                        "dauqs-test-eval"
-                    ],
-                    "time": 11.4436118603
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xf41b610524c044eaa90615ea3712d250"
-            },
-            "scores": {
-                "exact_match": 85.10437427882094,
-                "f1": 91.0546467312015
-            },
-            "submission": {
-                "created": 1535469416,
-                "description": "nlnet (ensemble) (Microsoft Research Asia)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 3,
-                "public": false,
-                "user_name": "fnwymr"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc811cfe6385c47a390ba72849a160a0b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -379,7 +299,7 @@
                 "created": 1531105917,
                 "description": "r-net (ensemble) (Microsoft Research Asia) ",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 1,
                 "public": false,
                 "user_name": "fnwymr"
             }
@@ -462,86 +382,6 @@
                 "num_total_submissions": 2,
                 "public": false,
                 "user_name": "fnwymrc"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xb32bfce8b47640b29f47164f7f3673f1 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": "0xdd4a1fb556c58ba6bbb260e18c13828c80c78b60",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xdba37ba8578d4b098509aaf754ca917b",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xdba37ba8578d4b098509aaf754ca917b",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xdba37ba8578d4b098509aaf754ca917b",
-                        "parent_name": "fnwymr-predictions-nlnet-single-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xb32bfce8b47640b29f47164f7f3673f1"
-                    }
-                ],
-                "id": "0xdba37ba8578d4b098509aaf754ca917b",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1537265893,
-                    "data_size": 4155,
-                    "description": "{\"submit_id\": \"0x0d2a8db5c2f9447f85d3ffa66d2c0da2\", \"predict_id\": \"0xb32bfce8b47640b29f47164f7f3673f1\", \"submitter_id\": \"0x40570297eb4a472bbf77e203ab24b43a\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1537266765,
-                    "name": "fnwymr-predictions-nlnet-single-results",
-                    "remote": "vm-clws-prod-gpuworker-1",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Upload started",
-                    "started": 1537266750,
-                    "tags": [
-                        "dauqs-test-eval"
-                    ],
-                    "time": 11.7085280418
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xdba37ba8578d4b098509aaf754ca917b"
-            },
-            "scores": {
-                "exact_match": 83.4574635476765,
-                "f1": 90.04869605301143
-            },
-            "submission": {
-                "created": 1535461871,
-                "description": "nlnet (single model) (Microsoft Research Asia)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 3,
-                "public": false,
-                "user_name": "fnwymr"
             }
         },
         {
@@ -13967,7 +13807,7 @@
             "submission": {
                 "created": 1534664969,
                 "description": "SAN + ELMo (ensemble model) (Microsoft Business Applications Research Group) https://arxiv.org/abs/1712.03556",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": false,
                 "user_name": "nlpfarmer03"
@@ -14808,6 +14648,78 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x544672d4500a4276b7354a23bbf8f35a \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x545200262f1449f7856f63d53c972189",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x545200262f1449f7856f63d53c972189",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x545200262f1449f7856f63d53c972189",
+                        "parent_name": "fnwmrc-predictions-nlnet-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x544672d4500a4276b7354a23bbf8f35a"
+                    }
+                ],
+                "id": "0x545200262f1449f7856f63d53c972189",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1538009682,
+                    "description": "{\"submit_id\": \"0xabdd36d2c54c476f89c8a12a9c2cbe8c\", \"predict_id\": \"0x544672d4500a4276b7354a23bbf8f35a\", \"submitter_id\": \"0xac36e4664456443191f0acad43f566c8\"}",
+                    "name": "fnwmrc-predictions-nlnet-ensemble-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0x545200262f1449f7856f63d53c972189"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1537956912,
+                "description": "nlnet (ensemble) (Microsoft Research Asia)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "fnwmrc"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef41a2c2c9a4ec0bd58b1cbf128ffa6 \"python evaluate.py dev.json predictions.json\"",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -15384,12 +15296,12 @@
             "submission": {
                 "created": 1534476930,
                 "description": "SAN +ELMo (single model) (Microsoft Business Applications Research Group) https://arxiv.org/abs/1712.03556",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": false,
                 "user_name": "nlpfarmer02"
             }
         }
     ],
-    "updated": 1537562341.204913
+    "updated": 1538009697.074629
 }
