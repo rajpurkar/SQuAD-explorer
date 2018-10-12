@@ -1,11 +1,11 @@
 define( [
 	"../core",
-	"./var/rboxStyle",
 	"./var/rnumnonpx",
+	"./var/rmargin",
 	"./var/getStyles",
 	"./support",
 	"../selector" // Get jQuery.contains
-], function( jQuery, rboxStyle, rnumnonpx, getStyles, support ) {
+], function( jQuery, rnumnonpx, rmargin, getStyles, support ) {
 
 "use strict";
 
@@ -35,7 +35,7 @@ function curCSS( elem, name, computed ) {
 		// but width seems to be reliably pixels.
 		// This is against the CSSOM draft spec:
 		// https://drafts.csswg.org/cssom/#resolved-values
-		if ( !support.pixelBoxStyles() && rnumnonpx.test( ret ) && rboxStyle.test( name ) ) {
+		if ( !support.pixelMarginRight() && rnumnonpx.test( ret ) && rmargin.test( name ) ) {
 
 			// Remember the original values
 			width = style.width;

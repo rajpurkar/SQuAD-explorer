@@ -1,16 +1,17 @@
 define( [
 	"../core",
 	"../var/indexOf",
-	"../var/isFunction",
 	"./var/rneedsContext",
 	"../selector"
-], function( jQuery, indexOf, isFunction, rneedsContext ) {
+], function( jQuery, indexOf, rneedsContext ) {
 
 "use strict";
 
+var risSimple = /^.[^:#\[\.,]*$/;
+
 // Implement the identical functionality for filter and not
 function winnow( elements, qualifier, not ) {
-	if ( isFunction( qualifier ) ) {
+	if ( jQuery.isFunction( qualifier ) ) {
 		return jQuery.grep( elements, function( elem, i ) {
 			return !!qualifier.call( elem, i, elem ) !== not;
 		} );
@@ -30,8 +31,16 @@ function winnow( elements, qualifier, not ) {
 		} );
 	}
 
-	// Filtered directly for both simple and complex selectors
-	return jQuery.filter( qualifier, elements, not );
+	// Simple selector that can be filtered directly, removing non-Elements
+	if ( risSimple.test( qualifier ) ) {
+		return jQuery.filter( qualifier, elements, not );
+	}
+
+	// Complex selector, compare the two sets, removing non-Elements
+	qualifier = jQuery.filter( qualifier, elements );
+	return jQuery.grep( elements, function( elem ) {
+		return ( indexOf.call( qualifier, elem ) > -1 ) !== not && elem.nodeType === 1;
+	} );
 }
 
 jQuery.filter = function( expr, elems, not ) {
