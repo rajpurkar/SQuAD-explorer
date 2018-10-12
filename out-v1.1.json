@@ -135,88 +135,8 @@
             },
             "submission": {
                 "created": 1538768277,
-                "description": "BERT (ensemble) (Google A.I.)",
-                "num_period_submissions": 2,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "jacobdevlin"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef2aab58b7e40309c94bcfc0b0bccc9 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": "0xd293f3fd00aa36ead163ccafb0cf7c280c536bd2",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
-                        "parent_name": "jacobdevlin-predictions-bert-single-model-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xdef2aab58b7e40309c94bcfc0b0bccc9"
-                    }
-                ],
-                "id": "0x465d8db35d784d378c2cf5620336abdc",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1539015372,
-                    "data_size": 4156,
-                    "description": "{\"submit_id\": \"0x2c69ca052e28483e9e80d9ad73967731\", \"predict_id\": \"0xdef2aab58b7e40309c94bcfc0b0bccc9\", \"submitter_id\": \"0x21e3d5c71dac4789bf681151d17a2745\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1539025245,
-                    "name": "jacobdevlin-predictions-bert-single-model-results",
-                    "remote": "vm-clws-prod-gpuworker-0",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Upload started",
-                    "started": 1539025220,
-                    "tags": [
-                        "dauqs-test-eval"
-                    ],
-                    "time": 11.4883720875
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x465d8db35d784d378c2cf5620336abdc"
-            },
-            "scores": {
-                "exact_match": 85.08339452428406,
-                "f1": 91.83521038993065
-            },
-            "submission": {
-                "created": 1538759735,
-                "description": "BERT (single model) (Google A.I.)",
-                "num_period_submissions": 2,
+                "description": "BERT (ensemble) (Google AI Language) https://arxiv.org/abs/1810.04805",
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "jacobdevlin"
@@ -376,7 +296,7 @@
             "submission": {
                 "created": 1536489822,
                 "description": "nlnet (ensemble) (Microsoft Research Asia)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": false,
                 "user_name": "fnwymrc"
@@ -618,7 +538,7 @@
             "submission": {
                 "created": 1536483480,
                 "description": "nlnet (single model) (Microsoft Research Asia)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": false,
                 "user_name": "fnwymrc"
@@ -15707,7 +15627,87 @@
                 "public": false,
                 "user_name": "nlpfarmer02"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef2aab58b7e40309c94bcfc0b0bccc9 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xd293f3fd00aa36ead163ccafb0cf7c280c536bd2",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x465d8db35d784d378c2cf5620336abdc",
+                        "parent_name": "jacobdevlin-predictions-bert-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xdef2aab58b7e40309c94bcfc0b0bccc9"
+                    }
+                ],
+                "id": "0x465d8db35d784d378c2cf5620336abdc",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1539015372,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x2c69ca052e28483e9e80d9ad73967731\", \"predict_id\": \"0xdef2aab58b7e40309c94bcfc0b0bccc9\", \"submitter_id\": \"0x21e3d5c71dac4789bf681151d17a2745\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1539025245,
+                    "name": "jacobdevlin-predictions-bert-single-model-results",
+                    "remote": "vm-clws-prod-gpuworker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Upload started",
+                    "started": 1539025220,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 11.4883720875
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x465d8db35d784d378c2cf5620336abdc"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1538759735,
+                "description": "BERT (single model) (Google AI Language) https://arxiv.org/abs/1810.04805",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "jacobdevlin"
+            }
         }
     ],
-    "updated": 1539063390.394058
+    "updated": 1539321960.566577
 }
