@@ -135,7 +135,7 @@
             },
             "submission": {
                 "created": 1538768277,
-                "description": "BERT (ensemble) (Google A.I.)",
+                "description": "BERT (ensemble) (Google AI Language) https://arxiv.org/abs/1810.04805",
                 "num_period_submissions": 2,
                 "num_total_submissions": 2,
                 "public": true,
@@ -215,7 +215,7 @@
             },
             "submission": {
                 "created": 1538759735,
-                "description": "BERT (single model) (Google A.I.)",
+                "description": "BERT (single model) (Google AI Language) https://arxiv.org/abs/1810.04805",
                 "num_period_submissions": 2,
                 "num_total_submissions": 2,
                 "public": true,
