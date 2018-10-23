@@ -1,9 +1,8 @@
 define( [
 	"./core",
-	"./var/isFunction",
 	"./var/slice",
 	"./callbacks"
-], function( jQuery, isFunction, slice ) {
+], function( jQuery, slice ) {
 
 "use strict";
 
@@ -20,11 +19,11 @@ function adoptValue( value, resolve, reject, noValue ) {
 	try {
 
 		// Check for promise aspect first to privilege synchronous behavior
-		if ( value && isFunction( ( method = value.promise ) ) ) {
+		if ( value && jQuery.isFunction( ( method = value.promise ) ) ) {
 			method.call( value ).done( resolve ).fail( reject );
 
 		// Other thenables
-		} else if ( value && isFunction( ( method = value.then ) ) ) {
+		} else if ( value && jQuery.isFunction( ( method = value.then ) ) ) {
 			method.call( value, resolve, reject );
 
 		// Other non-thenables
@@ -82,14 +81,14 @@ jQuery.extend( {
 						jQuery.each( tuples, function( i, tuple ) {
 
 							// Map tuples (progress, done, fail) to arguments (done, fail, progress)
-							var fn = isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
+							var fn = jQuery.isFunction( fns[ tuple[ 4 ] ] ) && fns[ tuple[ 4 ] ];
 
 							// deferred.progress(function() { bind to newDefer or newDefer.notify })
 							// deferred.done(function() { bind to newDefer or newDefer.resolve })
 							// deferred.fail(function() { bind to newDefer or newDefer.reject })
 							deferred[ tuple[ 1 ] ]( function() {
 								var returned = fn && fn.apply( this, arguments );
-								if ( returned && isFunction( returned.promise ) ) {
+								if ( returned && jQuery.isFunction( returned.promise ) ) {
 									returned.promise()
 										.progress( newDefer.notify )
 										.done( newDefer.resolve )
@@ -143,7 +142,7 @@ jQuery.extend( {
 										returned.then;
 
 									// Handle a returned thenable
-									if ( isFunction( then ) ) {
+									if ( jQuery.isFunction( then ) ) {
 
 										// Special processors (notify) just wait for resolution
 										if ( special ) {
@@ -239,7 +238,7 @@ jQuery.extend( {
 							resolve(
 								0,
 								newDefer,
-								isFunction( onProgress ) ?
+								jQuery.isFunction( onProgress ) ?
 									onProgress :
 									Identity,
 								newDefer.notifyWith
@@ -251,7 +250,7 @@ jQuery.extend( {
 							resolve(
 								0,
 								newDefer,
-								isFunction( onFulfilled ) ?
+								jQuery.isFunction( onFulfilled ) ?
 									onFulfilled :
 									Identity
 							)
@@ -262,7 +261,7 @@ jQuery.extend( {
 							resolve(
 								0,
 								newDefer,
-								isFunction( onRejected ) ?
+								jQuery.isFunction( onRejected ) ?
 									onRejected :
 									Thrower
 							)
@@ -302,15 +301,8 @@ jQuery.extend( {
 					// fulfilled_callbacks.disable
 					tuples[ 3 - i ][ 2 ].disable,
 
-					// rejected_handlers.disable
-					// fulfilled_handlers.disable
-					tuples[ 3 - i ][ 3 ].disable,
-
 					// progress_callbacks.lock
-					tuples[ 0 ][ 2 ].lock,
-
-					// progress_handlers.lock
-					tuples[ 0 ][ 3 ].lock
+					tuples[ 0 ][ 2 ].lock
 				);
 			}
 
@@ -380,7 +372,7 @@ jQuery.extend( {
 
 			// Use .then() to unwrap secondary thenables (cf. gh-3000)
 			if ( master.state() === "pending" ||
-				isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
+				jQuery.isFunction( resolveValues[ i ] && resolveValues[ i ].then ) ) {
 
 				return master.then();
 			}
