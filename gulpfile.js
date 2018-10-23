@@ -149,7 +149,7 @@ gulp.task('scrape_website', function (cb) {
 
 gulp.task('copy_models', function () {
   gulp
-    .src('models/*')
+    .src('models/*/*.json')
     .pipe(gulp.dest('./' + build_dir + 'models/'))
 })
 
@@ -161,7 +161,8 @@ gulp.task('connect', function () {
 
 var dataset_folder = './dataset/'
 var filepaths = [
-  dataset_folder + 'dev-v1.1.json'
+  dataset_folder + 'dev-v1.1.json',
+  dataset_folder + 'dev-v2.0.json'
   // dataset_folder + 'train-v1.1.json',
   // dataset_folder + 'dev-v1.0.json',
   // dataset_folder + 'train-v1.0.json'
@@ -195,7 +196,7 @@ filepaths.forEach(function (filename) {
   })
 
   // models
-  var models_folder = './models/'
+  var models_folder = './models/' + version
   var models = fs.readdirSync(models_folder).map(
     function (a) { return a.slice(0, -5) })
 

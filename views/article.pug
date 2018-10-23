@@ -44,8 +44,11 @@ block content
                                 li
                                   p
                                     i Ground Truth Answers: 
-                                    each answer, index in qa.answers
-                                      span.answer #{answer.text}
+                                    if qa.answers.length > 0
+                                      each answer, index in qa.answers
+                                        span.answer #{answer.text}
+                                    else
+                                      span.no-answer &lt;No Answer&gt;
                                 li.prediction-holder
                                   p
                                     i Prediction: 

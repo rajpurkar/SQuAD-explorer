@@ -13,7 +13,10 @@
             }
         ],
         "depth": 10,
-        "tag": "nurdauqs-test-predict"
+        "tag": "nurdauqs-test-predict",
+        "metadata": {
+          "request_network": false
+        }
     },
     "evaluate": {
         "dependencies": [

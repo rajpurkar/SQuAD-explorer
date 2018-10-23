@@ -15,8 +15,9 @@
     }
   }
   var model_name = getUrlParameter('model')
+  var version = getUrlParameter('version')
   if (model_name) {
-    $.getJSON('/SQuAD-explorer/models/' + model_name + '.json', function (data) {
+    $.getJSON('/SQuAD-explorer/models/' + version + '/' + model_name + '.json', function (data) {
       $('.model-title-holder > h1').text('Predictions by ' + model_name)
       $('.model-title-holder').show()
       $('.prediction-holder').show()
@@ -24,19 +25,27 @@
       var exact_scores = []
       $('.qa-wrap').each(function () {
         var id = $(this).attr('data-id')
-        $(this).find('.prediction').text(data[id])
         var prediction = data[id]
+        var display_pred = prediction
+        if (prediction === '') {
+          display_pred = '<No Answer>'
+        }
+        $(this).find('.prediction').text(display_pred)
+        if (prediction === '') {
+          $(this).find('.prediction').addClass('no-answer')
+        }
         var ground_truths = []
         $(this).closest('.qa-wrap')
           .find('.answer').each(function () {
             ground_truths.push($(this).text())
           })
-        var scores
+        /* var scores
         if (prediction && prediction.length > 0 && ground_truths.length > 0) {
           scores = window.evaluate_on_metrics(prediction, ground_truths)
         } else {
           scores = [0, 0]
-        }
+        }*/
+        var scores = window.evaluate_on_metrics(prediction, ground_truths)
         exact_scores.push(scores[0])
         var f1_score = scores[1]
         f1_scores.push(f1_score)
