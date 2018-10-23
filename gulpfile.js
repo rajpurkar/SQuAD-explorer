@@ -162,10 +162,7 @@ gulp.task('connect', function () {
 var dataset_folder = './dataset/'
 var filepaths = [
   dataset_folder + 'dev-v1.1.json',
-  dataset_folder + 'dev-v2.0.json'
-  // dataset_folder + 'train-v1.1.json',
-  // dataset_folder + 'dev-v1.0.json',
-  // dataset_folder + 'train-v1.0.json'
+  dataset_folder + 'dev-v2.0.json',
 ]
 
 var exploration_tasks = []
