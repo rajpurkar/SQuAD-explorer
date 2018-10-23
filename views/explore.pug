@@ -11,7 +11,7 @@ block extralinks
 
 block extrascripts
 
-mixin model_showcase(model)
+mixin model_showcase(model, version)
   if model
     h2(id=model) #{model}
   ul.list-inline
@@ -21,7 +21,7 @@ mixin model_showcase(model)
           a(href='/' + prefix + article + '.html').btn.actionBtn.inverseBtn
             | #{decodeURIComponent(article.split('/').pop())}
         else
-          a(href='/' + prefix + article + '.html' + '?model=' + model).btn.actionBtn
+          a(href='/' + prefix + article + '.html' + '?model=' + model + '&version=' + version).btn.actionBtn
             | #{decodeURIComponent(article.split('/').pop())}
 
 block content
@@ -39,5 +39,5 @@ block content
           each model in models.sort().reverse()
               .infoCard
                 .infoBody
-                    +model_showcase(model)
+                    +model_showcase(model, version)
                         

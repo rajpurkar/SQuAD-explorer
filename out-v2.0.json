@@ -377,7 +377,7 @@
             },
             "submission": {
                 "created": 1537180657,
-                "description": "Unet (ensemble) (Fudan University & Liulishuo Lab)",
+                "description": "Unet (ensemble) (Fudan University & Liulishuo Lab) https://arxiv.org/abs/1810.06638",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
@@ -2874,5 +2874,5 @@
             }
         }
     ],
-    "updated": 1539546279.722284
+    "updated": 1540060108.925762
 }
