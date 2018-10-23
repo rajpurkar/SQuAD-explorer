@@ -47,6 +47,13 @@ function compute_common (tokens1, tokens2) {
 }
 
 function f1_score (prediction, ground_truth) {
+  if (ground_truth === '') {
+    if (prediction === '') {
+      return 1.0
+    } else {
+      return 0.0
+    }
+  }
   var prediction_tokens = normalize_answer(prediction).split(' ')
   var ground_truth_tokens = normalize_answer(ground_truth).split(' ')
   var common = compute_common(prediction_tokens, ground_truth_tokens)
@@ -61,6 +68,13 @@ function f1_score (prediction, ground_truth) {
 }
 
 function exact_match_score (prediction, ground_truth) {
+  if (ground_truth === '') {
+    if (prediction === '') {
+      return 1.0
+    } else {
+      return 0.0
+    }
+  }
   return (normalize_answer(prediction) === normalize_answer(ground_truth))
 }
 
@@ -74,6 +88,9 @@ function metric_max_over_ground_truths (metric_fn, prediction, ground_truths) {
 }
 
 function evaluate_on_metrics (prediction, ground_truths) {
+  if (ground_truths.length === 0) {
+    ground_truths = [''];
+  }
   return [
     metric_max_over_ground_truths(exact_match_score, prediction, ground_truths),
     metric_max_over_ground_truths(f1_score, prediction, ground_truths)
