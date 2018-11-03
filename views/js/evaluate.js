@@ -2,7 +2,7 @@ function normalize_answer (text) {
   // Lower text and remove punctuation, articles and extra whitespace.
 
   function remove_punc (s) {
-    var to_exclude = /[.^/|#*(-=>:;?{&<[!'_+`)@$\]"~\\%},]/g
+    var to_exclude = /[.^/|#*(\-=>:;?{&<[!'_+`)@$\]"~\\%},]/g
     return s.replace(to_exclude, '')
   }
 
