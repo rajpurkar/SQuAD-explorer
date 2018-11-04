@@ -1,9 +1,7 @@
 define( [
 	"./core",
-	"./core/toType",
-	"./var/isFunction",
 	"./var/rnothtmlwhite"
-], function( jQuery, toType, isFunction, rnothtmlwhite ) {
+], function( jQuery, rnothtmlwhite ) {
 
 "use strict";
 
@@ -127,11 +125,11 @@ jQuery.Callbacks = function( options ) {
 
 					( function add( args ) {
 						jQuery.each( args, function( _, arg ) {
-							if ( isFunction( arg ) ) {
+							if ( jQuery.isFunction( arg ) ) {
 								if ( !options.unique || !self.has( arg ) ) {
 									list.push( arg );
 								}
-							} else if ( arg && arg.length && toType( arg ) !== "string" ) {
+							} else if ( arg && arg.length && jQuery.type( arg ) !== "string" ) {
 
 								// Inspect recursively
 								add( arg );
