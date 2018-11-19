@@ -3,17 +3,17 @@
     "max_submissions_total": 20,
     "host": "https://worksheets.codalab.org",
     "submission_tag": "squad-2.0-test-submit",
-    "log_worksheet_uuid": "0x75a2fb819f364b0f9453d5d63585b878",
+    "log_worksheet_uuid": "0x816632b5306d41d3ba80ccecc84f1b6e",
     "allow_multiple_models": true,
     "predict": {
         "mimic": [
             {
                 "old": "0xb30d937a18574073903bb38b382aab03",
-                "new": "0x4fd2e12372a444ed90ba3f186794777c"
+                "new": "0x913132d5089d4c6dbe45a0cb88b0ecee"
             }
         ],
         "depth": 10,
-        "tag": "nurdauqs-test-predict",
+        "tag": "nurdauqs-test-predict-shuf",
         "metadata": {
           "request_network": false
         }
@@ -25,7 +25,7 @@
                 "child_path": "evaluate-v2.0.py"
             },
             {
-                "parent_uuid": "0x4fd2e12372a444ed90ba3f186794777c",
+                "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209",
                 "child_path": "data.json"
             },
             {
@@ -38,7 +38,7 @@
         "metadata": {
           "request_docker_image": "codalab/ubuntu:1.9"
         },
-        "tag": "nurdauqs-test-eval"
+        "tag": "nurdauqs-test-eval-shuf"
     },
     "score_specs": [
         {
