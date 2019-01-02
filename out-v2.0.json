@@ -146,6 +146,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x7de95ab9e3f049b5870ca45e09d272df \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x46a2300d168f8be9c4feea288ded2f6cd53f8573",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
+                        "parent_name": "yichaolu-predictions-lunet-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x7de95ab9e3f049b5870ca45e09d272df"
+                    }
+                ],
+                "id": "0x7ff30db96f854761b918d3df6df52876",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1545002429,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x4137369d5cc74ea785c0a5da6d1a441b\", \"predict_id\": \"0x7de95ab9e3f049b5870ca45e09d272df\", \"submitter_id\": \"0x2a11fd08b3434d4f95c7485c4431f454\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1546387098,
+                    "name": "yichaolu-predictions-lunet-ensemble-results",
+                    "remote": "vm-clws-prod-gpuworker-1",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1546387077,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 13.8829751015
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x7ff30db96f854761b918d3df6df52876"
+            },
+            "scores": {
+                "exact_match": 83.46874294741593,
+                "f1": 86.04290496727909
+            },
+            "submission": {
+                "created": 1544980293,
+                "description": "Lunet + Verifier + BERT (ensemble) (Layer 6 AI NLP Team)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "yichaolu"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x98554a3dcc8644e9b6f849b4e54463c8 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -298,7 +378,7 @@
             "submission": {
                 "created": 1545016752,
                 "description": "PAML+BERT (single model) (PINGAN GammaLab)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "ewrfcas"
@@ -1658,7 +1738,7 @@
             "submission": {
                 "created": 1546138442,
                 "description": "MMIPN(Single)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "OldBirdAZ"
@@ -3890,7 +3970,7 @@
             "submission": {
                 "created": 1545405762,
                 "description": "PAML+BERT (ensemble model) (PINGAN GammaLab)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "ewrfcas"
@@ -3963,82 +4043,10 @@
             "submission": {
                 "created": 1545016117,
                 "description": "EBB-Net (single model) (Enliple AI)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "jeonsworld"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x7de95ab9e3f049b5870ca45e09d272df \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x7ff30db96f854761b918d3df6df52876",
-                        "parent_name": "yichaolu-predictions-lunet-ensemble-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x7de95ab9e3f049b5870ca45e09d272df"
-                    }
-                ],
-                "id": "0x7ff30db96f854761b918d3df6df52876",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1545002429,
-                    "description": "{\"submit_id\": \"0x4137369d5cc74ea785c0a5da6d1a441b\", \"predict_id\": \"0x7de95ab9e3f049b5870ca45e09d272df\", \"submitter_id\": \"0x2a11fd08b3434d4f95c7485c4431f454\"}",
-                    "name": "yichaolu-predictions-lunet-ensemble-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x7ff30db96f854761b918d3df6df52876"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1544980293,
-                "description": "Lunet + Verifier + BERT (ensemble) (Layer 6 AI NLP Team)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
-                "user_name": "yichaolu"
+                "user_name": "jeonsworld"
             }
         },
         {
@@ -4123,5 +4131,5 @@
             }
         }
     ],
-    "updated": 1546227630.93434
+    "updated": 1546392170.455268
 }
