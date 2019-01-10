@@ -13,3 +13,4 @@ then
   cd codalab-cli
   ./setup.sh server
 fi
+bower install --force
