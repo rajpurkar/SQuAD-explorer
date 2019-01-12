@@ -1272,6 +1272,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0a0c38bd24c94e43bce7a3753eb05297 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xeec6cff56ecc320d43c4aae7c3aa4c187298d065",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
+                        "parent_name": "shashank879-predictions-ARSG-BERT-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x0a0c38bd24c94e43bce7a3753eb05297"
+                    }
+                ],
+                "id": "0xf1a11046acf94930b3daba8f4c3a4090",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1547052523,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x5e38e47f26db47f9bb01eefb91e0724e\", \"predict_id\": \"0x0a0c38bd24c94e43bce7a3753eb05297\", \"submitter_id\": \"0xb433f04337b84ad6a6208e39d1ce32b5\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1547099115,
+                    "name": "shashank879-predictions-ARSG-BERT-results",
+                    "remote": "vm-clws-prod-gpuworker-1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1547099033,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 14.5750529766
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xf1a11046acf94930b3daba8f4c3a4090"
+            },
+            "scores": {
+                "exact_match": 81.30703870764712,
+                "f1": 88.90851471428881
+            },
+            "submission": {
+                "created": 1545110419,
+                "description": "ARSG-BERT (single model) (TRINITI RESEARCH LABS, Active.ai) https://active.ai",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "shashank879"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x4f7ff58ed0704524aeaefb86afd55cdb \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -15380,78 +15460,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0a0c38bd24c94e43bce7a3753eb05297 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xf1a11046acf94930b3daba8f4c3a4090",
-                        "parent_name": "shashank879-predictions-ARSG-BERT-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x0a0c38bd24c94e43bce7a3753eb05297"
-                    }
-                ],
-                "id": "0xf1a11046acf94930b3daba8f4c3a4090",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1547052523,
-                    "description": "{\"submit_id\": \"0x5e38e47f26db47f9bb01eefb91e0724e\", \"predict_id\": \"0x0a0c38bd24c94e43bce7a3753eb05297\", \"submitter_id\": \"0xb433f04337b84ad6a6208e39d1ce32b5\"}",
-                    "name": "shashank879-predictions-ARSG-BERT-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "dauqs-test-eval"
-                    ]
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xf1a11046acf94930b3daba8f4c3a4090"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1545110419,
-                "description": "ARSG-BERT (single model) (TRINITI RESEARCH LABS, Active.ai) https://active.ai",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "shashank879"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dataset:0x9ee64ab986174e62a23cbe54a2b875fd predictions:0xb60919c8088c4714a482c1e4d3314060 \"python evaluate.py dataset predictions\" --request-docker-image codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                 "bundle_type": "run",
                 "command": "python evaluate.py dataset predictions",
@@ -15958,7 +15966,7 @@
             },
             "submission": {
                 "created": 1542901685,
-                "description": "",
+                "description": "AIKGE",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
@@ -16258,5 +16266,5 @@
             }
         }
     ],
-    "updated": 1547052542.843038
+    "updated": 1547312981.319102
 }
