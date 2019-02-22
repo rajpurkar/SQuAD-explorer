@@ -144,6 +144,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc8cc86ffcde74becb2d266dd1eed7c2a \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xd42f0a1a025e87c238fcc930a7e01ac444400d8a",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xe7366feaecee4fccaf6a31c84b580619",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xe7366feaecee4fccaf6a31c84b580619",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xe7366feaecee4fccaf6a31c84b580619",
+                        "parent_name": "null-predictions-Knowledge-enhanced_BERT-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xc8cc86ffcde74becb2d266dd1eed7c2a"
+                    }
+                ],
+                "id": "0xe7366feaecee4fccaf6a31c84b580619",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550873693,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xe9aa106598c247d9ae9e19ea42dd1af0\", \"predict_id\": \"0xc8cc86ffcde74becb2d266dd1eed7c2a\", \"submitter_id\": \"0x4c5ffaafe3fa46ad9a3948a8dc50761e\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1550875228,
+                    "name": "null-predictions-Knowledge-enhanced_BERT-results",
+                    "remote": "vm-clws-prod-worker-3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1550875207,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 14.7232470512
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xe7366feaecee4fccaf6a31c84b580619"
+            },
+            "scores": {
+                "exact_match": 85.94356446029582,
+                "f1": 92.42524543820406
+            },
+            "submission": {
+                "created": 1550156266,
+                "description": "Knowledge-enhanced BERT (single model) (Anonymous)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "null"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef2aab58b7e40309c94bcfc0b0bccc9 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -384,6 +464,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x161e7d863db04e72b7cd683cc01f19b2 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xf443b492af628429532d3d6ecd5ab6f567d60eea",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x7a5cb81107144c91b3146bbd7a7036ee",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x7a5cb81107144c91b3146bbd7a7036ee",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x7a5cb81107144c91b3146bbd7a7036ee",
+                        "parent_name": "happy-predictions-WD-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x161e7d863db04e72b7cd683cc01f19b2"
+                    }
+                ],
+                "id": "0x7a5cb81107144c91b3146bbd7a7036ee",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550874128,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xede6750a3b314828a2d36cd6d98837e7\", \"predict_id\": \"0x161e7d863db04e72b7cd683cc01f19b2\", \"submitter_id\": \"0xfac9c750fb564fcd8b26a69e9b0f5c86\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1550875282,
+                    "name": "happy-predictions-WD-results",
+                    "remote": "vm-clws-prod-worker-3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1550875264,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 13.6552300453
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x7a5cb81107144c91b3146bbd7a7036ee"
+            },
+            "scores": {
+                "exact_match": 84.40155250183572,
+                "f1": 90.56105636195444
+            },
+            "submission": {
+                "created": 1550640553,
+                "description": "WD (single model) (Anonymous)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "happy"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc811cfe6385c47a390ba72849a160a0b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -461,6 +621,86 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "adamsyuwei10"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x40fd57bbcdea4a548411e4459ad94a0e \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0x039080868e785eeafcefb8aae66bbf5802563a40",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x11b5e64c20a9458c83af0da0f6024bdf",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x11b5e64c20a9458c83af0da0f6024bdf",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x11b5e64c20a9458c83af0da0f6024bdf",
+                        "parent_name": "happy-predictions-wd-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x40fd57bbcdea4a548411e4459ad94a0e"
+                    }
+                ],
+                "id": "0x11b5e64c20a9458c83af0da0f6024bdf",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550877166,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xb06c2ddf61864885aa47aa2a985f8478\", \"predict_id\": \"0x40fd57bbcdea4a548411e4459ad94a0e\", \"submitter_id\": \"0xfac9c750fb564fcd8b26a69e9b0f5c86\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1550877190,
+                    "name": "happy-predictions-wd-results",
+                    "remote": "vm-clws-prod-worker-3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1550877172,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 11.5717720985
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x11b5e64c20a9458c83af0da0f6024bdf"
+            },
+            "scores": {
+                "exact_match": 83.80362949753489,
+                "f1": 90.42905281438578
+            },
+            "submission": {
+                "created": 1550763867,
+                "description": "WD1 (single model) (Anonymous)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "happy"
             }
         },
         {
@@ -700,7 +940,7 @@
                 "created": 1529546977,
                 "description": "MARS (ensemble) (YUANFUDAO research NLP)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "yfd2018"
             }
@@ -781,7 +1021,7 @@
                 "created": 1521501161,
                 "description": "QANet (ensemble) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "thangluong6"
             }
@@ -942,7 +1182,7 @@
                 "created": 1529519415,
                 "description": "QANet (single) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "thangluong6"
             }
@@ -1185,7 +1425,7 @@
                 "created": 1520393393,
                 "description": "QANet (ensemble) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -1588,7 +1828,7 @@
                 "created": 1519801209,
                 "description": "QANet (single model) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -2317,7 +2557,7 @@
                 "created": 1519771497,
                 "description": "QANet (single model) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -2641,7 +2881,7 @@
                 "created": 1510971816,
                 "description": "BiDAF + Self Attention + ELMo (ensemble) (Allen Institute for Artificial Intelligence)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 6,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "chrisc"
             }
@@ -2965,7 +3205,7 @@
                 "created": 1515812629,
                 "description": "EAZI+ (ensemble) (Yiwise NLP Group)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "yiwise"
             }
@@ -3046,7 +3286,7 @@
                 "created": 1515116102,
                 "description": "{EAZI} (ensemble) (Yiwise NLP Group)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "yiwise"
             }
@@ -3208,7 +3448,7 @@
                 "created": 1521552108,
                 "description": "DNET (ensemble) (QA geeks)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "qingquan"
             }
@@ -4260,7 +4500,7 @@
                 "created": 1509737148,
                 "description": "BiDAF + Self Attention + ELMo (single model) (Allen Institute for Artificial Intelligence)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 6,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "chrisc"
             }
@@ -4745,7 +4985,7 @@
                 "created": 1514954150,
                 "description": "Conductor-net (ensemble) (CMU) https://arxiv.org/abs/1710.10504",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19875"
             }
@@ -4826,7 +5066,7 @@
                 "created": 1521471369,
                 "description": "aviqa (ensemble) (aviqa team)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "zerobaby"
             }
@@ -5312,7 +5552,7 @@
                 "created": 1521552113,
                 "description": "DNET (single model) (QA geeks)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "qingquan"
             }
@@ -5635,7 +5875,7 @@
                 "created": 1510005672,
                 "description": "Conductor-net (ensemble) (CMU) https://arxiv.org/abs/1710.10504",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19873"
             }
@@ -5797,7 +6037,7 @@
                 "created": 1526310155,
                 "description": "VS^3-NET (single model) (Kangwon National University in South Korea)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "parkce_knu"
             }
@@ -5959,7 +6199,7 @@
                 "created": 1509585930,
                 "description": "SAN (single model) (Microsoft Business AI Solutions Team) https://arxiv.org/abs/1712.03556",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "allenlaobupt"
             }
@@ -6202,7 +6442,7 @@
                 "created": 1508710923,
                 "description": "Conductor-net (ensemble) (CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19872"
             }
@@ -6363,7 +6603,7 @@
                 "created": 1504910666,
                 "description": "FusionNet (single model) (Microsoft Business AI Solutions team) https://arxiv.org/abs/1711.07341",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "momohuang"
             }
@@ -6686,7 +6926,7 @@
                 "created": 1521130518,
                 "description": "AVIQA-v2 (single model) (aviqa team)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "willwang"
             }
@@ -7333,7 +7573,7 @@
                 "created": 1514954228,
                 "description": "Conductor-net (single model) (CMU) https://arxiv.org/abs/1710.10504",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19875"
             }
@@ -7742,7 +7982,7 @@
                 "created": 1518522021,
                 "description": "SSR-BiDAF (ensemble model) Sichuan University",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "liwubo"
             }
@@ -8066,7 +8306,7 @@
                 "created": 1510005646,
                 "description": "Conductor-net (single) (CMU) https://arxiv.org/abs/1710.10504",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19873"
             }
@@ -8716,7 +8956,7 @@
                 "created": 1508714158,
                 "description": "Conductor-net (single) (CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "soul19872"
             }
@@ -8880,7 +9120,7 @@
                 "created": 1505951285,
                 "description": "BiDAF + Self Attention (single model) (Allen Institute for Artificial Intelligence) https://arxiv.org/abs/1710.10723",
                 "num_period_submissions": 0,
-                "num_total_submissions": 6,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "chrisc"
             }
@@ -9369,7 +9609,7 @@
                 "created": 1520092402,
                 "description": "AVIQA (single model) (aviqa team)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "willwang"
             }
@@ -9614,7 +9854,7 @@
                 "created": 1500082257,
                 "description": "smarnet (single model) (Eigen Technology & Zhejiang University) https://arxiv.org/abs/1710.02772",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "zheqianchen"
             }
@@ -10680,7 +10920,7 @@
                 "created": 1517902336,
                 "description": "SSR-BiDAF (single model) Sichuan University",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "liwubo"
             }
@@ -11417,7 +11657,7 @@
                 "created": 1505852412,
                 "description": "AllenNLP BiDAF (single model) (Allen Institute for AI) http://allennlp.org/",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "schmmd"
             }
@@ -11911,7 +12151,7 @@
                 "created": 1514994753,
                 "description": "newtest (single model) yeech",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_total_submissions": 1,
                 "public": true,
                 "user_name": "yicheng"
             }
@@ -12154,7 +12394,7 @@
                 "created": 1512852905,
                 "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "ravioncodalab"
             }
@@ -13304,6 +13544,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x42992183132247eaac447be0aca69d01 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0x5b093f9f441353b84a7be5cfb8c41208446052ad",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x5cc24895205d4e9198d4a77ac5b8113a",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x5cc24895205d4e9198d4a77ac5b8113a",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x5cc24895205d4e9198d4a77ac5b8113a",
+                        "parent_name": "patrickshlewis-predictions-unsupervisedqa-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x42992183132247eaac447be0aca69d01"
+                    }
+                ],
+                "id": "0x5cc24895205d4e9198d4a77ac5b8113a",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550876583,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xe1c53a62c8644e9b9d9fdfd18feb6a85\", \"predict_id\": \"0x42992183132247eaac447be0aca69d01\", \"submitter_id\": \"0x0a25d0d27d61403f994cd12323b3c360\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1550876606,
+                    "name": "patrickshlewis-predictions-unsupervisedqa-results",
+                    "remote": "vm-clws-prod-gpuworker-1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1550876588,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 12.4367280006
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x5cc24895205d4e9198d4a77ac5b8113a"
+            },
+            "scores": {
+                "exact_match": 44.21483268645757,
+                "f1": 54.72305266681634
+            },
+            "submission": {
+                "created": 1550263426,
+                "description": "\tUnsupervisedQA V1 (single model) (Anonymous ACL submission)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "patrickshlewis"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dataset:0x9ee64ab986174e62a23cbe54a2b875fd predictions:0xc86c22b44a1d470b8f78ee89397e9b98 \"python evaluate.py dataset predictions\"",
                 "bundle_type": "run",
                 "command": "python evaluate.py dataset predictions",
@@ -13378,7 +13698,7 @@
                 "created": 1518824006,
                 "description": "QANet (single model) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -13540,7 +13860,7 @@
                 "created": 1519962777,
                 "description": "QANet (ensemble) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -13863,7 +14183,7 @@
                 "created": 1519319295,
                 "description": "QANet (ensemble) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -14322,6 +14642,86 @@
                 "num_total_submissions": 6,
                 "public": false,
                 "user_name": "DeepQA"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xcaa7dcd740d04d6c8d6059d8ce7275ed \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0x337b3a97e60c8257dce72d1bdb499c10a9b9ae58",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x6a92864f74e249209cb72cdd5beeb83e",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x6a92864f74e249209cb72cdd5beeb83e",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x6a92864f74e249209cb72cdd5beeb83e",
+                        "parent_name": "NMC-predictions-NReader-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xcaa7dcd740d04d6c8d6059d8ce7275ed"
+                    }
+                ],
+                "id": "0x6a92864f74e249209cb72cdd5beeb83e",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550874055,
+                    "data_size": 4158,
+                    "description": "{\"submit_id\": \"0xa1297b01f6b94aa4a5c2eef53ca0fe71\", \"predict_id\": \"0xcaa7dcd740d04d6c8d6059d8ce7275ed\", \"submitter_id\": \"0x74446c2cad244650a5d5e2474c388cfc\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1550875870,
+                    "name": "NMC-predictions-NReader-results",
+                    "remote": "vm-clws-prod-gpuworker-1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1550875846,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 17.67968297
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x6a92864f74e249209cb72cdd5beeb83e"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1547699690,
+                "description": "",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "NMC"
             }
         },
         {
@@ -15228,9 +15628,81 @@
                 "created": 1512818550,
                 "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "ravioncodalab"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd2927749e45a43739ec5a7c1e7e9535b \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xd2c3e6591e624fcc886fa7cecdf3f5c4",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xd2c3e6591e624fcc886fa7cecdf3f5c4",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xd2c3e6591e624fcc886fa7cecdf3f5c4",
+                        "parent_name": "patrickshlewis-predictions-unsupervisedqa-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xd2927749e45a43739ec5a7c1e7e9535b"
+                    }
+                ],
+                "id": "0xd2c3e6591e624fcc886fa7cecdf3f5c4",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1550874094,
+                    "description": "{\"submit_id\": \"0xfe2d7a4eb73d4ca88ba9317b504176d3\", \"predict_id\": \"0xd2927749e45a43739ec5a7c1e7e9535b\", \"submitter_id\": \"0x0a25d0d27d61403f994cd12323b3c360\"}",
+                    "name": "patrickshlewis-predictions-unsupervisedqa-ensemble-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0xd2c3e6591e624fcc886fa7cecdf3f5c4"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1550841694,
+                "description": "\tUnsupervisedQA V1 (ensemble) (Anonymous ACL submission)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "patrickshlewis"
             }
         },
         {
@@ -15374,7 +15846,7 @@
                 "created": 1508736241,
                 "description": "BiDAF + Self Attention + ELMo (single model)  (Allen Institute for Artificial Intelligence)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 6,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "chrisc"
             }
@@ -15599,7 +16071,7 @@
                 "created": 1519406555,
                 "description": "QANet (single model) (Google Brain & CMU)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 9,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ddohan"
             }
@@ -15745,7 +16217,7 @@
                 "created": 1515116736,
                 "description": "EAZI (ensemble) (Yiwise NLP Group)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "yiwise"
             }
@@ -15891,86 +16363,9 @@
                 "created": 1508738332,
                 "description": "BiDAF + Self Attention + ELMo (single model) (Allen Institute for Artificial Intelligence)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 6,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "chrisc"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1eabe5d12aa8451a86d234c3536f4169 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xd84c3741364642fb88b7019f74d9150b",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xd84c3741364642fb88b7019f74d9150b",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xd84c3741364642fb88b7019f74d9150b",
-                        "parent_name": "NMC-predictions-NNET-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x1eabe5d12aa8451a86d234c3536f4169"
-                    }
-                ],
-                "id": "0xd84c3741364642fb88b7019f74d9150b",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1544212065,
-                    "description": "{\"submit_id\": \"0x88df86a70ad3414d8d8128549eaf3b10\", \"predict_id\": \"0x1eabe5d12aa8451a86d234c3536f4169\", \"submitter_id\": \"0x74446c2cad244650a5d5e2474c388cfc\"}",
-                    "last_updated": 1544220568,
-                    "name": "NMC-predictions-NNET-results",
-                    "remote": "vm-clws-prod-worker-0",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Pulling docker image: Status: Downloaded newer image for codalab/ubuntu:1.9",
-                    "started": 1544220493,
-                    "tags": [
-                        "dauqs-test-eval"
-                    ],
-                    "time": 8.58652305603
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "worker_offline",
-                "uuid": "0xd84c3741364642fb88b7019f74d9150b"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1542901685,
-                "description": "AIKGE",
-                "num_period_submissions": 0,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "NMC"
             }
         },
         {
@@ -16266,5 +16661,5 @@
             }
         }
     ],
-    "updated": 1547312981.319102
+    "updated": 1550877470.981956
 }
