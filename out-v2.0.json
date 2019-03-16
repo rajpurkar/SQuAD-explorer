@@ -4699,7 +4699,7 @@
                 "created": 1547956892,
                 "description": "{BERT-base} (single-model) (Anonymous)",
                 "num_period_submissions": 1,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "kevhuang"
             }
@@ -6771,7 +6771,7 @@
                 "created": 1552597621,
                 "description": "{Anonymous} (single model) (Anonymous)",
                 "num_period_submissions": 1,
-                "num_total_submissions": 3,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "kevhuang"
             }
@@ -7074,5 +7074,5 @@
             }
         }
     ],
-    "updated": 1552697819.357316
+    "updated": 1552697952.651728
 }
