@@ -66,6 +66,166 @@
     "leaderboard": [
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x947aeb3b14d6463c9eda6bd696ceb7e5 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x4da318e42ec1246efef7aebee4713e81eda8ab23",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x6e1fd1170988477c8c96fa6e88b5f71e",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x6e1fd1170988477c8c96fa6e88b5f71e",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x6e1fd1170988477c8c96fa6e88b5f71e",
+                        "parent_name": "airaria-predictions-dae-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x947aeb3b14d6463c9eda6bd696ceb7e5"
+                    }
+                ],
+                "id": "0x6e1fd1170988477c8c96fa6e88b5f71e",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553564594,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0x21faf905bd20416b87fccff7420d5160\", \"predict_id\": \"0x947aeb3b14d6463c9eda6bd696ceb7e5\", \"submitter_id\": \"0xb2a2c565c9144b2a850ce0817b8d2e4e\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553564626,
+                    "name": "airaria-predictions-dae-ensemble-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553564605,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 14.6619689465
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x6e1fd1170988477c8c96fa6e88b5f71e"
+            },
+            "scores": {
+                "exact_match": 87.1473707966599,
+                "f1": 89.47436604047962
+            },
+            "submission": {
+                "created": 1553079353,
+                "description": "BERT + DAE + AoA (ensemble) (Joint Laboratory of HIT and iFLYTEK Research)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "airaria"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xcc1d0059a23d45ff893da4c0909eb164 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x74fd7f7ef35abedc2b82ce49884e4cb82bf31522",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x813bd7d66f144ff7926f187bd2ab9e5c",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x813bd7d66f144ff7926f187bd2ab9e5c",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x813bd7d66f144ff7926f187bd2ab9e5c",
+                        "parent_name": "yichao-predictions-bert_convlstm-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xcc1d0059a23d45ff893da4c0909eb164"
+                    }
+                ],
+                "id": "0x813bd7d66f144ff7926f187bd2ab9e5c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553564449,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x4e33332833004c759bae75d5390242b3\", \"predict_id\": \"0xcc1d0059a23d45ff893da4c0909eb164\", \"submitter_id\": \"0xd4906166c8104ef7951e4bee0392e447\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553564481,
+                    "name": "yichao-predictions-bert_convlstm-ensemble-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553564460,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 14.6780560017
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x813bd7d66f144ff7926f187bd2ab9e5c"
+            },
+            "scores": {
+                "exact_match": 86.72985781990522,
+                "f1": 89.28594846729008
+            },
+            "submission": {
+                "created": 1552657884,
+                "description": "BERT + ConvLSTM + MTL + Verifier (ensemble) (Layer 6 AI)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 3,
+                "public": true,
+                "user_name": "yichao"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x4829198186a144749079a8681119afc1 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -142,6 +302,166 @@
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "NearestNeighbor"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x838d34629fa040a398303e1cceced2d1 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x029baa88b9c7036ff39d37cf07e12a3d86f5e902",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xadc9574bebc84b808b8afa8099192cb7",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xadc9574bebc84b808b8afa8099192cb7",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xadc9574bebc84b808b8afa8099192cb7",
+                        "parent_name": "refractor-predictions-dae-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x838d34629fa040a398303e1cceced2d1"
+                    }
+                ],
+                "id": "0xadc9574bebc84b808b8afa8099192cb7",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553564636,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0xedb06225af6c4d64b09f9366ce2fbf38\", \"predict_id\": \"0x838d34629fa040a398303e1cceced2d1\", \"submitter_id\": \"0x34303f14be0d4f44a5700387aaefdf77\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553564661,
+                    "name": "refractor-predictions-dae-single-model-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553564648,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 9.10260105133
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xadc9574bebc84b808b8afa8099192cb7"
+            },
+            "scores": {
+                "exact_match": 85.88354773188897,
+                "f1": 88.62100101818898
+            },
+            "submission": {
+                "created": 1552731350,
+                "description": "BERT + DAE + AoA (single model) (Joint Laboratory of HIT and iFLYTEK Research)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
+                "public": false,
+                "user_name": "refractor"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x91e7e95a5e8943ecbfe8734e9cd1d18d \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x82c9b90423f2bf9cd98e4142226fc3c70eba197a",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x8ffb7e21c1644f48b223d644161ab389",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x8ffb7e21c1644f48b223d644161ab389",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x8ffb7e21c1644f48b223d644161ab389",
+                        "parent_name": "yichao-predictions-bert_convlstm-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x91e7e95a5e8943ecbfe8734e9cd1d18d"
+                    }
+                ],
+                "id": "0x8ffb7e21c1644f48b223d644161ab389",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553564554,
+                    "data_size": 4336,
+                    "description": "{\"submit_id\": \"0xcc13a77051be421c8834c3064b87e323\", \"predict_id\": \"0x91e7e95a5e8943ecbfe8734e9cd1d18d\", \"submitter_id\": \"0xd4906166c8104ef7951e4bee0392e447\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553564583,
+                    "name": "yichao-predictions-bert_convlstm-single-model-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553564562,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 14.7262251377
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x8ffb7e21c1644f48b223d644161ab389"
+            },
+            "scores": {
+                "exact_match": 84.92439629880388,
+                "f1": 88.20449982310421
+            },
+            "submission": {
+                "created": 1552531525,
+                "description": "BERT + ConvLSTM + MTL + Verifier (single model) (Layer 6 AI)",
+                "num_period_submissions": 2,
+                "num_total_submissions": 3,
+                "public": true,
+                "user_name": "yichao"
             }
         },
         {
@@ -622,6 +942,86 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "yichaolu"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xf9f1f0627d8147d8ada1ef0100e87ef3 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x041513abcc5a17066a2afaec9e63b55effe30331",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x3735c9098e824d24a6864db1b9cc4200",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x3735c9098e824d24a6864db1b9cc4200",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x3735c9098e824d24a6864db1b9cc4200",
+                        "parent_name": "oho-predictions-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xf9f1f0627d8147d8ada1ef0100e87ef3"
+                    }
+                ],
+                "id": "0x3735c9098e824d24a6864db1b9cc4200",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553323918,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0xcbd6056c86ef4827848ebfe66734dad1\", \"predict_id\": \"0xf9f1f0627d8147d8ada1ef0100e87ef3\", \"submitter_id\": \"0x826335063e81467cb9ba897962880257\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553337776,
+                    "name": "oho-predictions-ensemble-results",
+                    "remote": "vm-clws-prod-worker-1",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553337754,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 17.8479092121
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x3735c9098e824d24a6864db1b9cc4200"
+            },
+            "scores": {
+                "exact_match": 83.60415256149854,
+                "f1": 86.03557379632136
+            },
+            "submission": {
+                "created": 1553094873,
+                "description": "Bert-raw (ensemble) (None)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "oho"
             }
         },
         {
@@ -1898,8 +2298,8 @@
             "submission": {
                 "created": 1551370321,
                 "description": "BERT-large+UBFT (single model)  (anonymous)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
                 "public": false,
                 "user_name": "refractor"
             }
@@ -2138,10 +2538,90 @@
             "submission": {
                 "created": 1542380115,
                 "description": "AoA + DA + BERT (single model) (Joint Laboratory of HIT and iFLYTEK Research)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
                 "public": false,
                 "user_name": "refractor"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x3a4708dba45943a79326461e92ee9640 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x2d1e2de724a6061dc6c4905f88ea7e48093bdac7",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xc2fe2d81ff74479fa638007e933592ad",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xc2fe2d81ff74479fa638007e933592ad",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xc2fe2d81ff74479fa638007e933592ad",
+                        "parent_name": "oho-predictions-single-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x3a4708dba45943a79326461e92ee9640"
+                    }
+                ],
+                "id": "0xc2fe2d81ff74479fa638007e933592ad",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553304487,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x3461914b3f4e487b905a1cf79527779f\", \"predict_id\": \"0x3a4708dba45943a79326461e92ee9640\", \"submitter_id\": \"0x826335063e81467cb9ba897962880257\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553305984,
+                    "name": "oho-predictions-single-results",
+                    "remote": "vm-clws-prod-worker-1",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553305966,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 12.4120349884
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xc2fe2d81ff74479fa638007e933592ad"
+            },
+            "scores": {
+                "exact_match": 80.69284585872263,
+                "f1": 83.92212585536629
+            },
+            "submission": {
+                "created": 1553097319,
+                "description": "Bert-raw (single) (None)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "oho"
             }
         },
         {
@@ -3506,6 +3986,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x2994d93af9dc4a999a8ecb403fb7f444 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x5aeba60d881e4678971a17ff10d3f06c6f59926e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x25919ed630b1451aa805c667c38a30c6",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x25919ed630b1451aa805c667c38a30c6",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x25919ed630b1451aa805c667c38a30c6",
+                        "parent_name": "kevhuang-predictions-RMBertLarge-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x2994d93af9dc4a999a8ecb403fb7f444"
+                    }
+                ],
+                "id": "0x25919ed630b1451aa805c667c38a30c6",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553565128,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0xb4bddb15e35d4803b253c72e0ebf6294\", \"predict_id\": \"0x2994d93af9dc4a999a8ecb403fb7f444\", \"submitter_id\": \"0x2a23b17c970a4b58a4ff989473169dcc\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553565156,
+                    "name": "kevhuang-predictions-RMBertLarge-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553565138,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 11.3113369942
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x25919ed630b1451aa805c667c38a30c6"
+            },
+            "scores": {
+                "exact_match": 78.87610020311442,
+                "f1": 82.5242659505543
+            },
+            "submission": {
+                "created": 1552597621,
+                "description": "{Anonymous} (single model) (Anonymous)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "kevhuang"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x328e7c30ac7c4121972e42611c85b8cb \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -3582,6 +4142,86 @@
                 "num_total_submissions": 3,
                 "public": true,
                 "user_name": "yichao"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x070f2c2b180a498eb3de724a57b753de \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xaed2c73b16dbed589c8b0fcfb33083c5a784791f",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x412e5f5052114528a3a505001778b31b",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x412e5f5052114528a3a505001778b31b",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x412e5f5052114528a3a505001778b31b",
+                        "parent_name": "jhchoi-predictions-BISAN-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x070f2c2b180a498eb3de724a57b753de"
+                    }
+                ],
+                "id": "0x412e5f5052114528a3a505001778b31b",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1553564511,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0x5bab6fba23634bc49ad51442856b8f4a\", \"predict_id\": \"0x070f2c2b180a498eb3de724a57b753de\", \"submitter_id\": \"0x5a1c20124b074b8a8da9363bb2b2f46a\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1553564541,
+                    "name": "jhchoi-predictions-BISAN-results",
+                    "remote": "vm-clws-prod-worker-2",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1553564520,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 14.6269581318
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x412e5f5052114528a3a505001778b31b"
+            },
+            "scores": {
+                "exact_match": 78.4811554953735,
+                "f1": 81.53103062326696
+            },
+            "submission": {
+                "created": 1552583884,
+                "description": "BISAN (single model) (Seoul National University & Hyundai Motors)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "jhchoi"
             }
         },
         {
@@ -4500,7 +5140,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1541899325,
                     "data_size": 4338,
-                    "description": "{\"submit_id\": \"0x1225ed91e00d41029c68b14b149bf90e\", \"predict_id\": \"0x79275fb65ae84830b1d9cf974b742345\", \"submitter_id\": \"0xb2a2c565c9144b2a850ce0817b8d2e4e\"}",
+                    "description": "",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
                     "last_updated": 1541903088,
@@ -4536,12 +5176,12 @@
                 "f1": 75.0748311236108
             },
             "submission": {
-                "created": 1539441163,
-                "description": "RNANetSimple (ensemble) (Anonymous)",
+                "created": 1541899325,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": false,
-                "user_name": "airaria"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         },
         {
@@ -4980,7 +5620,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1541900626,
                     "data_size": 4340,
-                    "description": "{\"submit_id\": \"0x8796cb09f0c745ceab8ae643a88123e2\", \"predict_id\": \"0xe6d5c69ffdb747a1b76335d53f445894\", \"submitter_id\": \"0xb2a2c565c9144b2a850ce0817b8d2e4e\"}",
+                    "description": "",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
                     "last_updated": 1541904770,
@@ -5016,12 +5656,12 @@
                 "f1": 73.40327976028887
             },
             "submission": {
-                "created": 1539436463,
-                "description": "RNANetSimple (single model) (Anonymous)",
+                "created": 1541900626,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": false,
-                "user_name": "airaria"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         },
         {
@@ -6706,150 +7346,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x32ddb5578a8c4f9e9034ad2c4b2a6d12 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xe4bfa94d5d0d4d3090340c4c8afde5b1",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xe4bfa94d5d0d4d3090340c4c8afde5b1",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xe4bfa94d5d0d4d3090340c4c8afde5b1",
-                        "parent_name": "kevhuang-predictions-RMBertLarge-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x32ddb5578a8c4f9e9034ad2c4b2a6d12"
-                    }
-                ],
-                "id": "0xe4bfa94d5d0d4d3090340c4c8afde5b1",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1552697736,
-                    "description": "{\"submit_id\": \"0xb4bddb15e35d4803b253c72e0ebf6294\", \"predict_id\": \"0x32ddb5578a8c4f9e9034ad2c4b2a6d12\", \"submitter_id\": \"0x2a23b17c970a4b58a4ff989473169dcc\"}",
-                    "name": "kevhuang-predictions-RMBertLarge-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xe4bfa94d5d0d4d3090340c4c8afde5b1"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1552597621,
-                "description": "{Anonymous} (single model) (Anonymous)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "kevhuang"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x04de44fa032d4f198695ccde147ff5ff \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x108daf29c5114a05b8748eab1d041f3f",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x108daf29c5114a05b8748eab1d041f3f",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x108daf29c5114a05b8748eab1d041f3f",
-                        "parent_name": "jhchoi-predictions-BISAN-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x04de44fa032d4f198695ccde147ff5ff"
-                    }
-                ],
-                "id": "0x108daf29c5114a05b8748eab1d041f3f",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1552697781,
-                    "description": "{\"submit_id\": \"0x5bab6fba23634bc49ad51442856b8f4a\", \"predict_id\": \"0x04de44fa032d4f198695ccde147ff5ff\", \"submitter_id\": \"0x5a1c20124b074b8a8da9363bb2b2f46a\"}",
-                    "name": "jhchoi-predictions-BISAN-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x108daf29c5114a05b8748eab1d041f3f"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1552583884,
-                "description": "BISAN (single model) (Seoul National University & Hyundai Motors)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "jhchoi"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xc417b31dca974ee7a977660542108413 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -6928,151 +7424,7 @@
                 "public": true,
                 "user_name": "TONYZHOU96"
             }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x8bb236395a2b4320aa69c35314185195 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xd824514c7eb34e07b9429e0df13b042a",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xd824514c7eb34e07b9429e0df13b042a",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xd824514c7eb34e07b9429e0df13b042a",
-                        "parent_name": "yichao-predictions-bert_convlstm-ensemble-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x8bb236395a2b4320aa69c35314185195"
-                    }
-                ],
-                "id": "0xd824514c7eb34e07b9429e0df13b042a",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1552697765,
-                    "description": "{\"submit_id\": \"0x4e33332833004c759bae75d5390242b3\", \"predict_id\": \"0x8bb236395a2b4320aa69c35314185195\", \"submitter_id\": \"0xd4906166c8104ef7951e4bee0392e447\"}",
-                    "name": "yichao-predictions-bert_convlstm-ensemble-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xd824514c7eb34e07b9429e0df13b042a"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1552657884,
-                "description": "BERT + ConvLSTM + MTL + Verifier (ensemble) (Layer 6 AI)",
-                "num_period_submissions": 2,
-                "num_total_submissions": 3,
-                "public": true,
-                "user_name": "yichao"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x9eb68f1ceb6d4185807bafba803a060b \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xa3f616f626074bf6a0d4faebbc478fdf",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xa3f616f626074bf6a0d4faebbc478fdf",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xa3f616f626074bf6a0d4faebbc478fdf",
-                        "parent_name": "yichao-predictions-bert_convlstm-single-model-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x9eb68f1ceb6d4185807bafba803a060b"
-                    }
-                ],
-                "id": "0xa3f616f626074bf6a0d4faebbc478fdf",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1552697800,
-                    "description": "{\"submit_id\": \"0xcc13a77051be421c8834c3064b87e323\", \"predict_id\": \"0x9eb68f1ceb6d4185807bafba803a060b\", \"submitter_id\": \"0xd4906166c8104ef7951e4bee0392e447\"}",
-                    "name": "yichao-predictions-bert_convlstm-single-model-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xa3f616f626074bf6a0d4faebbc478fdf"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1552531525,
-                "description": "BERT + ConvLSTM + MTL + Verifier (single model) (Layer 6 AI)",
-                "num_period_submissions": 2,
-                "num_total_submissions": 3,
-                "public": true,
-                "user_name": "yichao"
-            }
         }
     ],
-    "updated": 1552697952.651728
+    "updated": 1553565795.148455
 }
