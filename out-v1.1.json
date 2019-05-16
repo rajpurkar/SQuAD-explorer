@@ -144,6 +144,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x59e00fd3bfd149ff9f056e88726b83d5 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xd5987ec3089c5e6bc80ff8b42ff8343971331f73",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x3f6c3307e2784c51bd8f5fd4c0661e44",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x3f6c3307e2784c51bd8f5fd4c0661e44",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x3f6c3307e2784c51bd8f5fd4c0661e44",
+                        "parent_name": "refractor-predictions-ATB1.1-single-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x59e00fd3bfd149ff9f056e88726b83d5"
+                    }
+                ],
+                "id": "0x3f6c3307e2784c51bd8f5fd4c0661e44",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1557848787,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xa29d94f0f43f400a9a12b2e2ccfd9239\", \"predict_id\": \"0x59e00fd3bfd149ff9f056e88726b83d5\", \"submitter_id\": \"0x34303f14be0d4f44a5700387aaefdf77\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1557850454,
+                    "name": "refractor-predictions-ATB1.1-single-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1557850343,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 14.697510004
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x3f6c3307e2784c51bd8f5fd4c0661e44"
+            },
+            "scores": {
+                "exact_match": 86.94010280079723,
+                "f1": 92.64061680310853
+            },
+            "submission": {
+                "created": 1557821530,
+                "description": "ATB (single model) (Anonymous)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "refractor"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc8cc86ffcde74becb2d266dd1eed7c2a \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -17062,5 +17142,5 @@
             }
         }
     ],
-    "updated": 1557196531.128953
+    "updated": 1557988896.608533
 }
