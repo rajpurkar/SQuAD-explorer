@@ -15,6 +15,7 @@
         "depth": 10,
         "tag": "nurdauqs-test-predict-shuf",
         "metadata": {
+          "request_queue": "",
           "request_network": false
         }
     },

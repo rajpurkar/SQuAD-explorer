@@ -13,7 +13,11 @@
             }
         ],
         "depth": 10,
-        "tag": "dauqs-test-predict"
+        "tag": "dauqs-test-predict",
+        "metadata": {
+          "request_queue": "",
+          "request_network": false
+        }
     },
     "evaluate": {
         "dependencies": [
