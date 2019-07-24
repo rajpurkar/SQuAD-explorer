@@ -16,11 +16,16 @@ var cheerio = require('cheerio')
 var build_dir = 'SQuAD-explorer/' // good to have this be the same as the repo name for gh-pages purposes
 
 var rankEntries = function (entries) {
+  entries.sort(function(a, b) {
+    return (b.f1 + b.em) - (a.f1 + a.em);
+  })  // First sort by average F1 + EM
+/*
   entries.sort(function (a, b) {
     var f1Diff = Math.sign(b.f1 - a.f1)
     var emDiff = Math.sign(b.em - a.em)
     return f1Diff + emDiff
-  })
+  }) 
+  */
 
   for (var i = 0; i < entries.length; i++) {
     var entry = entries[i]
