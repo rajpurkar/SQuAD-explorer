@@ -227,61 +227,61 @@
         },
         {
             "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x0e79c2fefdcc461b99cc955491e3efe7 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-gpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x7358f9f066554357b4b42e719e298fb2 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0xbcb507239a5050ed52098afce55cf308b924a91f",
+                "data_hash": "0x14b6ef57edb889f742475099e669e9a46ab1a856",
                 "dependencies": [
                     {
                         "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xe33c0c50ba6d41db92a8d853eccc5324",
+                        "child_uuid": "0x5b15eea214e04630b7394bc02129d079",
                         "parent_name": "evaluate-v2.0.py",
                         "parent_path": "",
                         "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
                     },
                     {
                         "child_path": "data.json",
-                        "child_uuid": "0xe33c0c50ba6d41db92a8d853eccc5324",
+                        "child_uuid": "0x5b15eea214e04630b7394bc02129d079",
                         "parent_name": "test-v2.0.json",
                         "parent_path": "",
                         "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0xe33c0c50ba6d41db92a8d853eccc5324",
+                        "child_uuid": "0x5b15eea214e04630b7394bc02129d079",
                         "parent_name": "cooelf888-predictions-single-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x0e79c2fefdcc461b99cc955491e3efe7"
+                        "parent_uuid": "0x7358f9f066554357b4b42e719e298fb2"
                     }
                 ],
-                "id": "0xe33c0c50ba6d41db92a8d853eccc5324",
+                "id": "0x5b15eea214e04630b7394bc02129d079",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1563958163,
+                    "created": 1563958731,
                     "data_size": 4339,
-                    "description": "{\"submit_id\": \"0x79d7de3544cf4519bd1b175e79fe11ef\", \"predict_id\": \"0x0e79c2fefdcc461b99cc955491e3efe7\", \"submitter_id\": \"0x732f96d2bd604969b4c9a01dd14b582f\"}",
+                    "description": "{\"submit_id\": \"0x1c30fe538a784381a47e6e1956680047\", \"predict_id\": \"0x7358f9f066554357b4b42e719e298fb2\", \"submitter_id\": \"0x732f96d2bd604969b4c9a01dd14b582f\"}",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exitcode": 0,
-                    "last_updated": 1563958265,
+                    "last_updated": 1563968510,
                     "name": "cooelf888-predictions-single-results",
-                    "remote": "vm-clws-prod-gpuworker-6",
+                    "remote": "vm-clws-prod-gpuworker-5",
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 1,
+                    "request_gpus": 0,
                     "request_memory": "2g",
                     "request_network": false,
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "1d",
                     "run_status": "Finished",
-                    "started": 1563958187,
+                    "started": 1563968488,
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
-                    "time": 20.8486499786
+                    "time": 15.1600809097
                 },
                 "owner": {
                     "id": "20891",
@@ -290,14 +290,14 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "ready",
-                "uuid": "0xe33c0c50ba6d41db92a8d853eccc5324"
+                "uuid": "0x5b15eea214e04630b7394bc02129d079"
             },
             "scores": {
-                "exact_match": 87.03452945159107,
-                "f1": 89.89652405129914
+                "exact_match": 87.04581358609795,
+                "f1": 89.89878087820053
             },
             "submission": {
-                "created": 1563605238,
+                "created": 1563904352,
                 "description": "XLNet + SG-Net Verifier (single model) (Shanghai Jiao Tong University & CloudWalk)",
                 "num_period_submissions": 2,
                 "num_total_submissions": 2,
@@ -378,7 +378,7 @@
             },
             "submission": {
                 "created": 1563635954,
-                "description": "RoBERTa(single model) (Facebook AI)",
+                "description": "RoBERTa (single model) (Facebook AI)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
@@ -938,8 +938,8 @@
             },
             "submission": {
                 "created": 1563845458,
-                "description": "SpanBERT Large Cased (single model) (FAIR)",
-                "num_period_submissions": 5,
+                "description": "SpanBERT (single model) (FAIR & UW)",
+                "num_period_submissions": 1,
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
@@ -1978,8 +1978,8 @@
             },
             "submission": {
                 "created": 1563842599,
-                "description": "Tuned BERT-1seq Large Cased (single model) (FAIR)",
-                "num_period_submissions": 5,
+                "description": "Tuned BERT-1seq Large Cased (single model) (FAIR & UW)",
+                "num_period_submissions": 1,
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
@@ -2698,8 +2698,8 @@
             },
             "submission": {
                 "created": 1563842063,
-                "description": "Tuned BERT Large Cased (single model) (FAIR)",
-                "num_period_submissions": 5,
+                "description": "Tuned BERT Large Cased (single model) (FAIR & UW)",
+                "num_period_submissions": 1,
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
@@ -4778,8 +4778,8 @@
             },
             "submission": {
                 "created": 1563842037,
-                "description": "Original BERT Large Cased (single model) (FAIR)",
-                "num_period_submissions": 5,
+                "description": "Original BERT Large Cased (single model) (FAIR & UW)",
+                "num_period_submissions": 1,
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
@@ -9667,6 +9667,86 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x208d0aebcb474162a28c996f613d6165 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xe567c3c9d67ea9ae24332df271f42586fa698ede",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
+                        "parent_name": "w82318029-predictions-LLX-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x208d0aebcb474162a28c996f613d6165"
+                    }
+                ],
+                "id": "0x48463ee3417c4d0186e064b1b26dbbb6",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1563958755,
+                    "data_size": 4346,
+                    "description": "{\"submit_id\": \"0x5db0f3a70a2d42598facc7ba5d47302a\", \"predict_id\": \"0x208d0aebcb474162a28c996f613d6165\", \"submitter_id\": \"0x7cd7cba46b5b479181bb10691e5d6c72\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1563977794,
+                    "name": "w82318029-predictions-LLX-results",
+                    "remote": "vm-clws-prod-worker-1",
+                    "request_cpus": 1,
+                    "request_disk": "4g",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "1d",
+                    "run_status": "Finished",
+                    "started": 1563977774,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 13.9918289185
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x48463ee3417c4d0186e064b1b26dbbb6"
+            },
+            "scores": {
+                "exact_match": 44.94470774091627,
+                "f1": 47.994226567224636
+            },
+            "submission": {
+                "created": 1562082182,
+                "description": "XLNet + DAAF + BERTverifier (ensemble) (LLX)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "w82318029"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x2a539b658cc948179fac3c113e96dca5 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -10014,6 +10094,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1563958713,
                     "description": "{\"submit_id\": \"0xa7d06bf7f6964db7849df3e5690c62f7\", \"predict_id\": \"0x6f307c72d03c40faba02cbc76de7fac8\", \"submitter_id\": \"0xea94c966573f465395544310df4805fe\"}",
+                    "failure_message": " Parent bundles failed: 0x6f307c72d03c40faba02cbc76de7fac8 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "omerlevy-new-results",
                     "request_cpus": 1,
                     "request_disk": "4g",
@@ -10034,7 +10115,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x20489ca436ca43419aece9106023aecd"
             },
             "scores": {
@@ -10044,7 +10125,7 @@
             "submission": {
                 "created": 1563845479,
                 "description": "SpanBERT-Large-Cased (single model) (FAIR)",
-                "num_period_submissions": 5,
+                "num_period_submissions": 1,
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
@@ -10129,78 +10210,6 @@
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "TONYZHOU96"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x208d0aebcb474162a28c996f613d6165 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x48463ee3417c4d0186e064b1b26dbbb6",
-                        "parent_name": "w82318029-predictions-LLX-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x208d0aebcb474162a28c996f613d6165"
-                    }
-                ],
-                "id": "0x48463ee3417c4d0186e064b1b26dbbb6",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1563958755,
-                    "description": "{\"submit_id\": \"0x5db0f3a70a2d42598facc7ba5d47302a\", \"predict_id\": \"0x208d0aebcb474162a28c996f613d6165\", \"submitter_id\": \"0x7cd7cba46b5b479181bb10691e5d6c72\"}",
-                    "name": "w82318029-predictions-LLX-results",
-                    "request_cpus": 1,
-                    "request_disk": "4g",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "1d",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x48463ee3417c4d0186e064b1b26dbbb6"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1562082182,
-                "description": "XLNet + DAAF + BERTverifier (ensemble) (LLX)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "w82318029"
             }
         },
         {
@@ -10423,5 +10432,5 @@
             }
         }
     ],
-    "updated": 1563959342.959395
+    "updated": 1564004153.956925
 }
