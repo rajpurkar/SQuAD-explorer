@@ -2866,8 +2866,8 @@
             },
             "submission": {
                 "created": 1563156055,
-                "description": "BERT (single model) (KTNET R&D Center)",
-                "num_period_submissions": 1,
+                "description": "BERT (single model) (KTNET)",
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "yongchan"
@@ -14817,8 +14817,8 @@
             },
             "submission": {
                 "created": 1566507106,
-                "description": "",
-                "num_period_submissions": 1,
+                "description": "UQA (single model) (Anonymous)",
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "alexfabbri"
@@ -16393,7 +16393,7 @@
             "submission": {
                 "created": 1565764927,
                 "description": "BERT (single model) (KTNET R&D Center)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 2,
                 "public": true,
                 "user_name": "yongchan"
@@ -18556,5 +18556,5 @@
             }
         }
     ],
-    "updated": 1567187391.266866
+    "updated": 1567616344.419708
 }
