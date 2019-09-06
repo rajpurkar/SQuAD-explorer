@@ -16363,6 +16363,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1567115167,
                     "description": "{\"submit_id\": \"0x8c2826a345d2418695eb8e6c03d383f4\", \"predict_id\": \"0xf145211f006e415ab5b14e901098f274\", \"submitter_id\": \"0x0e9b6f0b24994bf681cf3157985a4c61\"}",
+                    "failure_message": " Parent bundles failed: 0xf145211f006e415ab5b14e901098f274 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "yongchan-predictions-KTNET-large-batch-3-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -16383,7 +16384,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x228f1c31c11144f5bacb98e7e1f237e0"
             },
             "scores": {
@@ -18556,5 +18557,5 @@
             }
         }
     ],
-    "updated": 1567616344.419708
+    "updated": 1567734642.675846
 }
