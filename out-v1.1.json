@@ -18193,6 +18193,78 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd58a74fa1c39499e876ba6f20c44144a \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xaa04164036c34c46968f9d6a2b1f3acc",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xaa04164036c34c46968f9d6a2b1f3acc",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xaa04164036c34c46968f9d6a2b1f3acc",
+                        "parent_name": "jerryeoi-predictions-v1.1-XLNET-Base-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xd58a74fa1c39499e876ba6f20c44144a"
+                    }
+                ],
+                "id": "0xaa04164036c34c46968f9d6a2b1f3acc",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1568504303,
+                    "description": "{\"submit_id\": \"0xd544a316c64d4d7aa7d022e62e7d5df4\", \"predict_id\": \"0xd58a74fa1c39499e876ba6f20c44144a\", \"submitter_id\": \"0x03439bf4caca4f82bd9fd0ff62d48e93\"}",
+                    "name": "jerryeoi-predictions-v1.1-XLNET-Base-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0xaa04164036c34c46968f9d6a2b1f3acc"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1568343862,
+                "description": "XLNET-123+ (single model) (MST/EOI) http://tia.today",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "jerryeoi"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x55cf3dc97ac64d8d983cfb514bb7194a \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -18557,5 +18629,5 @@
             }
         }
     ],
-    "updated": 1567734642.675846
+    "updated": 1568504378.024606
 }
