@@ -67,7 +67,7 @@
     "leaderboard": [
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6db7193ed30044b5a59ea8c36d8900d6 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6db7193ed30044b5a59ea8c36d8900d6 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xe3689b12aa5a0eb179bc1d53369688333849ffc7",
@@ -147,7 +147,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x850d77f9971b4172ba1017e6c3348f5f \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x850d77f9971b4172ba1017e6c3348f5f \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x5462464fd543b0403d9fc700870f6cbcb2186633",
@@ -227,7 +227,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd58a74fa1c39499e876ba6f20c44144a \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd58a74fa1c39499e876ba6f20c44144a \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x7ecb9512b0db2e46f406b7e0aefe53db74c68215",
@@ -307,7 +307,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6634ae2b51bf4dffa32bd8c268ca12bc \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6634ae2b51bf4dffa32bd8c268ca12bc \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x5cdaf731e5ccefe70eda3d6e572eb6dbcf35f640",
@@ -387,7 +387,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3aee81b83f79474187ee2b7cfa5044a3 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3aee81b83f79474187ee2b7cfa5044a3 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xbfd845680dd32ce90a1763064449fb912cc161ca",
@@ -467,7 +467,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa5505071589340e8a56c6d72b9e4e647 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa5505071589340e8a56c6d72b9e4e647 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xc5ffcf758ba7c80e633feed1a144efe152a3371e",
@@ -547,7 +547,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1b59f307ba6e49eba580ce536b0e44c6 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1b59f307ba6e49eba580ce536b0e44c6 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x76c968d7f4f21872a79689c7be98bb449a937348",
@@ -627,7 +627,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa60670a5aae7434196423ccfef2d3457 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa60670a5aae7434196423ccfef2d3457 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x5e176fbe8a30989657622f3bcc56195240fffea2",
@@ -707,7 +707,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x59e00fd3bfd149ff9f056e88726b83d5 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x59e00fd3bfd149ff9f056e88726b83d5 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xd5987ec3089c5e6bc80ff8b42ff8343971331f73",
@@ -787,7 +787,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xece1cd98e73b4b7da36cba25c0a56ac6 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xece1cd98e73b4b7da36cba25c0a56ac6 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x0cf11445716dd2c18f18d18132800549ef427f7f",
@@ -867,7 +867,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc8cc86ffcde74becb2d266dd1eed7c2a \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc8cc86ffcde74becb2d266dd1eed7c2a \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xd42f0a1a025e87c238fcc930a7e01ac444400d8a",
@@ -947,7 +947,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0cf64f8d52a84bc985b0ce55f02d4794 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0cf64f8d52a84bc985b0ce55f02d4794 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xdc8c9a126c3f851b3bbcf224a1ed5569ba6b9ce7",
@@ -1027,7 +1027,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa648209696924e4fa1ec58769f633bd3 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa648209696924e4fa1ec58769f633bd3 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xd130c0f165e7512905bc3b2f189b9e8420663bf3",
@@ -1107,7 +1107,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x24dfb7a96e6d4e33bd965685439aeb90 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x24dfb7a96e6d4e33bd965685439aeb90 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xcf6c466968658e922bdca7d75c129a4111f76bb9",
@@ -1187,7 +1187,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef2aab58b7e40309c94bcfc0b0bccc9 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdef2aab58b7e40309c94bcfc0b0bccc9 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xd293f3fd00aa36ead163ccafb0cf7c280c536bd2",
@@ -1267,7 +1267,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xddc8aa96013a43a99985a94b52e26c2c \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xddc8aa96013a43a99985a94b52e26c2c \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x6153a65ba0ce7d9ac7d74223489f2172c04affdd",
@@ -1347,7 +1347,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x031053e799384ab5a42911b50189d5dd \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x031053e799384ab5a42911b50189d5dd \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x7c05b768f1f395437400587c0f0050638abed987",
@@ -1427,7 +1427,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd2fab8b07061482193a946a34f5fcae3 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd2fab8b07061482193a946a34f5fcae3 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x0220e2c5da07dfc86990cd74f3d7fb0b0c5f1a9c",
@@ -1507,7 +1507,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x2930c3a8bb63497da55cea32a7094877 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x2930c3a8bb63497da55cea32a7094877 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x627ac14dca8e86082ef8518bc2ee31011e7c9f92",
@@ -1587,7 +1587,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x06d36fbecc374b5697cc41fd061a2275 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x06d36fbecc374b5697cc41fd061a2275 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x32767b78a1ad79256cce2d47363f13dd7bdfe3a0",
@@ -1667,7 +1667,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xbdbedec6d0db4d47b4e818a97563371d \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xbdbedec6d0db4d47b4e818a97563371d \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x1ba262a6fa45edb173aaf4aadcb31751ede6841b",
@@ -1747,7 +1747,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x4f0a146242c24e4a90732ffcadb45986 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x4f0a146242c24e4a90732ffcadb45986 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x2decde13c91de6fbe900762e4557dbc9c62e8484",
@@ -1827,7 +1827,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x161e7d863db04e72b7cd683cc01f19b2 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x161e7d863db04e72b7cd683cc01f19b2 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xf443b492af628429532d3d6ecd5ab6f567d60eea",
@@ -1907,7 +1907,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc811cfe6385c47a390ba72849a160a0b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc811cfe6385c47a390ba72849a160a0b \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x4be006ba00f31533502c234c448824eed83651d7",
@@ -1988,7 +1988,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x40fd57bbcdea4a548411e4459ad94a0e \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x40fd57bbcdea4a548411e4459ad94a0e \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x039080868e785eeafcefb8aae66bbf5802563a40",
@@ -2068,7 +2068,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3b4f487c5ead456a916fb9b7e8e2765c \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3b4f487c5ead456a916fb9b7e8e2765c \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xd8b62ec698b67681398356634dae7be6b4f19388",
@@ -2149,7 +2149,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xede915bff11a49d9b43b593a357e0c2c \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xede915bff11a49d9b43b593a357e0c2c \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x913aae592ce1dede57de84250feeff1e2ac7300e",
@@ -2229,7 +2229,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc9266a6793b640c28f91c84d678e94aa \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc9266a6793b640c28f91c84d678e94aa \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xfe5b24ffddcb32d374aa54dca176458c0c9d0222",
@@ -2391,7 +2391,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x65624df5391f4546bf30e5ce76023390 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x65624df5391f4546bf30e5ce76023390 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x1652dc742cb4fa0144755994c6b90bdb40e69373",
@@ -2471,7 +2471,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x219a3c6d9564425c8410858e38381038 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x219a3c6d9564425c8410858e38381038 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x6a964f0c6f290badb07e88230d0e9ab7687f268b",
@@ -2633,7 +2633,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xe22e7befc4964fa79c8994ecdd9f936c \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xe22e7befc4964fa79c8994ecdd9f936c \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xa7d6945be6fc918df1935c0f6dc83a624952b667",
@@ -2795,7 +2795,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfa029e8d4f6e496c8cda55d828dd31c6 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfa029e8d4f6e496c8cda55d828dd31c6 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xe36cbf606ac0698b6e1b0cd71687d385143644e4",
@@ -2875,7 +2875,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6071c897b54649c298713f8d083d9240 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6071c897b54649c298713f8d083d9240 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xc270c61123f834f1a921149a15c5c342567c3769",
@@ -2955,7 +2955,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0a0c38bd24c94e43bce7a3753eb05297 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0a0c38bd24c94e43bce7a3753eb05297 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xeec6cff56ecc320d43c4aae7c3aa4c187298d065",
@@ -5465,7 +5465,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3c5e1783dbf344279c1c816303609245 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3c5e1783dbf344279c1c816303609245 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x87274de48acfe4d62f441cd2c951cbb0354a8bc7",
@@ -6274,7 +6274,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc65131e1bb7a4069ac445d6de9617946 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc65131e1bb7a4069ac445d6de9617946 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xb4d8353d89fb1bba78093d4948161440e952abdb",
@@ -7002,7 +7002,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xac8715e55f624d6babe4dec6ef040674 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xac8715e55f624d6babe4dec6ef040674 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xc571b4b933be342327e1fd943f02a8bf0e7bb818",
@@ -7892,7 +7892,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1ebb0f5ae428422b9a239288ec0e5ba8 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1ebb0f5ae428422b9a239288ec0e5ba8 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xeb0b6d4729b2d3f32f76e0fa03d66bfd0574e378",
@@ -8134,7 +8134,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x65c4ceddd26d4d4d90c454a7ab07e487 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x65c4ceddd26d4d4d90c454a7ab07e487 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x8769e3b71b0a0f3f56be28e8825384a8b96e0967",
@@ -8376,7 +8376,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x53166106da064578a166700df6979790 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x53166106da064578a166700df6979790 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x229d1f29aa6cae411cc1a105dab51b43f7d137f5",
@@ -9271,7 +9271,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x865749c17687432b820e646aca5e24a2 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-time 1d --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x865749c17687432b820e646aca5e24a2 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-time 1d --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x9b4041b2bbe67e3d7c77161d4c107475a94b32b4",
@@ -13437,7 +13437,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xb88f0f44723d4d229e58a0f78369172e \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xb88f0f44723d4d229e58a0f78369172e \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x24bbd62cba10e4d06e77f0a81e02bfa1aae674d9",
@@ -14582,7 +14582,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa6c494abb1ca4dfbb48cf6e4cfea428b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa6c494abb1ca4dfbb48cf6e4cfea428b \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x8c041b7a4838452f6f56c988fc4432df56fca9f3",
@@ -14826,7 +14826,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7c356d8d42064c3596b2f90cdaa1a69b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7c356d8d42064c3596b2f90cdaa1a69b \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x402a54fd4fc763f1d17dd0d6eed1866256217170",
@@ -14906,7 +14906,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd8dd6434d72442c3afddaa3f2e37980c \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd8dd6434d72442c3afddaa3f2e37980c \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xc5065f1aea58b691de7a1cc7c431dd9dfe890acc",
@@ -14986,7 +14986,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x63c8db7a11a64a35abb54c56a8a530f7 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x63c8db7a11a64a35abb54c56a8a530f7 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x21132625217a6ba2a1b5bd4c1e19ad6d45650a27",
@@ -15147,7 +15147,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd2927749e45a43739ec5a7c1e7e9535b \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xd2927749e45a43739ec5a7c1e7e9535b \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0xe1ba89d32644fc0e191bcc8dbd98565c6a1371c0",
@@ -15227,7 +15227,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x42992183132247eaac447be0aca69d01 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x42992183132247eaac447be0aca69d01 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x5b093f9f441353b84a7be5cfb8c41208446052ad",
@@ -15307,7 +15307,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xcaa7dcd740d04d6c8d6059d8ce7275ed \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xcaa7dcd740d04d6c8d6059d8ce7275ed \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x337b3a97e60c8257dce72d1bdb499c10a9b9ae58",
@@ -16409,7 +16409,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xf145211f006e415ab5b14e901098f274 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xf145211f006e415ab5b14e901098f274 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -16482,7 +16482,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x2d426e01579c4b0d9fb9abf7d4a32b31 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x2d426e01579c4b0d9fb9abf7d4a32b31 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x824e2a8357cd7dfe55ad533c82fb27594b01af4b",
@@ -16556,7 +16556,7 @@
                 "created": 1569202967,
                 "description": "InfoWord-Large (single model) (Google)",
                 "num_period_submissions": 1,
-                "num_total_submissions": 1,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "lingpenk"
             }
@@ -16632,6 +16632,78 @@
                 "num_total_submissions": 3,
                 "public": true,
                 "user_name": "zcgzcgzcg"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7972c17d91f5435483cf1eea141cd7ef \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x8eda63e6d67343c68294d7d34b0b6d4f",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x8eda63e6d67343c68294d7d34b0b6d4f",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x8eda63e6d67343c68294d7d34b0b6d4f",
+                        "parent_name": "lingpenk-InfoWord-Base-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x7972c17d91f5435483cf1eea141cd7ef"
+                    }
+                ],
+                "id": "0x8eda63e6d67343c68294d7d34b0b6d4f",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1569992692,
+                    "description": "{\"submit_id\": \"0x289dfaa42cc2424c9435abdc09723f52\", \"predict_id\": \"0x7972c17d91f5435483cf1eea141cd7ef\", \"submitter_id\": \"0x65c6a82413884ecb9afe2cedb1cbaec6\"}",
+                    "name": "lingpenk-InfoWord-Base-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0x8eda63e6d67343c68294d7d34b0b6d4f"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1569201451,
+                "description": "InfoWord-Base (single model) (Google)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "lingpenk"
             }
         },
         {
@@ -16937,7 +17009,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0201c820fe884a5f93d5188e5e91d55f \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x0201c820fe884a5f93d5188e5e91d55f \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -17238,7 +17310,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3e5d70db915e4803ba70cac94afdea79 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3e5d70db915e4803ba70cac94afdea79 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -17311,7 +17383,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x96bd5fb2ff3d4f5092f69ad78b7d1636 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-cpus 1 --request-disk 4g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x96bd5fb2ff3d4f5092f69ad78b7d1636 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-time 1d --request-memory 2g --request-disk 4g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -17770,7 +17842,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x5c537508551d45bf8af92af1f4917c88 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x5c537508551d45bf8af92af1f4917c88 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -17989,7 +18061,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7f15b5d501444061a2215b305404d86a \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x7f15b5d501444061a2215b305404d86a \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": "0x824e2a8357cd7dfe55ad533c82fb27594b01af4b",
@@ -18063,7 +18135,7 @@
                 "created": 1569203188,
                 "description": "BERT-Base Baseline (single model) (Google)",
                 "num_period_submissions": 1,
-                "num_total_submissions": 1,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "lingpenk_google"
             }
@@ -18143,7 +18215,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa371b2efe58d4b43bab73d5ead3c3bab \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xa371b2efe58d4b43bab73d5ead3c3bab \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -18581,7 +18653,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1a3efe2145ca48ee90234b54334be1ea \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x1a3efe2145ca48ee90234b54334be1ea \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -18727,7 +18799,7 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfafb35e741b540e0ab89f344368cef99 \"python evaluate.py dev.json predictions.json\" --request-memory 2g --request-docker-image codalab/ubuntu:1.9 --request-cpus 1",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfafb35e741b540e0ab89f344368cef99 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
                 "data_hash": null,
@@ -18797,7 +18869,151 @@
                 "public": false,
                 "user_name": "nlpfarmer02"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfd36ba2ad08e4bd989f99e33c50d9242 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x56dd0bdd97c74e31b6c7a603e6a7efde",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0x56dd0bdd97c74e31b6c7a603e6a7efde",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x56dd0bdd97c74e31b6c7a603e6a7efde",
+                        "parent_name": "lingpenk_google-BERT-Large-Baseline-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xfd36ba2ad08e4bd989f99e33c50d9242"
+                    }
+                ],
+                "id": "0x56dd0bdd97c74e31b6c7a603e6a7efde",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1569992657,
+                    "description": "{\"submit_id\": \"0x3ff6c03392a54f0586a56ceb6aaf56b9\", \"predict_id\": \"0xfd36ba2ad08e4bd989f99e33c50d9242\", \"submitter_id\": \"0x3f31a2a4adf449cba2c397c4b3423af3\"}",
+                    "name": "lingpenk_google-BERT-Large-Baseline-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0x56dd0bdd97c74e31b6c7a603e6a7efde"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1569203169,
+                "description": "BERT-Large Baseline (single model) (Google)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "lingpenk_google"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x95261bfc525846bdb84354d0a3e11887 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xcdf0735543494f22af7e82bce193c04c",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xcdf0735543494f22af7e82bce193c04c",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xcdf0735543494f22af7e82bce193c04c",
+                        "parent_name": "NMC-predictions-BERT_SP_Single-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x95261bfc525846bdb84354d0a3e11887"
+                    }
+                ],
+                "id": "0xcdf0735543494f22af7e82bce193c04c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1569992616,
+                    "description": "{\"submit_id\": \"0x9b7a3e7dd06d4eba81b12a6ec2e038ac\", \"predict_id\": \"0x95261bfc525846bdb84354d0a3e11887\", \"submitter_id\": \"0x74446c2cad244650a5d5e2474c388cfc\"}",
+                    "name": "NMC-predictions-BERT_SP_Single-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "dauqs-test-eval"
+                    ]
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0xcdf0735543494f22af7e82bce193c04c"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1569407502,
+                "description": "NEUKG",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": false,
+                "user_name": "NMC"
+            }
         }
     ],
-    "updated": 1569382574.186144
+    "updated": 1569992719.075131
 }
