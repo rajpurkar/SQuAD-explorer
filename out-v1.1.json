@@ -467,6 +467,88 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6cc0bbe201dd4f00a019f987d94ce9c0 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate.py dev.json predictions.json",
+                "data_hash": "0xe386764aef65342ae6ca4f9ff4f05df1e4f09d79",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "dev.json",
+                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
+                        "parent_name": "jerrygmail-predictions-v1.1-xlnet-123-pp-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x6cc0bbe201dd4f00a019f987d94ce9c0"
+                    }
+                ],
+                "id": "0xf43186ff3d2d42cab1b52a5c623152c7",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1571010336,
+                    "data_size": 4155,
+                    "description": "{\"submit_id\": \"0x02a4bca93cbb4704a58df4309396ff8e\", \"predict_id\": \"0x6cc0bbe201dd4f00a019f987d94ce9c0\", \"submitter_id\": \"0x3a31b3236574498e9069e7ea036c35a7\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exitcode": 0,
+                    "last_updated": 1571022976,
+                    "name": "jerrygmail-predictions-v1.1-xlnet-123-pp-results",
+                    "remote": "vm-clws-prod-worker-1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1571022947,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 3.889580488204956,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xf43186ff3d2d42cab1b52a5c623152c7"
+            },
+            "scores": {
+                "exact_match": 89.10101751809503,
+                "f1": 94.5239276699083
+            },
+            "submission": {
+                "created": 1570585054,
+                "description": "XLNET-123++ (single model) (MST/EOI) http://tia.today",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "jerrygmail"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3aee81b83f79474187ee2b7cfa5044a3 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -18004,78 +18086,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6cc0bbe201dd4f00a019f987d94ce9c0 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xf43186ff3d2d42cab1b52a5c623152c7",
-                        "parent_name": "jerrygmail-predictions-v1.1-xlnet-123-pp-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x6cc0bbe201dd4f00a019f987d94ce9c0"
-                    }
-                ],
-                "id": "0xf43186ff3d2d42cab1b52a5c623152c7",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1571010336,
-                    "description": "{\"submit_id\": \"0x02a4bca93cbb4704a58df4309396ff8e\", \"predict_id\": \"0x6cc0bbe201dd4f00a019f987d94ce9c0\", \"submitter_id\": \"0x3a31b3236574498e9069e7ea036c35a7\"}",
-                    "name": "jerrygmail-predictions-v1.1-xlnet-123-pp-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "dauqs-test-eval"
-                    ]
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0xf43186ff3d2d42cab1b52a5c623152c7"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1570585054,
-                "description": "XLNET-123++ (single model) (MST/EOI) http://tia.today",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "jerrygmail"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dataset:0x9ee64ab986174e62a23cbe54a2b875fd predictions:0xb60919c8088c4714a482c1e4d3314060 \"python evaluate.py dataset predictions\" --request-docker-image codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                 "bundle_type": "run",
                 "command": "python evaluate.py dataset predictions",
@@ -19113,5 +19123,5 @@
             }
         }
     ],
-    "updated": 1571012945.358922
+    "updated": 1571381276.096707
 }
