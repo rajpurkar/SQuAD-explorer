@@ -3191,8 +3191,8 @@
             },
             "submission": {
                 "created": 1573277478,
-                "description": "BERT + Multiple-CNN (ensemble)(Kyonggi University (ICL) & KISTI)",
-                "num_period_submissions": 1,
+                "description": "BERT + Multiple-CNN (ensemble) (Kyonggi University (ICL) & KISTI)",
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "ICLICL"
@@ -11820,78 +11820,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x30298ef8da704ed7aa4fa39c54daa3e3 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x994f2ec124de4cc3b6072c3c4474d05b",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x994f2ec124de4cc3b6072c3c4474d05b",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x994f2ec124de4cc3b6072c3c4474d05b",
-                        "parent_name": "icl_check-predictions-BERT_Multiple_CNN-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x30298ef8da704ed7aa4fa39c54daa3e3"
-                    }
-                ],
-                "id": "0x994f2ec124de4cc3b6072c3c4474d05b",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1573364934,
-                    "description": "{\"submit_id\": \"0xf8bc2ba0ed614f6a966f6db99fe5e81b\", \"predict_id\": \"0x30298ef8da704ed7aa4fa39c54daa3e3\", \"submitter_id\": \"0xa01f12872e654910ae388063cce3f9d8\"}",
-                    "name": "icl_check-predictions-BERT_Multiple_CNN-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x994f2ec124de4cc3b6072c3c4474d05b"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1572915808,
-                "description": "BERT + Multiple-CNN (ensemble) (Kyonggi University (ICL) & KISTI)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "icl_check"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xf36241f6f70b496b92be194ca912000f \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -12199,7 +12127,79 @@
                 "public": true,
                 "user_name": "TONYZHOU96"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x41262ddd6f404f3ea94013aab20d0456 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x2e6fda0d858d4b1da976fe62ed0eb5b5",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x2e6fda0d858d4b1da976fe62ed0eb5b5",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x2e6fda0d858d4b1da976fe62ed0eb5b5",
+                        "parent_name": "icl_check-predictions-BERT_Multiple_CNN-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x41262ddd6f404f3ea94013aab20d0456"
+                    }
+                ],
+                "id": "0x2e6fda0d858d4b1da976fe62ed0eb5b5",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1573433618,
+                    "description": "{\"submit_id\": \"0xf8bc2ba0ed614f6a966f6db99fe5e81b\", \"predict_id\": \"0x41262ddd6f404f3ea94013aab20d0456\", \"submitter_id\": \"0xa01f12872e654910ae388063cce3f9d8\"}",
+                    "name": "icl_check-predictions-BERT_Multiple_CNN-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ]
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0x2e6fda0d858d4b1da976fe62ed0eb5b5"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1572915808,
+                "description": "BERT + Multiple-CNN (ensemble) (Kyonggi University (ICL) & KISTI)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "icl_check"
+            }
         }
     ],
-    "updated": 1573364954.816732
+    "updated": 1573433638.926478
 }

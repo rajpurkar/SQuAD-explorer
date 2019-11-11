@@ -57,22 +57,33 @@ var parseCompEntries = function (comp_file) {
       var entry = {}
       entry.user = o_entry.submission.user_name
       var description = o_entry.submission.description.trim()
-      entry.model_name = description.substr(0, description.lastIndexOf('(')).trim()
-      var firstPart = description.substr(description.lastIndexOf('(') + 1)
-      entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
-      if (description.lastIndexOf('http') !== -1) {
-        entry.link = description.substr(description.lastIndexOf('http')).trim()
+      var regex_match = description.match(/(.*) ?\((.*)\) ?\((.*)\)(.*)/);
+      if (regex_match) {
+        entry.model_name = regex_match[1].trim() + " (" + regex_match[2].trim() + ")";
+        entry.institution = regex_match[3].trim();
+        if (regex_match[4].lastIndexOf('http') !== -1) {
+          entry.link = regex_match[4].trim()
+        }
+      } else {
+        entry.model_name = description.substr(0, description.lastIndexOf('(')).trim()
+        var firstPart = description.substr(description.lastIndexOf('(') + 1)
+        entry.institution = firstPart.substr(0, firstPart.lastIndexOf(')'))
+        if (description.lastIndexOf('http') !== -1) {
+          entry.link = description.substr(description.lastIndexOf('http')).trim()
+        }
       }
       entry.date = o_entry.submission.created
       entry.em = parseFloat(o_entry.scores.exact_match)
       entry.f1 = parseFloat(o_entry.scores.f1)
       if (!(entry.em >= 0)) throw 'Score invalid'
       if (entry.em < 50) throw 'Score too low'
-      if (entry.model_name === '') {
-        entry.model_name = 'Unnamed submission by ' + entry.user
-      }
+      //if (entry.model_name === '') {
+      //  entry.model_name = 'Unnamed submission by ' + entry.user
+      //}
       // if (entry.em > 50 && entry.f1 > 60) {
-      entries.push(entry)
+      if (entry.model_name !== '') {
+        entries.push(entry);
+      }
     } catch (err) {
       console.error(err)
       console.error(entry)
@@ -160,6 +171,7 @@ gulp.task('copy_models', function () {
 
 gulp.task('connect', function () {
   connect.server({
+    host: '0.0.0.0',
     root: '.'
   })
 })
