@@ -142,7 +142,7 @@
             "submission": {
                 "created": 1573091312,
                 "description": "ALBERT + DAAF + Verifier (ensemble) (PINGAN Omni-Sinitic)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "lxylxyoooo"
@@ -8400,88 +8400,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x39037643befc4098a546f312b1ac6dca \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-docker-image codalab/ubuntu:1.9 --request-cpus 1 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0x4589766b951c6ea6a8420a55dcdb1417f3cdc044",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x538cd467c9c04aa981943d37d0b83aa7",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x538cd467c9c04aa981943d37d0b83aa7",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x538cd467c9c04aa981943d37d0b83aa7",
-                        "parent_name": "ICL1618-predictions-ICL_MODEL-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x39037643befc4098a546f312b1ac6dca"
-                    }
-                ],
-                "id": "0x538cd467c9c04aa981943d37d0b83aa7",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1571073779,
-                    "data_size": 4337,
-                    "description": "{\"submit_id\": \"0x84df88f7bfac468ea7685af87a500015\", \"predict_id\": \"0x39037643befc4098a546f312b1ac6dca\", \"submitter_id\": \"0xe51e9f11a59c44b092592b4a97404a02\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exitcode": 0,
-                    "last_updated": 1571076822,
-                    "name": "ICL1618-predictions-ICL_MODEL-results",
-                    "remote": "jagupard18.stanford.edu(14156)",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1571076611,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 7.040396451950073,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x538cd467c9c04aa981943d37d0b83aa7"
-            },
-            "scores": {
-                "exact_match": 72.88422477995938,
-                "f1": 76.21688026650813
-            },
-            "submission": {
-                "created": 1570905220,
-                "description": "ICL_MODEL(ensemble) (Intelligent Contents Laboratory)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "ICL1618"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x39bb7bb559d2464e92e15855a009b32b \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-disk 4g --request-time 1d --request-docker-image codalab/ubuntu:1.9 --request-cpus 1 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -12164,6 +12082,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1573433618,
                     "description": "{\"submit_id\": \"0xf8bc2ba0ed614f6a966f6db99fe5e81b\", \"predict_id\": \"0x41262ddd6f404f3ea94013aab20d0456\", \"submitter_id\": \"0xa01f12872e654910ae388063cce3f9d8\"}",
+                    "failure_message": " Parent bundles failed: 0x41262ddd6f404f3ea94013aab20d0456 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "icl_check-predictions-BERT_Multiple_CNN-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -12184,7 +12103,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "failed",
                 "uuid": "0x2e6fda0d858d4b1da976fe62ed0eb5b5"
             },
             "scores": {
@@ -12201,5 +12120,5 @@
             }
         }
     ],
-    "updated": 1573433638.926478
+    "updated": 1573462415.142086
 }
