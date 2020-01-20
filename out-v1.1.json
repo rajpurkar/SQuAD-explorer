@@ -4327,7 +4327,7 @@
                 "created": 1578307028,
                 "description": "\tBERT-COMPOUND-DSS (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -4490,7 +4490,7 @@
                 "created": 1578307030,
                 "description": "BERT-COMPOUND (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -5544,7 +5544,7 @@
                 "created": 1578307033,
                 "description": "BERT-INDEPENDENT (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -14084,7 +14084,7 @@
                 "created": 1578307035,
                 "description": "\tBIDAF-COMPOUND-DSS (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -14246,7 +14246,7 @@
                 "created": 1578307038,
                 "description": "\tBIDAF-INDEPENDENT-DSS (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -14573,7 +14573,7 @@
                 "created": 1578307040,
                 "description": "\tBIDAF-INDEPENDENT (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -14655,7 +14655,7 @@
                 "created": 1578307037,
                 "description": "\tBIDAF-COMPOUND (single model) (Brno University of Technology)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 8,
+                "num_total_submissions": 7,
                 "public": true,
                 "user_name": "ifajcik"
             }
@@ -20028,79 +20028,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xe901e38f520549689d7772f797754729 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-cpus 1",
-                "bundle_type": "run",
-                "command": "python evaluate.py dev.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0xe172d0ca0fa44f51bff3b33cb64f2fd8",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "dev.json",
-                        "child_uuid": "0xe172d0ca0fa44f51bff3b33cb64f2fd8",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xe172d0ca0fa44f51bff3b33cb64f2fd8",
-                        "parent_name": "ifajcik-predictions-BERT-INDEPENDENT-DSS-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xe901e38f520549689d7772f797754729"
-                    }
-                ],
-                "id": "0xe172d0ca0fa44f51bff3b33cb64f2fd8",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1578418885,
-                    "description": "{\"submit_id\": \"0xab17c68f5a7d4b5f9971a0e6a9e6f04f\", \"predict_id\": \"0xe901e38f520549689d7772f797754729\", \"submitter_id\": \"0x8847564c4c7e4ee39723259a58ce6bd3\"}",
-                    "failure_message": " Parent bundles failed: 0xe901e38f520549689d7772f797754729 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
-                    "name": "ifajcik-predictions-BERT-INDEPENDENT-DSS-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "dauqs-test-eval"
-                    ]
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "failed",
-                "uuid": "0xe172d0ca0fa44f51bff3b33cb64f2fd8"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1578307032,
-                "description": "BERT-INDEPENDENT-DSS (single model) (Brno University of Technology)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 8,
-                "public": true,
-                "user_name": "ifajcik"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfd36ba2ad08e4bd989f99e33c50d9242 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-memory 2g --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -20181,5 +20108,5 @@
             }
         }
     ],
-    "updated": 1579424122.975027
+    "updated": 1579502708.547891
 }
