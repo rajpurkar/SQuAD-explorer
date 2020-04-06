@@ -1,6 +1,5 @@
-cd ../codalab-cli/
-./scripts/competitiond.py -v ../SQuAD-explorer/config/codalab-v1.1.json ../SQuAD-explorer/out-v1.1.json
-./scripts/competitiond.py -v -l ../SQuAD-explorer/config/codalab-v2.0.json ../SQuAD-explorer/out-v2.0.json
-cd ../SQuAD-explorer/
+cd ./codalab-cli/
+python ./scripts/competitiond.py -v ../config/v1.1.yml ../out-v1.1.json
+cd ../
 gulp
 gulp connect
