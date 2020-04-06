@@ -1,0 +1,23 @@
+max_submissions_per_period: 5                               # allows at most 5 submissions per user per period, where period is 24 hours by default
+log_worksheet_uuid: '0xdd55d9c11839487f8eef5503586b4d26'    # uuid of the worksheet to create new run bundles in
+submission_tag: squad-test-submit                     # configure the tag that participants use to submit to the competition
+
+# Configure how to mimic the submitted prediction bundles
+predict:
+  mimic:
+  - {new: '0x9ee64ab986174e62a23cbe54a2b875fd', old: '0x8f29fe78ffe545128caccab74eb06c57'}  # replace `old` bundle with `new` bundle
+  tag: dauqs-test-predict
+
+## Configure how to evaluate the new prediction bundles
+evaluate:
+  dependencies:
+  - {child_path: evaluate.py, parent_uuid: '0xbcd57bee090b421c982906709c8c27e1'}
+  - {child_path: test.json, parent_uuid: '0x9ee64ab986174e62a23cbe54a2b875fd'}
+  - {child_path: predictions.json, parent_path: predictions.json, parent_uuid: '{predict}'}
+  command: python evaluate.py test.json predictions.json
+  tag: dauqs-test-eval
+
+# Define how to extract the scores from the evaluation bundle
+score_specs:
+- {key: '/stdout:f1', name: f1}
+- {key: '/stdout:exact_match', name: exact_match}
