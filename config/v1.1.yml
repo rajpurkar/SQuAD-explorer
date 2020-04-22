@@ -13,7 +13,7 @@ evaluate:
   dependencies:
   - {child_path: evaluate.py, parent_uuid: '0xbcd57bee090b421c982906709c8c27e1'}
   - {child_path: test.json, parent_uuid: '0x9ee64ab986174e62a23cbe54a2b875fd'}
-  - {child_path: predictions.json, parent_path: predictions.json, parent_uuid: '{predict}'}
+  - {child_path: predictions.json, parent_uuid: '{predict}'}
   command: python evaluate.py test.json predictions.json
   tag: dauqs-test-eval
 
