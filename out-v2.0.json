@@ -713,8 +713,8 @@
             "submission": {
                 "created": 1585311208,
                 "description": "albert+KD+transfer (ensemble) (Anonymous)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "zyzhao"
             }
@@ -1779,8 +1779,8 @@
             "submission": {
                 "created": 1586870489,
                 "description": "albert+KD+transfer (single) (HIT master)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "zyzhao"
             }
@@ -2350,7 +2350,7 @@
             },
             "submission": {
                 "created": 1585556995,
-                "description": "ALBERT-MTL  single model HAPTIK AI RESEARCH https://haptik.ai",
+                "description": "{MTL} (single model ) (HAPTIK AI RESEARCH) https://haptik.ai",
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
@@ -15609,7 +15609,7 @@
                 },
                 "permission": 2,
                 "permission_spec": "all",
-                "state": "created",
+                "state": "staged",
                 "uuid": "0x44f88e7a8e7a4b39aa6e45206d836e6a"
             },
             "scores": {
@@ -15696,7 +15696,79 @@
                 "public": true,
                 "user_name": "Shangqinghua"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x2bdbba4b4a784b2ea2ccde03664a61a4 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-docker-image codalab/ubuntu:1.9 --request-cpus 1 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xfef217664dda4d5bbbcfdf4fe89c2cca",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xfef217664dda4d5bbbcfdf4fe89c2cca",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xfef217664dda4d5bbbcfdf4fe89c2cca",
+                        "parent_name": "zyzhao-predictions_single2-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x2bdbba4b4a784b2ea2ccde03664a61a4"
+                    }
+                ],
+                "id": "0xfef217664dda4d5bbbcfdf4fe89c2cca",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1587532296,
+                    "description": "{\"submit_id\": \"0x360afe6760284adda3ea19d71f2e6bf3\", \"submitter_id\": \"0xfadecd9e58bc4bb1957b18061e766e9c\", \"predict_id\": \"0x2bdbba4b4a784b2ea2ccde03664a61a4\"}",
+                    "name": "zyzhao-predictions_single2-results",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ]
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "created",
+                "uuid": "0xfef217664dda4d5bbbcfdf4fe89c2cca"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1587527653,
+                "description": "albert+KD+transfer+twopass (single) (SPPD)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 3,
+                "public": true,
+                "user_name": "zyzhao"
+            }
         }
     ],
-    "updated": 1587514159.9653225
+    "updated": 1587594982.7185142
 }
