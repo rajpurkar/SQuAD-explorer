@@ -60,6 +60,88 @@
     "leaderboard": [
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x09f1d5a0c42c42f7bbdb983ca4f5effe \"python evaluate.py test.json predictions.json\" --request-memory 2g --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py test.json predictions.json",
+                "data_hash": "0x2eae6107960c29f9eae1878c270dc37534a0c058",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test.json",
+                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
+                        "parent_name": "ikuyamada-predictions-LUKE-3-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x09f1d5a0c42c42f7bbdb983ca4f5effe"
+                    }
+                ],
+                "id": "0x0f02665fc2b84db2904bad0eceedeb44",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1587536611,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x5be616ccadae449e88fa3e4ff7d8c60d\", \"submitter_id\": \"0xba85696be1dd49e6b675e1d38e52fe02\", \"predict_id\": \"0x09f1d5a0c42c42f7bbdb983ca4f5effe\"}",
+                    "docker_image": "codalab/default-cpu@sha256:ff7de716ac5f94d9b4ff8d6341d60166ed5b0163cc05d8d51da9418511caf5e1",
+                    "exitcode": 0,
+                    "last_updated": 1587539761,
+                    "name": "ikuyamada-predictions-LUKE-3-results",
+                    "remote": "vm-clws-prod-gpuworker-3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1587539739,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.86155,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x0f02665fc2b84db2904bad0eceedeb44"
+            },
+            "scores": {
+                "exact_match": 90.20245463128082,
+                "f1": 95.37937207559357
+            },
+            "submission": {
+                "created": 1586576819,
+                "description": "LUKE (single model) (Studio Ousia & NAIST & RIKEN AIP)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "ikuyamada"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x6db7193ed30044b5a59ea8c36d8900d6 \"python evaluate.py dev.json predictions.json\" --request-disk 4g --request-memory 2g --request-time 1d --request-cpus 1 --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -20590,112 +20672,40 @@
         },
         {
             "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x09f1d5a0c42c42f7bbdb983ca4f5effe \"python evaluate.py test.json predictions.json\" --request-cpus 1 --request-memory 2g",
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc551f087427b496eb34eb00dda350f97 \"python evaluate.py test.json predictions.json\" --request-cpus 1 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py test.json predictions.json",
                 "data_hash": null,
                 "dependencies": [
                     {
                         "child_path": "evaluate.py",
-                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
                         "parent_name": "evaluate-v1.1.py",
                         "parent_path": "",
                         "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
                     },
                     {
                         "child_path": "test.json",
-                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
                         "parent_name": "test-v1.1.json",
                         "parent_path": "",
                         "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
                     },
                     {
                         "child_path": "predictions.json",
-                        "child_uuid": "0x0f02665fc2b84db2904bad0eceedeb44",
-                        "parent_name": "ikuyamada-predictions-LUKE-3-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x09f1d5a0c42c42f7bbdb983ca4f5effe"
-                    }
-                ],
-                "id": "0x0f02665fc2b84db2904bad0eceedeb44",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1587536611,
-                    "description": "{\"submit_id\": \"0x5be616ccadae449e88fa3e4ff7d8c60d\", \"submitter_id\": \"0xba85696be1dd49e6b675e1d38e52fe02\", \"predict_id\": \"0x09f1d5a0c42c42f7bbdb983ca4f5effe\"}",
-                    "name": "ikuyamada-predictions-LUKE-3-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "dauqs-test-eval"
-                    ]
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x0f02665fc2b84db2904bad0eceedeb44"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1586576819,
-                "description": "LUKE (single model) (Studio Ousia & NAIST & RIKEN AIP)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "ikuyamada"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x3963b8067457452a8bc643f1380034a0 \"python evaluate.py test.json predictions.json\" --request-cpus 1 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py test.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0x1de57b2bf8f04e2a850d954182142581",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "test.json",
-                        "child_uuid": "0x1de57b2bf8f04e2a850d954182142581",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x1de57b2bf8f04e2a850d954182142581",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
                         "parent_name": "zhijing-predbatch-predict",
                         "parent_path": "",
-                        "parent_uuid": "0x3963b8067457452a8bc643f1380034a0"
+                        "parent_uuid": "0xc551f087427b496eb34eb00dda350f97"
                     }
                 ],
-                "id": "0x1de57b2bf8f04e2a850d954182142581",
+                "id": "0x33c11c960f7649a780481078a8230960",
                 "is_anonymous": false,
                 "metadata": {
                     "actions": [],
                     "allow_failed_dependencies": false,
-                    "created": 1587536841,
-                    "description": "{\"submit_id\": \"0xa77fafb38acf404fb15d3b059cc76a01\", \"submitter_id\": \"0x413e4c5cad64474bb72408c034ec3d66\", \"predict_id\": \"0x3963b8067457452a8bc643f1380034a0\"}",
+                    "created": 1587544866,
+                    "description": "{\"submit_id\": \"0xa77fafb38acf404fb15d3b059cc76a01\", \"submitter_id\": \"0x413e4c5cad64474bb72408c034ec3d66\", \"predict_id\": \"0xc551f087427b496eb34eb00dda350f97\"}",
                     "name": "zhijing-predbatch-results",
                     "request_cpus": 1,
                     "request_disk": "",
@@ -20717,7 +20727,7 @@
                 "permission": 2,
                 "permission_spec": "all",
                 "state": "created",
-                "uuid": "0x1de57b2bf8f04e2a850d954182142581"
+                "uuid": "0x33c11c960f7649a780481078a8230960"
             },
             "scores": {
                 "exact_match": null,
@@ -20733,5 +20743,5 @@
             }
         }
     ],
-    "updated": 1587536876.6857688
+    "updated": 1587544896.2562408
 }
