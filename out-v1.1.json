@@ -134,7 +134,7 @@
             "submission": {
                 "created": 1586576819,
                 "description": "LUKE (single model) (Studio Ousia & NAIST & RIKEN AIP)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "ikuyamada"
@@ -3922,6 +3922,88 @@
         },
         {
             "bundle": {
+                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc551f087427b496eb34eb00dda350f97 \"python evaluate.py test.json predictions.json\" --request-memory 2g --request-cpus 1",
+                "bundle_type": "run",
+                "command": "python evaluate.py test.json predictions.json",
+                "data_hash": "0xeb6524aebfcc43d3e13d6f1e41102a4919e58de4",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate.py",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test.json",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
+                        "parent_name": "zhijing-predbatch-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xc551f087427b496eb34eb00dda350f97"
+                    }
+                ],
+                "id": "0x33c11c960f7649a780481078a8230960",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1587544866,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xa77fafb38acf404fb15d3b059cc76a01\", \"submitter_id\": \"0x413e4c5cad64474bb72408c034ec3d66\", \"predict_id\": \"0xc551f087427b496eb34eb00dda350f97\"}",
+                    "docker_image": "codalab/default-cpu@sha256:ff7de716ac5f94d9b4ff8d6341d60166ed5b0163cc05d8d51da9418511caf5e1",
+                    "exitcode": 0,
+                    "last_updated": 1587601999,
+                    "name": "zhijing-predbatch-results",
+                    "remote": "vm-clws-prod-gpuworker-3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1587601970,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.914966,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x33c11c960f7649a780481078a8230960"
+            },
+            "scores": {
+                "exact_match": 79.85943564460295,
+                "f1": 88.26313368861535
+            },
+            "submission": {
+                "created": 1583982422,
+                "description": "batch (single model) (THU)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "zhijing"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xdd46f02047714a819dcfe0d0f958cff3 \"python evaluate.py dev.json predictions.json\" --request-docker-image codalab/ubuntu:1.9",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -4401,7 +4483,7 @@
             "submission": {
                 "created": 1578307028,
                 "description": "\tBERT-COMPOUND-DSS (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -4564,7 +4646,7 @@
             "submission": {
                 "created": 1578307030,
                 "description": "BERT-COMPOUND (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -4970,7 +5052,7 @@
             "submission": {
                 "created": 1578307004,
                 "description": "BERT-INDEPENDENT-DSS-FILTERED (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -5700,7 +5782,7 @@
             "submission": {
                 "created": 1578307033,
                 "description": "BERT-INDEPENDENT (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -9259,7 +9341,7 @@
             "submission": {
                 "created": 1584698259,
                 "description": "Kbs (single model) (Tsinghua University)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "distant"
@@ -14564,7 +14646,7 @@
             "submission": {
                 "created": 1578307035,
                 "description": "\tBIDAF-COMPOUND-DSS (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -14726,7 +14808,7 @@
             "submission": {
                 "created": 1578307038,
                 "description": "\tBIDAF-INDEPENDENT-DSS (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -15053,7 +15135,7 @@
             "submission": {
                 "created": 1578307040,
                 "description": "\tBIDAF-INDEPENDENT (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -15135,7 +15217,7 @@
             "submission": {
                 "created": 1578307037,
                 "description": "\tBIDAF-COMPOUND (single model) (Brno University of Technology)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 8,
                 "public": true,
                 "user_name": "ifajcik"
@@ -17572,7 +17654,7 @@
             "submission": {
                 "created": 1580774644,
                 "description": "XLNet-deep (ensemble) (deepfine)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "deepfine"
@@ -20669,79 +20751,7 @@
                 "public": true,
                 "user_name": "jerrygmail"
             }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc551f087427b496eb34eb00dda350f97 \"python evaluate.py test.json predictions.json\" --request-cpus 1 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate.py test.json predictions.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate.py",
-                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
-                        "parent_name": "evaluate-v1.1.py",
-                        "parent_path": "",
-                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
-                    },
-                    {
-                        "child_path": "test.json",
-                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
-                        "parent_name": "test-v1.1.json",
-                        "parent_path": "",
-                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x33c11c960f7649a780481078a8230960",
-                        "parent_name": "zhijing-predbatch-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xc551f087427b496eb34eb00dda350f97"
-                    }
-                ],
-                "id": "0x33c11c960f7649a780481078a8230960",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1587544866,
-                    "description": "{\"submit_id\": \"0xa77fafb38acf404fb15d3b059cc76a01\", \"submitter_id\": \"0x413e4c5cad64474bb72408c034ec3d66\", \"predict_id\": \"0xc551f087427b496eb34eb00dda350f97\"}",
-                    "name": "zhijing-predbatch-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "dauqs-test-eval"
-                    ]
-                },
-                "owner": {
-                    "id": "21705",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "created",
-                "uuid": "0x33c11c960f7649a780481078a8230960"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1583982422,
-                "description": "batch (single model) (THU)",
-                "num_period_submissions": 1,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "zhijing"
-            }
         }
     ],
-    "updated": 1587544896.2562408
+    "updated": 1588061970.23595
 }
