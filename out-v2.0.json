@@ -6422,6 +6422,89 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x0c74b50ac40e499b8bcb6d7159fd6516 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x303d5d2300e436324065cff6431cfff508a81fc6",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xa10c60d063d54078aa2ef5f400dbd15c",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xa10c60d063d54078aa2ef5f400dbd15c",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xa10c60d063d54078aa2ef5f400dbd15c",
+                        "parent_name": "cwkang0204-predictions-BERTlarge-ensemble-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x0c74b50ac40e499b8bcb6d7159fd6516"
+                    }
+                ],
+                "id": "0xa10c60d063d54078aa2ef5f400dbd15c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834539,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0x41bb2d5bca3e40419407b578ad18cac5\", \"submitter_id\": \"0xecc8d61c0f3d44b59c2ded80e103f4cb\", \"predict_id\": \"0x0c74b50ac40e499b8bcb6d7159fd6516\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600856472,
+                    "name": "cwkang0204-predictions-BERTlarge-ensemble-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600856449,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.652987,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xa10c60d063d54078aa2ef5f400dbd15c"
+            },
+            "scores": {
+                "exact_match": 85.87226359738209,
+                "f1": 88.79291439630447
+            },
+            "submission": {
+                "created": 1600758653,
+                "description": "RoBERTa-Large (ensemble model) (SAIL)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "cwkang0204"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x9da44281b34641f0a19511d1fd4a2cc5 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -6744,6 +6827,89 @@
                 "num_total_submissions": 0,
                 "public": null,
                 "user_name": null
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x4e81cd2ee22f4e3f925e99ab44459982 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xfcc67605fa2c5023c215baba5808130534f2c460",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x78ef491b0e714edc88625235472fda0d",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x78ef491b0e714edc88625235472fda0d",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x78ef491b0e714edc88625235472fda0d",
+                        "parent_name": "cwkang0204-predictions-BERTlarge-single-model-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x4e81cd2ee22f4e3f925e99ab44459982"
+                    }
+                ],
+                "id": "0x78ef491b0e714edc88625235472fda0d",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834504,
+                    "data_size": 4336,
+                    "description": "{\"submit_id\": \"0xa8a82e541089488f8b8760e014148241\", \"submitter_id\": \"0xecc8d61c0f3d44b59c2ded80e103f4cb\", \"predict_id\": \"0x4e81cd2ee22f4e3f925e99ab44459982\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600854445,
+                    "name": "cwkang0204-predictions-BERTlarge-single-model-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600854423,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.732983,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x78ef491b0e714edc88625235472fda0d"
+            },
+            "scores": {
+                "exact_match": 85.17264725795532,
+                "f1": 88.42500771478342
+            },
+            "submission": {
+                "created": 1600756782,
+                "description": "RoBERTa-Large (single model) (SAIL)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "cwkang0204"
             }
         },
         {
@@ -9504,6 +9670,89 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x60fb57531966451297fb1e2acaddfe94 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xae28c73873dc69d217b9f35cde2d9dccc2dd7021",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x104692f01680467eb0031e76ee5d815c",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x104692f01680467eb0031e76ee5d815c",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x104692f01680467eb0031e76ee5d815c",
+                        "parent_name": "opherl-predictions-pmi-masking-2.4M-base-added-data-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x60fb57531966451297fb1e2acaddfe94"
+                    }
+                ],
+                "id": "0x104692f01680467eb0031e76ee5d815c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834525,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0x54f51b3013734cc7adfa3c03a7faa5cb\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0x60fb57531966451297fb1e2acaddfe94\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600856090,
+                    "name": "opherl-predictions-pmi-masking-2.4M-base-added-data-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600856067,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.633785,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x104692f01680467eb0031e76ee5d815c"
+            },
+            "scores": {
+                "exact_match": 82.02437373053486,
+                "f1": 84.85427964999565
+            },
+            "submission": {
+                "created": 1600758069,
+                "description": "BERT-Base PMI-Masking Additional Data (single model) (AI21 Labs)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 4,
+                "public": true,
+                "user_name": "opherl"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xda42f01b819e4001976112a811fbabe4 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -9743,89 +9992,6 @@
                 "num_total_submissions": 4,
                 "public": false,
                 "user_name": "refractor"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x1cb91ecaf17c47f69215385cafb1a5d7 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0x07f1bd12ce9f3b525f1b02b3aecd0f2242ded0fd",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x5d58541c5a8e4c9d8b5e7763e000bfd4",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x5d58541c5a8e4c9d8b5e7763e000bfd4",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x5d58541c5a8e4c9d8b5e7763e000bfd4",
-                        "parent_name": "opherl-predictions-pmi-masking-2.4M-base-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x1cb91ecaf17c47f69215385cafb1a5d7"
-                    }
-                ],
-                "id": "0x5d58541c5a8e4c9d8b5e7763e000bfd4",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1598973072,
-                    "data_size": 4337,
-                    "description": "{\"submit_id\": \"0xc811e1c972b344d08735becc11f71675\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0x1cb91ecaf17c47f69215385cafb1a5d7\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1598993553,
-                    "name": "opherl-predictions-pmi-masking-2.4M-base-results",
-                    "remote": "vm-clws-prod-worker-1",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1598993529,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 1.556154,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x5d58541c5a8e4c9d8b5e7763e000bfd4"
-            },
-            "scores": {
-                "exact_match": 81.41503046716316,
-                "f1": 84.40187936096373
-            },
-            "submission": {
-                "created": 1598940792,
-                "description": "BERT-Base PMI-Masking (single model) (AI21 Labs)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "opherl"
             }
         },
         {
@@ -10316,6 +10482,89 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x1b7529f412b3472993cc72a361371717 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x100349c95fad29475aff2d599472dfe1fb24779a",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xa44e90411b894344b86686d1526ce05d",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xa44e90411b894344b86686d1526ce05d",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xa44e90411b894344b86686d1526ce05d",
+                        "parent_name": "opherl-predictions-pmi-masking-2.4M-base-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x1b7529f412b3472993cc72a361371717"
+                    }
+                ],
+                "id": "0xa44e90411b894344b86686d1526ce05d",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834512,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x9a3614d58cd04ce4b8984a31fd24ab88\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0x1b7529f412b3472993cc72a361371717\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600854491,
+                    "name": "opherl-predictions-pmi-masking-2.4M-base-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600854468,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.616316,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xa44e90411b894344b86686d1526ce05d"
+            },
+            "scores": {
+                "exact_match": 80.89596027984653,
+                "f1": 83.60400576883566
+            },
+            "submission": {
+                "created": 1600757507,
+                "description": "BERT-Base PMI-Masking (single model) (AI21 Labs)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 4,
+                "public": true,
+                "user_name": "opherl"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x84058aefce984c18ad1bdc5df0c83e8f \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -10393,89 +10642,6 @@
                 "num_total_submissions": 0,
                 "public": null,
                 "user_name": null
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xaf14fc02faa841f2856516990a13ea6b \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0x38bf07cf3bcf1edd14d885760a479a4d9fd9b0a2",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xdb2667e21dfd49df8ab83fb559c0a4b5",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xdb2667e21dfd49df8ab83fb559c0a4b5",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xdb2667e21dfd49df8ab83fb559c0a4b5",
-                        "parent_name": "cwkang0204-predictions-BERTlarge-ensemble-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xaf14fc02faa841f2856516990a13ea6b"
-                    }
-                ],
-                "id": "0xdb2667e21dfd49df8ab83fb559c0a4b5",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1573552035,
-                    "data_size": 4338,
-                    "description": "{\"submit_id\": \"0x110456ee1b3a4c5c9562048b6e784ae4\", \"predict_id\": \"0xaf14fc02faa841f2856516990a13ea6b\", \"submitter_id\": \"0xecc8d61c0f3d44b59c2ded80e103f4cb\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1573554606,
-                    "name": "cwkang0204-predictions-BERTlarge-ensemble-results",
-                    "remote": "vm-clws-prod-worker-0",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1573554572,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 3.4702682495117188,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xdb2667e21dfd49df8ab83fb559c0a4b5"
-            },
-            "scores": {
-                "exact_match": 80.45587903407808,
-                "f1": 83.50934668975451
-            },
-            "submission": {
-                "created": 1573543762,
-                "description": "BERTlarge (ensemble) (SAIL)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "cwkang0204"
             }
         },
         {
@@ -10719,6 +10885,89 @@
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xd6d935134a4b49b0a244fa7849f000c4 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x3616f09818195ac1761ca5734a909dab38bb71df",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xfa6b04504c04493e95acca66c5ef6d2d",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xfa6b04504c04493e95acca66c5ef6d2d",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xfa6b04504c04493e95acca66c5ef6d2d",
+                        "parent_name": "opherl-predictions-pmi-masking-2.4M-added-data-random-baseline-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xd6d935134a4b49b0a244fa7849f000c4"
+                    }
+                ],
+                "id": "0xfa6b04504c04493e95acca66c5ef6d2d",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834531,
+                    "data_size": 4334,
+                    "description": "{\"submit_id\": \"0xc57e77b03f424d1797e44f353058285e\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0xd6d935134a4b49b0a244fa7849f000c4\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600873740,
+                    "name": "opherl-predictions-pmi-masking-2.4M-added-data-random-baseline-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600873717,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.574911,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xfa6b04504c04493e95acca66c5ef6d2d"
+            },
+            "scores": {
+                "exact_match": 80.3768900925299,
+                "f1": 83.26220856377965
+            },
+            "submission": {
+                "created": 1600758109,
+                "description": "PMI-Masking Additional Data Random Baseline (single model) (AI21 Labs)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 4,
+                "public": true,
+                "user_name": "opherl"
             }
         },
         {
@@ -11290,89 +11539,6 @@
         },
         {
             "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x86b02ca02e714a75be6feea7e14a1086 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0xf4853d20fb676667ac4f94a60390532a5c0be97c",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x4aab7f700a97405eac792e403b90042a",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x4aab7f700a97405eac792e403b90042a",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x4aab7f700a97405eac792e403b90042a",
-                        "parent_name": "opherl-predictions-pmi-masking-2.4M-random-baseline-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0x86b02ca02e714a75be6feea7e14a1086"
-                    }
-                ],
-                "id": "0x4aab7f700a97405eac792e403b90042a",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1598973066,
-                    "data_size": 4338,
-                    "description": "{\"submit_id\": \"0x8d1f60b7c25e4dbeb5e2959aa68f45a5\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0x86b02ca02e714a75be6feea7e14a1086\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1598993409,
-                    "name": "opherl-predictions-pmi-masking-2.4M-random-baseline-results",
-                    "remote": "vm-clws-prod-worker-1",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1598993384,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 1.589508,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x4aab7f700a97405eac792e403b90042a"
-            },
-            "scores": {
-                "exact_match": 79.95937711577523,
-                "f1": 83.10631967937923
-            },
-            "submission": {
-                "created": 1598940486,
-                "description": "PMI-Masking Random Baseline (single model) (AI21 Labs)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "opherl"
-            }
-        },
-        {
-            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x0b2abc5b1a024f5ca4601ff5b6e44648 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -11855,6 +12021,89 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "zheyeyou"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xdfdac8b69692438fbcc59163ab04b88e \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x42fb87ce66a3d23498356e86ffa7bfccd27152cc",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x3f50817427fe4eb992cf91fca1ce0af6",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x3f50817427fe4eb992cf91fca1ce0af6",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x3f50817427fe4eb992cf91fca1ce0af6",
+                        "parent_name": "opherl-predictions-pmi-masking-2.4M-random-baseline-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xdfdac8b69692438fbcc59163ab04b88e"
+                    }
+                ],
+                "id": "0x3f50817427fe4eb992cf91fca1ce0af6",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1600834518,
+                    "data_size": 4335,
+                    "description": "{\"submit_id\": \"0x28eaefc27a684b6c93b003417a7abaed\", \"submitter_id\": \"0xe4a7dc0e5e3641aeb16a51e717399693\", \"predict_id\": \"0xdfdac8b69692438fbcc59163ab04b88e\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1600854468,
+                    "name": "opherl-predictions-pmi-masking-2.4M-random-baseline-results",
+                    "remote": "vm-clws-prod-worker-0",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1600854445,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.633448,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x3f50817427fe4eb992cf91fca1ce0af6"
+            },
+            "scores": {
+                "exact_match": 80.0383660573234,
+                "f1": 82.79590567982369
+            },
+            "submission": {
+                "created": 1600757933,
+                "description": "PMI-Masking Random Baseline (single model) (AI21 Labs)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 4,
+                "public": true,
+                "user_name": "opherl"
             }
         },
         {
@@ -12345,89 +12594,6 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "infykamal"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xc5ebeafaf6a34ab7908b8431aeb1faf5 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0xa1d411616062203c6a6646a09c6caf9e890fb5e9",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0x803af39a0b044810af2bad9f6c6adb57",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0x803af39a0b044810af2bad9f6c6adb57",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0x803af39a0b044810af2bad9f6c6adb57",
-                        "parent_name": "cwkang0204-predictions-BERTlarge-single-model-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xc5ebeafaf6a34ab7908b8431aeb1faf5"
-                    }
-                ],
-                "id": "0x803af39a0b044810af2bad9f6c6adb57",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1573552048,
-                    "data_size": 4336,
-                    "description": "{\"submit_id\": \"0x8aabce0c9f0b44b589697528bf340cfa\", \"predict_id\": \"0xc5ebeafaf6a34ab7908b8431aeb1faf5\", \"submitter_id\": \"0xecc8d61c0f3d44b59c2ded80e103f4cb\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1573555802,
-                    "name": "cwkang0204-predictions-BERTlarge-single-model-results",
-                    "remote": "vm-clws-prod-worker-0",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1573555756,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 3.563425302505493,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0x803af39a0b044810af2bad9f6c6adb57"
-            },
-            "scores": {
-                "exact_match": 78.65041751297676,
-                "f1": 81.47406881851941
-            },
-            "submission": {
-                "created": 1573538524,
-                "description": "BERTlarge (single model) (SAIL)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 2,
-                "public": true,
-                "user_name": "cwkang0204"
             }
         },
         {
@@ -18325,81 +18491,7 @@
                 "public": true,
                 "user_name": "luke"
             }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xb0a933fa11434b92b6179b1c4806b29d \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": null,
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xd32ef87cdf9342109013a6aee4740ce9",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xd32ef87cdf9342109013a6aee4740ce9",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xd32ef87cdf9342109013a6aee4740ce9",
-                        "parent_name": "kg_team_a3-predictions-learn_how_to_response_on_ELECTRA-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xb0a933fa11434b92b6179b1c4806b29d"
-                    }
-                ],
-                "id": "0xd32ef87cdf9342109013a6aee4740ce9",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1590892826,
-                    "description": "",
-                    "exclude_patterns": [],
-                    "failure_message": " Parent bundles failed: 0xb0a933fa11434b92b6179b1c4806b29d (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
-                    "name": "kg_team_a3-predictions-learn_how_to_response_on_ELECTRA-results",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ]
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "failed",
-                "uuid": "0xd32ef87cdf9342109013a6aee4740ce9"
-            },
-            "scores": {
-                "exact_match": null,
-                "f1": null
-            },
-            "submission": {
-                "created": 1590892826,
-                "description": "",
-                "num_period_submissions": 0,
-                "num_total_submissions": 0,
-                "public": null,
-                "user_name": null
-            }
         }
     ],
-    "updated": 1600624542.8079703
+    "updated": 1601078035.1831048
 }
