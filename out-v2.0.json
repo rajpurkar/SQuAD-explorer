@@ -475,7 +475,90 @@
                 "created": 1588610664,
                 "description": "ELECTRA+ALBERT+EntitySpanFocus (ensemble) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 5,
+                "num_total_submissions": 6,
+                "public": true,
+                "user_name": "SRCB_DML"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x2c3971683d9041f2b5d34e4aa85c082e \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xad313f8ad1f63aae033e9dfe491ceeed1bc8d58c",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xe55aa319187d475a8503cb6a370f2d43",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xe55aa319187d475a8503cb6a370f2d43",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xe55aa319187d475a8503cb6a370f2d43",
+                        "parent_name": "SRCB_DML-predictions-em-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x2c3971683d9041f2b5d34e4aa85c082e"
+                    }
+                ],
+                "id": "0xe55aa319187d475a8503cb6a370f2d43",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1606971326,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0xe1bc8ef675a6451e99931463863db3a4\", \"submitter_id\": \"0xd22789d83d5145ba850f5d49fefaad86\", \"predict_id\": \"0x2c3971683d9041f2b5d34e4aa85c082e\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1606986471,
+                    "name": "SRCB_DML-predictions-em-results",
+                    "remote": "1cbd94ab7edd-a8ae852003d24bf1ba8a99a6b30ea11d",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1606986311,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.369393,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xe55aa319187d475a8503cb6a370f2d43"
+            },
+            "scores": {
+                "exact_match": 90.52132701421802,
+                "f1": 92.82428605810355
+            },
+            "submission": {
+                "created": 1606872935,
+                "description": "EntitySpanFocusV2 (ensemble) (RICOH_SRCB_DML)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -558,7 +641,7 @@
                 "created": 1592755097,
                 "description": "ELECTRA+ALBERT+EntitySpanFocus (ensemble) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 5,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -724,7 +807,7 @@
                 "created": 1599874201,
                 "description": "EntitySpanFocus+AT (ensemble) (RICOH_SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 5,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -972,7 +1055,7 @@
             "submission": {
                 "created": 1604239393,
                 "description": "electra+nlayers+kdav (ensemble) (oppo.tensorlab)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "oppo.tensorlab"
@@ -1467,8 +1550,8 @@
             },
             "submission": {
                 "created": 1605762863,
-                "description": "ROaD-Electra (single model) (Facebook)",
-                "num_period_submissions": 1,
+                "description": "ROaD-Electra (single model)",
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "hfadeel"
@@ -2215,7 +2298,7 @@
             "submission": {
                 "created": 1603941782,
                 "description": "electra & albert (ensemble) ()",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "Big_Orange"
@@ -2299,7 +2382,7 @@
                 "created": 1588417206,
                 "description": "ELECTRA+EntitySpanFocus (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 5,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -2880,7 +2963,7 @@
                 "created": 1582595957,
                 "description": "ALBERT (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 5,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -13824,7 +13907,7 @@
                 "created": 1598698211,
                 "description": "BERT-Base-V (single model) (Anonymous)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "alex_alex"
             }
@@ -13907,7 +13990,90 @@
                 "created": 1596704686,
                 "description": "BERT-Base-DT (single model) (Anonymous)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 5,
+                "public": true,
+                "user_name": "alex_alex"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xeff07dcb74ad4baf8d2cb417b57eed1a \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xa87815247666cfc9f7aff5fe203a7a9c221f26aa",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xb07bff5ec6b543a4aaa692f0072199d8",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xb07bff5ec6b543a4aaa692f0072199d8",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xb07bff5ec6b543a4aaa692f0072199d8",
+                        "parent_name": "alex_alex-predictions-BERT-Base-V2-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xeff07dcb74ad4baf8d2cb417b57eed1a"
+                    }
+                ],
+                "id": "0xb07bff5ec6b543a4aaa692f0072199d8",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1607492730,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0x9afaa9c64e4643a192560410735a4690\", \"submitter_id\": \"0x24e6aa7caac1427d83a419565887b7c2\", \"predict_id\": \"0xeff07dcb74ad4baf8d2cb417b57eed1a\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1607504821,
+                    "name": "alex_alex-predictions-BERT-Base-V2-results",
+                    "remote": "18e39ae04192-c76df2da59b04dbea5ced1c88af52ed5",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1607504561,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.728017,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xb07bff5ec6b543a4aaa692f0072199d8"
+            },
+            "scores": {
+                "exact_match": 74.65583389754006,
+                "f1": 77.40386756984573
+            },
+            "submission": {
+                "created": 1607031603,
+                "description": "BERT-Base-V2 (single model) Anonymous",
+                "num_period_submissions": 0,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "alex_alex"
             }
@@ -13990,7 +14156,7 @@
                 "created": 1597401433,
                 "description": "BERT-Base-Add (single model) (Anonymous)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "alex_alex"
             }
@@ -14480,7 +14646,7 @@
                 "created": 1596997075,
                 "description": "BERT-Base-Baseline (single model) (Anonymous)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 5,
                 "public": true,
                 "user_name": "alex_alex"
             }
@@ -18825,5 +18991,5 @@
             }
         }
     ],
-    "updated": 1606524152.5147998
+    "updated": 1608091732.8596935
 }
