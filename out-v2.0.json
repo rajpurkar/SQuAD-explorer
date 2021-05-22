@@ -40,7 +40,7 @@
             "depth": 10,
             "metadata": {
                 "request_network": false,
-                "request_queue": "nlp"
+                "request_queue": ""
             },
             "mimic": [
                 {
@@ -151,6 +151,96 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x43bf23bd357b4573a89209cdef3d8a39 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x5d37634e9cf006cb1d55a55db28317aa740020a4",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xfa79ac587e62452eadb5b1c89abe7ed1",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xfa79ac587e62452eadb5b1c89abe7ed1",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xfa79ac587e62452eadb5b1c89abe7ed1",
+                        "parent_name": "SRCB_DML_SQUAD-predictions-IENET-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x43bf23bd357b4573a89209cdef3d8a39"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xfa79ac587e62452eadb5b1c89abe7ed1",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1621296065,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0x0b60c497ca7c4331949f522862d2fe9c\", \"submitter_id\": \"0x8618c01062434d7e9d18e2938f6d1386\", \"predict_id\": \"0x43bf23bd357b4573a89209cdef3d8a39\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1621328701,
+                    "memory_usage": 0.0,
+                    "name": "SRCB_DML_SQUAD-predictions-IENET-results",
+                    "remote": "98bfdeaeae0c-4b19e6fcde714c39bf7a4726838fe5da",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1621328503,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.469774,
+                    "time_cleaning_up": 9.17505407333374,
+                    "time_preparing": 157.64141035079956,
+                    "time_running": 11.164896965026855,
+                    "time_system": 0.0,
+                    "time_uploading_results": 18.35716676712036,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xfa79ac587e62452eadb5b1c89abe7ed1"
+            },
+            "scores": {
+                "exact_match": 90.8598510494245,
+                "f1": 93.1002472044682
+            },
+            "submission": {
+                "created": 1621161310,
+                "description": "IE-NetV2 (ensemble) (RICOH_SRCB_DML)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "SRCB_DML_SQUAD"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xd54ba3a9536a4ee3ba88236549686101 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -228,7 +318,7 @@
                 "created": 1614152558,
                 "description": "IE-Net (ensemble) (RICOH_SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -816,7 +906,7 @@
                 "created": 1588610664,
                 "description": "ELECTRA+ALBERT+EntitySpanFocus (ensemble) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -900,7 +990,7 @@
                 "created": 1606872935,
                 "description": "EntitySpanFocusV2 (ensemble) (RICOH_SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -984,7 +1074,7 @@
                 "created": 1592755097,
                 "description": "ELECTRA+ALBERT+EntitySpanFocus (ensemble) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -1110,7 +1200,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1599928108,
                     "data_size": 4338,
-                    "description": "{\"submit_id\": \"0x082fc49949b14c6aa3827bfebed5cc40\", \"submitter_id\": \"0xd22789d83d5145ba850f5d49fefaad86\", \"predict_id\": \"0x6f173d0429874a9ab92c51a59a0522ef\"}",
+                    "description": "",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exclude_patterns": [],
                     "exitcode": 0,
@@ -1149,12 +1239,12 @@
                 "f1": 92.74778628294945
             },
             "submission": {
-                "created": 1599874201,
-                "description": "EntitySpanFocus+AT (ensemble) (RICOH_SRCB_DML)",
+                "created": 1599928108,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
-                "public": true,
-                "user_name": "SRCB_DML"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         },
         {
@@ -3334,7 +3424,7 @@
                 "created": 1588417206,
                 "description": "ELECTRA+EntitySpanFocus (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -3922,7 +4012,7 @@
                 "created": 1582595957,
                 "description": "ALBERT (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 7,
+                "num_total_submissions": 6,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -14759,6 +14849,90 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x94821cc07efe425fafa2c3c361cf09c1 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x34552ac2c0191c1fbb079cb760522500288f3582",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x912200cbed194924a65340d20658f70c",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x912200cbed194924a65340d20658f70c",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x912200cbed194924a65340d20658f70c",
+                        "parent_name": "QL-predictions-mgrc-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x94821cc07efe425fafa2c3c361cf09c1"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x912200cbed194924a65340d20658f70c",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1621641579,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0x13edfa7e158f4bd0834e29f72379741f\", \"submitter_id\": \"0x2cf55d6da19648fba89a0aa41bda6f5a\", \"predict_id\": \"0x94821cc07efe425fafa2c3c361cf09c1\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1621642715,
+                    "name": "QL-predictions-mgrc-results",
+                    "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1621642647,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.643266,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x912200cbed194924a65340d20658f70c"
+            },
+            "scores": {
+                "exact_match": 75.34416610245994,
+                "f1": 78.38119336305569
+            },
+            "submission": {
+                "created": 1621616214,
+                "description": "mgrc (single model) stca_nlp",
+                "num_period_submissions": 1,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "QL"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x150cd1b1273c475da4431e2ade1cc1ad \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -16577,7 +16751,7 @@
             "submission": {
                 "created": 1619358185,
                 "description": "HYDRA_BERT (single model) (JAIST)",
-                "num_period_submissions": 1,
+                "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "nguyenhathanh"
@@ -20399,5 +20573,5 @@
             }
         }
     ],
-    "updated": 1619478376.8420794
+    "updated": 1621701911.0006268
 }
