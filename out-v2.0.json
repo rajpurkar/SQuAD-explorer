@@ -67,6 +67,90 @@
     "leaderboard": [
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x33a6800d4c4f456486c434f56c10af01 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x3f58ed03d1da299f4d65d95e771f5293c71f1ad2",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xe46209f4ddc241798c220981c6acf850",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xe46209f4ddc241798c220981c6acf850",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xe46209f4ddc241798c220981c6acf850",
+                        "parent_name": "SRCB_DML_SQUAD-predictions-IE-Net-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x33a6800d4c4f456486c434f56c10af01"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xe46209f4ddc241798c220981c6acf850",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1622912612,
+                    "data_size": 4337,
+                    "description": "{\"submit_id\": \"0x8bf592beb7804a49bdca7eecc3fa82ef\", \"submitter_id\": \"0x8618c01062434d7e9d18e2938f6d1386\", \"predict_id\": \"0x33a6800d4c4f456486c434f56c10af01\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1622961905,
+                    "name": "SRCB_DML_SQUAD-predictions-IE-Net-results",
+                    "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1622961856,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.49308,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xe46209f4ddc241798c220981c6acf850"
+            },
+            "scores": {
+                "exact_match": 90.9388399909727,
+                "f1": 93.21444255956477
+            },
+            "submission": {
+                "created": 1622859814,
+                "description": "IE-Net (ensemble) (RICOH_SRCB_DML)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "SRCB_DML_SQUAD"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x4a98ee114b8941ed90aa09e2e364fe46 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -234,93 +318,9 @@
                 "created": 1621161310,
                 "description": "IE-NetV2 (ensemble) (RICOH_SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 1,
+                "num_total_submissions": 2,
                 "public": true,
                 "user_name": "SRCB_DML_SQUAD"
-            }
-        },
-        {
-            "bundle": {
-                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xd54ba3a9536a4ee3ba88236549686101 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
-                "bundle_type": "run",
-                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
-                "data_hash": "0xadeae2976f82829e5c0555ea99856f9581ad3643",
-                "dependencies": [
-                    {
-                        "child_path": "evaluate-v2.0.py",
-                        "child_uuid": "0xda14f5a710cd48b69faf8a33aa523155",
-                        "parent_name": "evaluate-v2.0.py",
-                        "parent_path": "",
-                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
-                    },
-                    {
-                        "child_path": "data.json",
-                        "child_uuid": "0xda14f5a710cd48b69faf8a33aa523155",
-                        "parent_name": "test-v2.0.json",
-                        "parent_path": "",
-                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
-                    },
-                    {
-                        "child_path": "predictions.json",
-                        "child_uuid": "0xda14f5a710cd48b69faf8a33aa523155",
-                        "parent_name": "SRCB_DML-predictions-IE-Net-predict",
-                        "parent_path": "",
-                        "parent_uuid": "0xd54ba3a9536a4ee3ba88236549686101"
-                    }
-                ],
-                "frozen": null,
-                "id": "0xda14f5a710cd48b69faf8a33aa523155",
-                "is_anonymous": false,
-                "metadata": {
-                    "actions": [],
-                    "allow_failed_dependencies": false,
-                    "created": 1614201538,
-                    "data_size": 4339,
-                    "description": "{\"submit_id\": \"0x1fb7ad3cd3444c26bca378933cad8bab\", \"submitter_id\": \"0xd22789d83d5145ba850f5d49fefaad86\", \"predict_id\": \"0xd54ba3a9536a4ee3ba88236549686101\"}",
-                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
-                    "exclude_patterns": [],
-                    "exitcode": 0,
-                    "last_updated": 1614219958,
-                    "name": "SRCB_DML-predictions-IE-Net-results",
-                    "remote": "0dd0a1b780ea-3bd7a54fd8584390b3b9c4dfda6d78d3",
-                    "request_cpus": 1,
-                    "request_disk": "",
-                    "request_docker_image": "codalab/ubuntu:1.9",
-                    "request_gpus": 0,
-                    "request_memory": "2g",
-                    "request_network": false,
-                    "request_priority": 0,
-                    "request_queue": "",
-                    "request_time": "",
-                    "run_status": "Finished",
-                    "started": 1614219908,
-                    "tags": [
-                        "nurdauqs-test-eval-shuf"
-                    ],
-                    "time": 1.483068,
-                    "time_system": 0.0,
-                    "time_user": 0.0
-                },
-                "owner": {
-                    "id": "20891",
-                    "type": "users"
-                },
-                "permission": 2,
-                "permission_spec": "all",
-                "state": "ready",
-                "uuid": "0xda14f5a710cd48b69faf8a33aa523155"
-            },
-            "scores": {
-                "exact_match": 90.75829383886256,
-                "f1": 93.04440839289724
-            },
-            "submission": {
-                "created": 1614152558,
-                "description": "IE-Net (ensemble) (RICOH_SRCB_DML)",
-                "num_period_submissions": 0,
-                "num_total_submissions": 4,
-                "public": true,
-                "user_name": "SRCB_DML"
             }
         },
         {
@@ -990,7 +990,7 @@
                 "created": 1606872935,
                 "description": "EntitySpanFocusV2 (ensemble) (RICOH_SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -3340,7 +3340,7 @@
                 "created": 1588417206,
                 "description": "ELECTRA+EntitySpanFocus (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -3928,7 +3928,7 @@
                 "created": 1582595957,
                 "description": "ALBERT (Single model) (SRCB_DML)",
                 "num_period_submissions": 0,
-                "num_total_submissions": 4,
+                "num_total_submissions": 3,
                 "public": true,
                 "user_name": "SRCB_DML"
             }
@@ -9247,6 +9247,90 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xe3eba853aa964bd28b9a7a3d5ade70ba \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x1c46d4b30c34f35e45f1c546b0e7a3583191b78e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xa5bce79ad3a74152b02ff8ff65e4ff59",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xa5bce79ad3a74152b02ff8ff65e4ff59",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xa5bce79ad3a74152b02ff8ff65e4ff59",
+                        "parent_name": "vutranism-predictions-SemNet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xe3eba853aa964bd28b9a7a3d5ade70ba"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xa5bce79ad3a74152b02ff8ff65e4ff59",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1622699191,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0xfb81d37c02e94b13b7098d9a2a557ac9\", \"submitter_id\": \"0x7cd675274805415eb470f4b553509326\", \"predict_id\": \"0xe3eba853aa964bd28b9a7a3d5ade70ba\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1622704709,
+                    "name": "vutranism-predictions-SemNet-results",
+                    "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1622704659,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.465303,
+                    "time_system": 0.0,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xa5bce79ad3a74152b02ff8ff65e4ff59"
+            },
+            "scores": {
+                "exact_match": 83.81855111712932,
+                "f1": 86.66891936174207
+            },
+            "submission": {
+                "created": 1622617880,
+                "description": "SemNet (single model) (JAIST)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "vutranism"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0xd5cf1bc94dcf45d18b83a50ac4d5c35c \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -9325,6 +9409,96 @@
                 "num_total_submissions": 5,
                 "public": true,
                 "user_name": "omerlevy"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x80d768b21cc744108f961dd78dec1c16 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x58f55c6990a890a61ff9b714de66e63caaca488a",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x23b36f5a79a94a0d9860a8eb3fc237fd",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x23b36f5a79a94a0d9860a8eb3fc237fd",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x23b36f5a79a94a0d9860a8eb3fc237fd",
+                        "parent_name": "vutranism-predictions-SynNet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x80d768b21cc744108f961dd78dec1c16"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x23b36f5a79a94a0d9860a8eb3fc237fd",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1622699184,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0xc7646031a61e487b8f34c85a632bccce\", \"submitter_id\": \"0x7cd675274805415eb470f4b553509326\", \"predict_id\": \"0x80d768b21cc744108f961dd78dec1c16\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1622702417,
+                    "memory_usage": 0.0,
+                    "name": "vutranism-predictions-SynNet-results",
+                    "remote": "d648b139eb40-c81a64e618c74316aa93a8695306ffba",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1622702184,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.657572,
+                    "time_cleaning_up": 8.152315616607666,
+                    "time_preparing": 197.23460578918457,
+                    "time_running": 10.13711142539978,
+                    "time_system": 0.0,
+                    "time_uploading_results": 16.265084505081177,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x23b36f5a79a94a0d9860a8eb3fc237fd"
+            },
+            "scores": {
+                "exact_match": 83.52516361995035,
+                "f1": 86.2220782329396
+            },
+            "submission": {
+                "created": 1622614424,
+                "description": "SynNet (single model) (JAIST)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "vutranism"
             }
         },
         {
@@ -20573,5 +20747,5 @@
             }
         }
     ],
-    "updated": 1622254761.1732073
+    "updated": 1623556321.5452087
 }
