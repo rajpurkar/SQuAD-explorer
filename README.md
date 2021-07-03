@@ -5,7 +5,7 @@ This repository is intended to let people explore the dataset and visualize mode
 This website is hosted on the [gh-pages branch](https://github.com/rajpurkar/SQuAD-explorer/tree/gh-pages).
 
 ## Testing models on your own data
-Here are instructions for generating predictions of a model from the SQuAD leaderboard on custom data. This is done through [CodaLab Worksheets](https://worksheets.codalab.org/)](https://worksheets.codalab.org/)
+Here are instructions for generating predictions of a model from the SQuAD leaderboard on custom data. This is done through [CodaLab Worksheets](https://worksheets.codalab.org/).
 
 1. Get the CodaLab UUID for the model you want to run by clicking on its name on the SQuAD leaderboard. For instance, clicking on the original BERT model submitted by Google AI for SQuAD 2.0 takes you to [https://worksheets.codalab.org/bundles/0xbe9df0807151427f92fc306189b6d63e](https://worksheets.codalab.org/bundles/0xbe9df0807151427f92fc306189b6d63e), which tells you that `0xbe9df0807151427f92fc306189b6d63e` is the CodaLab UUID for this submission.
 
