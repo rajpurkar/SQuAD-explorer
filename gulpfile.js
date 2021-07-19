@@ -75,8 +75,11 @@ var parseCompEntries = function (comp_file) {
       entry.date = o_entry.submission.created
       entry.em = parseFloat(o_entry.scores.exact_match)
       entry.f1 = parseFloat(o_entry.scores.f1)
-      if (entry.user === 'haptik101') {
-        console.log(entry)
+      try {
+        var metaDescription = JSON.parse(o_entry.bundle.metadata.description);
+        entry.submit_link = "https://worksheets.codalab.org/bundles/" + metaDescription.submit_id;
+      } catch (e) {
+        // Just don't fill the submit bundle link
       }
       if (!(entry.em >= 0)) throw 'Score invalid'
       if (entry.em < 50) throw 'Score too low'
