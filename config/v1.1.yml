@@ -11,10 +11,10 @@ predict:
 ## Configure how to evaluate the new prediction bundles
 evaluate:
   dependencies:
-  - {child_path: evaluate.py, parent_uuid: '0xbcd57bee090b421c982906709c8c27e1'}
-  - {child_path: test.json, parent_uuid: '0x9ee64ab986174e62a23cbe54a2b875fd'}
-  - {child_path: predictions.json, parent_uuid: '{predict}'}
-  command: python evaluate.py test.json predictions.json
+  - {child_path: evaluate-v1.1.py, parent_uuid: '0xbcd57bee090b421c982906709c8c27e1'}
+  - {child_path: test-v1.1.json, parent_uuid: '0x9ee64ab986174e62a23cbe54a2b875fd'}
+  - {child_path: predictions.json, parent_uuid: '{predict}', parent_path: ""}
+  command: python evaluate-v1.1.py test-v1.1.json predictions.json
   tag: dauqs-test-eval
 
 # Define how to extract the scores from the evaluation bundle

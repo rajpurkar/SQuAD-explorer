@@ -4,15 +4,15 @@
         "allow_orphans": true,
         "count_failed_submissions": true,
         "evaluate": {
-            "command": "python evaluate.py test.json predictions.json",
+            "command": "python evaluate-v1.1.py test-v1.1.json predictions.json",
             "dependencies": [
                 {
-                    "child_path": "evaluate.py",
+                    "child_path": "evaluate-v1.1.py",
                     "parent_path": "",
                     "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
                 },
                 {
-                    "child_path": "test.json",
+                    "child_path": "test-v1.1.json",
                     "parent_path": "",
                     "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
                 },
@@ -21269,5 +21269,5 @@
             }
         }
     ],
-    "updated": 1626287338.647785
+    "updated": 1626695923.147109
 }
