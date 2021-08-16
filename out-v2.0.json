@@ -10571,6 +10571,96 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x53587159347a453ca0f07acc77c6a714 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x545922d6f2649efd8056c9506efb280d22b0ceee",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x10edf00366894290b70a23abdd641b68",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x10edf00366894290b70a23abdd641b68",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x10edf00366894290b70a23abdd641b68",
+                        "parent_name": "till0r-predictions-bart-large_qa_squad2_lohfink-rossi-leaveout-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x53587159347a453ca0f07acc77c6a714"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x10edf00366894290b70a23abdd641b68",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1628371448,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0xaf67fb2c5e604a43ac3359b9918de8ff\", \"submitter_id\": \"0xbb36ded7beed4346b648df35f2f2dd77\", \"predict_id\": \"0x53587159347a453ca0f07acc77c6a714\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1628382001,
+                    "memory_usage": 0.0,
+                    "name": "till0r-predictions-bart-large_qa_squad2_lohfink-rossi-leaveout-results",
+                    "remote": "d417e1b8dd93-51864859a5734e4c8b36ac194645e784",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1628381840,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.48264,
+                    "time_cleaning_up": 9.183258771896362,
+                    "time_preparing": 121.70550155639648,
+                    "time_running": 11.171903848648071,
+                    "time_system": 0.0,
+                    "time_uploading_results": 18.380987405776978,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x10edf00366894290b70a23abdd641b68"
+            },
+            "scores": {
+                "exact_match": 82.30647709320695,
+                "f1": 85.67019582642918
+            },
+            "submission": {
+                "created": 1628233075,
+                "description": "BART + Adapters + Lohfink-Rossi-Leaveout (single-model) (Georgia Institute of Technology) https://adapterhub.ml/adapters/lohfink-rossi/facebook-bart-large_qa_squad2_lohfink-rossi-leaveout/",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "till0r"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x63118fbe72a047d1ad6ab44c820e19ac \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -20747,5 +20837,5 @@
             }
         }
     ],
-    "updated": 1623556321.5452087
+    "updated": 1629091446.5799422
 }
