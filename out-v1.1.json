@@ -60,6 +60,96 @@
     "leaderboard": [
         {
             "bundle": {
+                "args": "run evaluate-v1.1.py:0xbcd57bee090b421c982906709c8c27e1 test-v1.1.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xfb01cd94a60a46f89bab8b0d952e6d5f \"python evaluate-v1.1.py test-v1.1.json predictions.json\" --request-cpus 1 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v1.1.py test-v1.1.json predictions.json",
+                "data_hash": "0x56724443c6bc15b6956811056c5f440d6995417e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v1.1.py",
+                        "child_uuid": "0xc0318e23b5e84619aad7dc133bac52b2",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test-v1.1.json",
+                        "child_uuid": "0xc0318e23b5e84619aad7dc133bac52b2",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xc0318e23b5e84619aad7dc133bac52b2",
+                        "parent_name": "lair.nlp2-predictions-ANNA-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xfb01cd94a60a46f89bab8b0d952e6d5f"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xc0318e23b5e84619aad7dc133bac52b2",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1630326747,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x601dd798b19c4f808d121f3c6990ada0\", \"submitter_id\": \"0xfa7f88c938d64450aea5cefe90e8def4\", \"predict_id\": \"0xfb01cd94a60a46f89bab8b0d952e6d5f\"}",
+                    "docker_image": "codalab/default-cpu@sha256:c9241ee45945c9fa71cacfb88d2d8cfe8c1cecfc49f44dbe376b346d7c96772b",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1630373344,
+                    "memory_usage": 0.0,
+                    "name": "lair.nlp2-predictions-ANNA-results",
+                    "remote": "6b5fa2e087e3-0b8a1c2419224df091a9069d341d7213",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1630373136,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.544002,
+                    "time_cleaning_up": 14.344771385192871,
+                    "time_preparing": 81.06047463417053,
+                    "time_running": 16.535730600357056,
+                    "time_system": 0.0,
+                    "time_uploading_results": 30.657493352890015,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xc0318e23b5e84619aad7dc133bac52b2"
+            },
+            "scores": {
+                "exact_match": 90.62204972201825,
+                "f1": 95.71930408568393
+            },
+            "submission": {
+                "created": 1627140654,
+                "description": "{ANNA} (single model) (LG AI Research) ",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "lair.nlp2"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 test.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x09f1d5a0c42c42f7bbdb983ca4f5effe \"python evaluate.py test.json predictions.json\" --request-cpus 1 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate.py test.json predictions.json",
@@ -2942,6 +3032,96 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v1.1.py:0xbcd57bee090b421c982906709c8c27e1 test-v1.1.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xe5a773ac3c124d0ea6029765ac837710 \"python evaluate-v1.1.py test-v1.1.json predictions.json\" --request-cpus 1 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v1.1.py test-v1.1.json predictions.json",
+                "data_hash": "0x5c5b2f8072e0ec427a605ec2d7e17a0b097e1d93",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v1.1.py",
+                        "child_uuid": "0xad702630893f498883e95af448387b7b",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test-v1.1.json",
+                        "child_uuid": "0xad702630893f498883e95af448387b7b",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xad702630893f498883e95af448387b7b",
+                        "parent_name": "alex_alex-predictions-BERT_BASE_mod-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xe5a773ac3c124d0ea6029765ac837710"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xad702630893f498883e95af448387b7b",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1630326730,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x4f6624e358a0401c9cebb0ea77f4abb8\", \"submitter_id\": \"0x24e6aa7caac1427d83a419565887b7c2\", \"predict_id\": \"0xe5a773ac3c124d0ea6029765ac837710\"}",
+                    "docker_image": "codalab/default-cpu@sha256:c9241ee45945c9fa71cacfb88d2d8cfe8c1cecfc49f44dbe376b346d7c96772b",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1630344904,
+                    "memory_usage": 0.0,
+                    "name": "alex_alex-predictions-BERT_BASE_mod-results",
+                    "remote": "5546bf38f3b7-61098a0c3b3f4cb6b2f00e14a0ba09ba",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1630344744,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.444825,
+                    "time_cleaning_up": 11.249708652496338,
+                    "time_preparing": 79.09836530685425,
+                    "time_running": 13.2070791721344,
+                    "time_system": 0.0,
+                    "time_uploading_results": 22.47842311859131,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xad702630893f498883e95af448387b7b"
+            },
+            "scores": {
+                "exact_match": 82.68121262981224,
+                "f1": 89.37939943413954
+            },
+            "submission": {
+                "created": 1593611885,
+                "description": "BERT-Base mod (single model) (Anonymous)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "alex_alex"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate.py:0xbcd57bee090b421c982906709c8c27e1 dev.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x219a3c6d9564425c8410858e38381038 \"python evaluate.py dev.json predictions.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate.py dev.json predictions.json",
@@ -3187,6 +3367,96 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "mosestime"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v1.1.py:0xbcd57bee090b421c982906709c8c27e1 test-v1.1.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0xc420db4f14224f768ad94f7be02157c2 \"python evaluate-v1.1.py test-v1.1.json predictions.json\" --request-cpus 1 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v1.1.py test-v1.1.json predictions.json",
+                "data_hash": "0x350143a4dcdf93852a0bbdebc1d2e275e8923235",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v1.1.py",
+                        "child_uuid": "0xeb5cbb1992b646ccade1af0398a686ef",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test-v1.1.json",
+                        "child_uuid": "0xeb5cbb1992b646ccade1af0398a686ef",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xeb5cbb1992b646ccade1af0398a686ef",
+                        "parent_name": "YG-predictions-pytalk-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0xc420db4f14224f768ad94f7be02157c2"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xeb5cbb1992b646ccade1af0398a686ef",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1630326742,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0xd0d76361603d4e9eafbf375a4f2f6e02\", \"submitter_id\": \"0x8f620944ba514d0682b8c366f63f6d6c\", \"predict_id\": \"0xc420db4f14224f768ad94f7be02157c2\"}",
+                    "docker_image": "codalab/default-cpu@sha256:c9241ee45945c9fa71cacfb88d2d8cfe8c1cecfc49f44dbe376b346d7c96772b",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1630348289,
+                    "memory_usage": 0.0,
+                    "name": "YG-predictions-pytalk-results",
+                    "remote": "9f9484df83f6-b1e35655279545fd9d6b49401c6124ea",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1630348037,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.569997,
+                    "time_cleaning_up": 11.290183305740356,
+                    "time_preparing": 79.55608201026917,
+                    "time_running": 13.236814498901367,
+                    "time_system": 0.0,
+                    "time_uploading_results": 22.536255359649658,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0xeb5cbb1992b646ccade1af0398a686ef"
+            },
+            "scores": {
+                "exact_match": 83.42599391587119,
+                "f1": 89.21792090055422
+            },
+            "submission": {
+                "created": 1609203483,
+                "description": "Pytalk + Stanza + BERT (single model) (University of North Texas)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "YG"
             }
         },
         {
@@ -4181,6 +4451,96 @@
                 "num_total_submissions": 6,
                 "public": false,
                 "user_name": "DeepQA"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v1.1.py:0xbcd57bee090b421c982906709c8c27e1 test-v1.1.json:0x9ee64ab986174e62a23cbe54a2b875fd predictions.json:0x68e333b968bd473db5193dbbba1898e0 \"python evaluate-v1.1.py test-v1.1.json predictions.json\" --request-cpus 1 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v1.1.py test-v1.1.json predictions.json",
+                "data_hash": "0xbfb84f44746082175fa7ae62d4dc7c40fe61c99e",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v1.1.py",
+                        "child_uuid": "0x161532cd11af443c979629b05f82cf11",
+                        "parent_name": "evaluate-v1.1.py",
+                        "parent_path": "",
+                        "parent_uuid": "0xbcd57bee090b421c982906709c8c27e1"
+                    },
+                    {
+                        "child_path": "test-v1.1.json",
+                        "child_uuid": "0x161532cd11af443c979629b05f82cf11",
+                        "parent_name": "test-v1.1.json",
+                        "parent_path": "",
+                        "parent_uuid": "0x9ee64ab986174e62a23cbe54a2b875fd"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x161532cd11af443c979629b05f82cf11",
+                        "parent_name": "philliprust-predictions-mBERT-adapter2-single-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x68e333b968bd473db5193dbbba1898e0"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x161532cd11af443c979629b05f82cf11",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1630326737,
+                    "data_size": 4156,
+                    "description": "{\"submit_id\": \"0x3a23deb71bda41c7b1723b3f3924712e\", \"submitter_id\": \"0xe483fa71517a44b9aff2dc6e6f6d480b\", \"predict_id\": \"0x68e333b968bd473db5193dbbba1898e0\"}",
+                    "docker_image": "codalab/default-cpu@sha256:c9241ee45945c9fa71cacfb88d2d8cfe8c1cecfc49f44dbe376b346d7c96772b",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1630336604,
+                    "memory_usage": 0.0,
+                    "name": "philliprust-predictions-mBERT-adapter2-single-results",
+                    "remote": "a300e0ff2450-31fdcb1f58574c5db9696a14563302c3",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1630336432,
+                    "tags": [
+                        "dauqs-test-eval"
+                    ],
+                    "time": 1.561094,
+                    "time_cleaning_up": 11.251251459121704,
+                    "time_preparing": 78.70940017700195,
+                    "time_running": 13.25326156616211,
+                    "time_system": 0.0,
+                    "time_uploading_results": 22.666622161865234,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "21705",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x161532cd11af443c979629b05f82cf11"
+            },
+            "scores": {
+                "exact_match": 80.66715619427252,
+                "f1": 88.16932457236487
+            },
+            "submission": {
+                "created": 1605879219,
+                "description": "mBERT + Task Adapter (Single) (TU Darmstadt)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "philliprust"
             }
         },
         {
@@ -7004,7 +7364,7 @@
                 "num_period_submissions": 0,
                 "num_total_submissions": 0,
                 "public": false,
-                "user_name": "Unnamed"
+                "user_name": ""
             }
         },
         {
@@ -9490,7 +9850,7 @@
                 "num_period_submissions": 0,
                 "num_total_submissions": 0,
                 "public": false,
-                "user_name": "Unnamed"
+                "user_name": ""
             }
         },
         {
@@ -10572,7 +10932,7 @@
                 "num_period_submissions": 0,
                 "num_total_submissions": 0,
                 "public": false,
-                "user_name": "Unnamed"
+                "user_name": ""
             }
         },
         {
@@ -21269,5 +21629,5 @@
             }
         }
     ],
-    "updated": 1626695923.147109
+    "updated": 1630871134.673227
 }
