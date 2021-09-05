@@ -3,6 +3,7 @@ SQuAD-explorer/
 .publish/
 bower_components/
 *.DS_Store
+codalab-cli/
 
 development.json
 
