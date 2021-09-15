@@ -3767,6 +3767,96 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x749a25ff3195484eaeb374c51c68dc42 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0x8b85ee854ca3258e4a77fa1f382c9d40a3141637",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x9ed5206446a44e4d8399fa3a8234925a",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x9ed5206446a44e4d8399fa3a8234925a",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x9ed5206446a44e4d8399fa3a8234925a",
+                        "parent_name": "jkx19-predictions-Deberta-prefix-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x749a25ff3195484eaeb374c51c68dc42"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x9ed5206446a44e4d8399fa3a8234925a",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1630334513,
+                    "data_size": 4339,
+                    "description": "{\"submit_id\": \"0xff67757f0abf49ada7aea04940d4cff6\", \"submitter_id\": \"0x0541dc20c0e64b7fb7aadb60bb024bb7\", \"predict_id\": \"0x749a25ff3195484eaeb374c51c68dc42\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1630424768,
+                    "memory_usage": 0.0,
+                    "name": "jkx19-predictions-Deberta-prefix-results",
+                    "remote": "c13e5075cc10-5e1830c633f94e898dd3a86363ea1ff1",
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1630424597,
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.450624,
+                    "time_cleaning_up": 10.268392324447632,
+                    "time_preparing": 123.97437047958374,
+                    "time_running": 11.075865030288696,
+                    "time_system": 0.0,
+                    "time_uploading_results": 24.620455503463745,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x9ed5206446a44e4d8399fa3a8234925a"
+            },
+            "scores": {
+                "exact_match": 88.60302414804785,
+                "f1": 91.29917700230499
+            },
+            "submission": {
+                "created": 1630123336,
+                "description": "Deberta+prefix (Tsinghua University)",
+                "num_period_submissions": 0,
+                "num_total_submissions": 1,
+                "public": true,
+                "user_name": "jkx19"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x48fe638d12924614989ee1f8ac4bdc4a \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -9702,7 +9792,7 @@
                     "allow_failed_dependencies": false,
                     "created": 1622072428,
                     "data_size": 4339,
-                    "description": "{\"submit_id\": \"0x7a70ef67feca4d4e95b11b235688ca69\", \"submitter_id\": \"0x350ca2493e7342dfbb659d87b9d55e69\", \"predict_id\": \"0xc18b1125d2ce4241b7c96aa875a93a5a\"}",
+                    "description": "",
                     "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
                     "exclude_patterns": [],
                     "exitcode": 0,
@@ -9741,12 +9831,12 @@
                 "f1": 86.07501391325054
             },
             "submission": {
-                "created": 1622014092,
-                "description": "mgrc_l (single model) (stca_nlp)",
+                "created": 1622072428,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 1,
-                "public": true,
-                "user_name": "LQ"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         },
         {
@@ -20837,5 +20927,5 @@
             }
         }
     ],
-    "updated": 1629091446.5799422
+    "updated": 1631724620.5327027
 }
