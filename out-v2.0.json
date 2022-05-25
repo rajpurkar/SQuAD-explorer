@@ -109,6 +109,7 @@
                     "last_updated": 1622961905,
                     "name": "SRCB_DML_SQUAD-predictions-IE-Net-results",
                     "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -120,6 +121,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1622961856,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -193,6 +195,7 @@
                     "last_updated": 1614353196,
                     "name": "louzai6-predictions-92.454-results",
                     "remote": "0d5a862c9326-cb9ee1a54fc64442923d6c2066f04794",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -204,6 +207,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1614352997,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -279,6 +283,7 @@
                     "memory_usage": 0.0,
                     "name": "SRCB_DML_SQUAD-predictions-IENET-results",
                     "remote": "98bfdeaeae0c-4b19e6fcde714c39bf7a4726838fe5da",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -290,6 +295,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1621328503,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -367,6 +373,7 @@
                     "last_updated": 1587018699,
                     "name": "tangliang-sa_net_emsemble_predictions-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -378,6 +385,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587018587,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -451,6 +459,7 @@
                     "last_updated": 1586381083,
                     "name": "thunthersine88-pred-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -462,6 +471,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1586381063,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -535,6 +545,7 @@
                     "last_updated": 1589147514,
                     "name": "Shangqinghua-sa_net_emsemble_predictions-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -546,6 +557,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1589147441,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -619,6 +631,7 @@
                     "last_updated": 1612753031,
                     "name": "lxy-predictions-9240-results",
                     "remote": "590f976f6d45-9bd8a70dab004e31936ea17e51b8e779",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -630,6 +643,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1612752828,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -703,6 +717,7 @@
                     "last_updated": 1619174929,
                     "name": "Wadood-predictions-SFEnsembler-results",
                     "remote": "ed3b250672ef-1a7f33a60e8c4c87bc2da499e7ed6062",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -714,6 +729,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1619174679,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -740,7 +756,7 @@
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
-                "user_name": "Wadood"
+                "user_name": "SF2021"
             }
         },
         {
@@ -787,6 +803,7 @@
                     "last_updated": 1596341536,
                     "name": "zhao.sarsa-predictions-ATRLP_PV_ensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -798,6 +815,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596341511,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -871,6 +889,7 @@
                     "last_updated": 1588793763,
                     "name": "SRCB_DML-predictions-ELECTRAensemble-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -882,6 +901,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1588793725,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -955,6 +975,7 @@
                     "last_updated": 1606986471,
                     "name": "SRCB_DML-predictions-em-results",
                     "remote": "1cbd94ab7edd-a8ae852003d24bf1ba8a99a6b30ea11d",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -966,6 +987,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1606986311,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -993,6 +1015,101 @@
                 "num_total_submissions": 3,
                 "public": true,
                 "user_name": "SRCB_DML"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x60260d82775449b790e3caf84816c288 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xb7ab3e64801c9d3b58da6cc9a0b983907b922a9f",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x7fd2256c4d4a47de8a991a42ad66be07",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x7fd2256c4d4a47de8a991a42ad66be07",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x7fd2256c4d4a47de8a991a42ad66be07",
+                        "parent_name": "davidkim205-predictions-LANetV2-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x60260d82775449b790e3caf84816c288"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x7fd2256c4d4a47de8a991a42ad66be07",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1653414845,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0x85631354df4041a6b2d4ad795578823f\", \"submitter_id\": \"0x32e94d81fbd6460a859f6c697b3bb559\", \"predict_id\": \"0x60260d82775449b790e3caf84816c288\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1653453597,
+                    "memory_usage": 0.0,
+                    "name": "davidkim205-predictions-LANetV2-results",
+                    "on_preemptible_worker": false,
+                    "remote": "b4983158d623-c62e8c7a2ddf42cbbe9184049a7440fb",
+                    "remote_history": [
+                        "b4983158d623"
+                    ],
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1653453363,
+                    "store": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.606286,
+                    "time_cleaning_up": 3.2029292583465576,
+                    "time_preparing": 212.91862678527832,
+                    "time_running": 5.034434795379639,
+                    "time_system": 0.0,
+                    "time_uploading_results": 8.119636297225952,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x7fd2256c4d4a47de8a991a42ad66be07"
+            },
+            "scores": {
+                "exact_match": 90.41976980365607,
+                "f1": 92.80669431676829
+            },
+            "submission": {
+                "created": 1652748866,
+                "description": "LANetV2 (ensemble) (2digit-david) http://2digit.io/",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "davidkim205"
             }
         },
         {
@@ -1039,6 +1156,7 @@
                     "last_updated": 1584121355,
                     "name": "lxylxyooooo-predictions-omsn-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1050,6 +1168,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1584121255,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1123,6 +1242,7 @@
                     "last_updated": 1599945461,
                     "name": "SRCB_DML-predictions-ensemble-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1134,6 +1254,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1599945438,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1207,6 +1328,7 @@
                     "last_updated": 1611092050,
                     "name": "oppo.tensorlab-predictions-electra-results",
                     "remote": "f87fdf027ed9-17e6ebb7cfe04c85be2614c493097b53",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1218,6 +1340,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1611092001,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1291,6 +1414,7 @@
                     "last_updated": 1598941310,
                     "name": "oppo.tensorlab-predictions-electra2-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1302,6 +1426,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1598941285,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1375,6 +1500,7 @@
                     "last_updated": 1614803467,
                     "name": "lxy2023-predictions-squad2.0-results",
                     "remote": "ffb3a5a00ff0-6fa36abb36b243dc9c984210e1868d85",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1386,6 +1512,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1614803290,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1459,6 +1586,7 @@
                     "last_updated": 1579712721,
                     "name": "thunthersine88-predictions-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1470,6 +1598,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1579712653,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1543,6 +1672,7 @@
                     "last_updated": 1610612716,
                     "name": "jqiang002-predictions-ansdependentclassify-results",
                     "remote": "505b7e95828d-1da9a8daecbf4edc9280a3057891d13e",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1554,6 +1684,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1610612664,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1627,6 +1758,7 @@
                     "last_updated": 1614783220,
                     "name": "yuyanglxy-predictions-anonymous-results",
                     "remote": "1aab4cf1496a-f265e6eb1ac5437180e5fafdcd3f110c",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1638,6 +1770,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1614782995,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1711,6 +1844,7 @@
                     "last_updated": 1573353545,
                     "name": "lxylxyoooo-predictions-omni-sinitic-results",
                     "remote": "vm-clws-prod-gpuworker-6",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1722,6 +1856,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1573353453,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1749,6 +1884,98 @@
                 "num_total_submissions": 1,
                 "public": true,
                 "user_name": "lxylxyoooo"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x709286e903c843b1b3453e628c086f33 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": "0xaec5a841ba9d9742f582335771b8286f3b9bc5cd",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x91182016ee0e44b1a8d109816218fcac",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x91182016ee0e44b1a8d109816218fcac",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x91182016ee0e44b1a8d109816218fcac",
+                        "parent_name": "davidkim205-predictions-LANet-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x709286e903c843b1b3453e628c086f33"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x91182016ee0e44b1a8d109816218fcac",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1649194509,
+                    "data_size": 4338,
+                    "description": "{\"submit_id\": \"0x118f8721d93d46539a87f90afe9c5f1f\", \"submitter_id\": \"0x32e94d81fbd6460a859f6c697b3bb559\", \"predict_id\": \"0x709286e903c843b1b3453e628c086f33\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1649318966,
+                    "memory_usage": 0.0,
+                    "name": "davidkim205-predictions-LANet-results",
+                    "remote": "eaffc307bb45-a599009f4f414b74bcfb2f9fb6d53841",
+                    "remote_history": [],
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "started": 1649318940,
+                    "store": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.381719,
+                    "time_cleaning_up": 1.0494611263275146,
+                    "time_preparing": 3.7627665996551514,
+                    "time_running": 9.306204319000244,
+                    "time_system": 0.0,
+                    "time_uploading_results": 8.292255640029907,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "uuid": "0x91182016ee0e44b1a8d109816218fcac"
+            },
+            "scores": {
+                "exact_match": 89.9232678853532,
+                "f1": 92.42456240312491
+            },
+            "submission": {
+                "created": 1649135025,
+                "description": "LANet (ensemble) (2digit-david)",
+                "num_period_submissions": 1,
+                "num_total_submissions": 2,
+                "public": true,
+                "user_name": "davidkim205"
             }
         },
         {
@@ -1795,6 +2022,7 @@
                     "last_updated": 1593328970,
                     "name": "kg_team_a3-predictions-ELECTRA_atrlp_pv-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1806,6 +2034,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1593328861,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1879,6 +2108,7 @@
                     "last_updated": 1610351073,
                     "name": "czwwayneczw-predictions-spanextractclassify-results",
                     "remote": "505b7e95828d-1da9a8daecbf4edc9280a3057891d13e",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1890,6 +2120,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1610350938,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -1963,6 +2194,7 @@
                     "last_updated": 1569226391,
                     "name": "mingdachen-predictions-albert-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-6",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -1974,6 +2206,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1569226319,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2045,6 +2278,7 @@
                     "last_updated": 1582911309,
                     "name": "fuzixi-predictions-albert_verifier_aa_net-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2056,6 +2290,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1582911286,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2129,6 +2364,7 @@
                     "last_updated": 1585717907,
                     "name": "zyzhao-predictions-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2140,6 +2376,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1585717885,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2213,6 +2450,7 @@
                     "last_updated": 1606536722,
                     "name": "hfadeel-predictions-road-results",
                     "remote": "98a4061616f4-186840f435394eb799cc991217533622",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2224,6 +2462,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1606536699,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2297,6 +2536,7 @@
                     "last_updated": 1582514367,
                     "name": "tangliang-predictions-albert-transfor-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2308,6 +2548,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1582514274,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2381,6 +2622,7 @@
                     "last_updated": 1586326928,
                     "name": "thunthersine88-pred-single-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2392,6 +2634,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1586326903,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2465,6 +2708,7 @@
                     "last_updated": 1610367175,
                     "name": "Midea_User-predictions-2021-results",
                     "remote": "2c9dee7ec326-628bb249be18497bab265456f24ec60a",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2476,6 +2720,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1610367125,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2549,6 +2794,7 @@
                     "last_updated": 1612738795,
                     "name": "Big_Orange-predictions-2021submit-results",
                     "remote": "0dd0a1b780ea-3bd7a54fd8584390b3b9c4dfda6d78d3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2560,6 +2806,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1612738743,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2633,6 +2880,7 @@
                     "last_updated": 1588676510,
                     "name": "oppo.tensorlab-predictions-Albert-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2644,6 +2892,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1588676473,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2717,6 +2966,7 @@
                     "last_updated": 1610611832,
                     "name": "Ted2020-predictions-2task-results",
                     "remote": "689baa8acb8a-f11dc8da125940a789c1654dc8b0aef7",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2728,6 +2978,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1610611781,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2801,6 +3052,7 @@
                     "last_updated": 1587615268,
                     "name": "zyzhao-predictions_single2-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2812,6 +3064,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587615240,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2885,6 +3138,7 @@
                     "last_updated": 1587958456,
                     "name": "kg_team_a3-predictions-ELECTRA-RL-EV-results",
                     "remote": "vm-clws-prod-gpuworker-9",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2896,6 +3150,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587958422,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -2969,6 +3224,7 @@
                     "last_updated": 1578387553,
                     "name": "liyifeng-predictions-albert-verify-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -2980,6 +3236,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1578387484,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3053,6 +3310,7 @@
                     "last_updated": 1587615227,
                     "name": "kkadiri-predictions-ALBERT-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3064,6 +3322,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587615131,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3137,6 +3396,7 @@
                     "last_updated": 1587311174,
                     "name": "desense9-predictions-ALBERT-Ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-8",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3148,6 +3408,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587311158,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3221,6 +3482,7 @@
                     "last_updated": 1606694726,
                     "name": "Big_Orange-predictions-baseline1-results",
                     "remote": "d266699a33b9-57772c56953248479e7fe7eb5e5f81a7",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3232,6 +3494,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1606694558,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3307,6 +3570,7 @@
                     "memory_usage": 0.0,
                     "name": "rika114516-AlbertElectra-results",
                     "remote": "93ae6ba9cc3d-e38b89b2051748578400a1f9e2f0ee50",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3318,6 +3582,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1632972272,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3397,6 +3662,7 @@
                     "memory_usage": 0.0,
                     "name": "furude-AE-TEST-results",
                     "remote": "69cfe78ba08b-1be2dfa4211f4543b0803836ecc6eefa",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3408,6 +3674,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1632986124,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3485,6 +3752,7 @@
                     "last_updated": 1588710137,
                     "name": "SRCB_DML-predictions-ELECTRAsingle-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3496,6 +3764,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1588710100,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3569,6 +3838,7 @@
                     "last_updated": 1587029859,
                     "name": "lvkaokao1992-sa_net_single_predictions-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3580,6 +3850,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587029707,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3653,6 +3924,7 @@
                     "last_updated": 1579944130,
                     "name": "thunthersine88-predictions-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3664,6 +3936,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1579944103,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3737,6 +4010,7 @@
                     "last_updated": 1589368355,
                     "name": "zyzhao-predictions_single3-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3748,6 +4022,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1589368248,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3821,6 +4096,7 @@
                     "last_updated": 1583535095,
                     "name": "kevclark-predictions-electra-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3832,6 +4108,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1583535071,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3905,6 +4182,7 @@
                     "last_updated": 1597577900,
                     "name": "Kyle_SLT-predictions-ELECTRA_ATT_SINGLE-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -3916,6 +4194,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1597577743,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -3991,6 +4270,7 @@
                     "memory_usage": 0.0,
                     "name": "jkx19-predictions-Deberta-prefix-results",
                     "remote": "c13e5075cc10-5e1830c633f94e898dd3a86363ea1ff1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4002,6 +4282,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1630424597,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4079,6 +4360,7 @@
                     "last_updated": 1593336615,
                     "name": "dishwasher-predictions-ig-ne-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4090,6 +4372,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1593336584,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4163,6 +4446,7 @@
                     "last_updated": 1582709733,
                     "name": "SRCB_DML-predictions-ALBERT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4174,6 +4458,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1582709713,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4247,6 +4532,7 @@
                     "last_updated": 1576218184,
                     "name": "fangeniu-predictions-albert-verify-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4258,6 +4544,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1576218052,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4331,6 +4618,7 @@
                     "last_updated": 1593336562,
                     "name": "dishwasher-predictions-ig-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4342,6 +4630,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1593336531,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4415,6 +4704,7 @@
                     "last_updated": 1582533237,
                     "name": "Ankur310794-predictions-Tuned_ALBERT-Ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4426,6 +4716,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1582533217,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4499,6 +4790,7 @@
                     "last_updated": 1592953106,
                     "name": "kg_team_a3-predictions-ELECTRA_atrl_pv-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4510,6 +4802,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1592953083,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4583,6 +4876,7 @@
                     "last_updated": 1584820381,
                     "name": "zyzhao-predictions-single-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4594,6 +4888,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1584820280,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4667,6 +4962,7 @@
                     "last_updated": 1579658198,
                     "name": "huahua-predictions-ALBert-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4678,6 +4974,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1579658118,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4751,6 +5048,7 @@
                     "last_updated": 1574909533,
                     "name": "sumura95-predictions-albert_verifier-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4762,6 +5060,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1574909512,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4835,6 +5134,7 @@
                     "last_updated": 1581710263,
                     "name": "oleg-predictions-squad-final-thresh-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4846,6 +5146,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1581710243,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -4919,6 +5220,7 @@
                     "last_updated": 1579943530,
                     "name": "fuzixi-predictions-m_transfor_02_add_5_v0_0_new-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -4930,6 +5232,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1579943502,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5003,6 +5306,7 @@
                     "last_updated": 1584143286,
                     "name": "lvkaokao1992-predictions_aanet_v2.0-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5014,6 +5318,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1584143262,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5087,6 +5392,7 @@
                     "last_updated": 1569226444,
                     "name": "mingdachengoogle-predictions-albert-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5098,6 +5404,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1569226370,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5169,6 +5476,7 @@
                     "last_updated": 1585617391,
                     "name": "haptik101-predictions-ALBERTMTL-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5180,6 +5488,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1585617365,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5253,6 +5562,7 @@
                     "last_updated": 1590179928,
                     "name": "zheyuyeic-predictions-albert_xxlarge-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5264,6 +5574,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1590179905,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5337,6 +5648,7 @@
                     "last_updated": 1563958357,
                     "name": "LOUXINGYU-predictions-omni-sinitic-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5348,6 +5660,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563958338,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5419,6 +5732,7 @@
                     "last_updated": 1579658117,
                     "name": "hraw-predictions-albert-sfverifier-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5430,6 +5744,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1579658087,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5456,7 +5771,7 @@
                 "num_period_submissions": 0,
                 "num_total_submissions": 1,
                 "public": true,
-                "user_name": "hraw"
+                "user_name": "sury"
             }
         },
         {
@@ -5503,6 +5818,7 @@
                     "last_updated": 1584490395,
                     "name": "kg_team-predictions-albert-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5514,6 +5830,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1584490322,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5587,6 +5904,7 @@
                     "last_updated": 1590148210,
                     "name": "zyzhao-predictions_single-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5598,6 +5916,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1590148123,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5671,6 +5990,7 @@
                     "last_updated": 1564621197,
                     "name": "williamkl-predictions-ensemble-results",
                     "remote": "jagupard23.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5682,6 +6002,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1564621174,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5753,6 +6074,7 @@
                     "last_updated": 1565018928,
                     "name": "cooelf888-predictions-ensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5764,6 +6086,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1565018904,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5835,6 +6158,7 @@
                     "last_updated": 1574213403,
                     "name": "zanderdai-predictions-v2-xlnet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5846,6 +6170,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1574213374,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -5919,6 +6244,7 @@
                     "last_updated": 1581718783,
                     "name": "oleg-predictions-squad-final-nothresh-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -5930,6 +6256,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1581718763,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6003,6 +6330,7 @@
                     "last_updated": 1582601906,
                     "name": "Ankur310794-predictions-Tuned_ALBERT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6014,6 +6342,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1582601796,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6087,6 +6416,7 @@
                     "last_updated": 1586328987,
                     "name": "ikuyamada-predictions-LUKE-results",
                     "remote": "vm-clws-prod-gpuworker-4",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6098,6 +6428,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1586328963,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6171,6 +6502,7 @@
                     "last_updated": 1565001888,
                     "name": "cooelf888-predictions-single-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6182,6 +6514,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1565001865,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6253,6 +6586,7 @@
                     "last_updated": 1575047031,
                     "name": "donhoff.h-predictions-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6264,6 +6598,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1575047007,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6337,6 +6672,7 @@
                     "last_updated": 1564618493,
                     "name": "williamkl-predictions-single-results",
                     "remote": "jagupard23.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6348,6 +6684,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1564618340,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6419,6 +6756,7 @@
                     "last_updated": 1563825317,
                     "name": "kkweird-predictions-RoBERTa-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6430,6 +6768,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563825183,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6501,6 +6840,7 @@
                     "last_updated": 1580896690,
                     "name": "oleg-predictions-squad-init-nothresh-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6512,6 +6852,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1580896641,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6585,6 +6926,7 @@
                     "last_updated": 1591078121,
                     "name": "wuxianchao-predictions-ms-stca-aic-4-results",
                     "remote": "vm-clws-prod-gpuworker-12",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6596,6 +6938,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1591078010,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6669,6 +7012,7 @@
                     "last_updated": 1590907462,
                     "name": "wuxianchao-predictions-ms-stca-aic-results",
                     "remote": "vm-clws-prod-gpuworker-16",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6680,6 +7024,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1590907332,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6753,6 +7098,7 @@
                     "last_updated": 1568408408,
                     "name": "cw02-predictions-ensemble-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6764,6 +7110,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1568408380,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6835,6 +7182,7 @@
                     "last_updated": 1573559855,
                     "name": "cw01-predictions-verify-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6846,6 +7194,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1573559824,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -6919,6 +7268,7 @@
                     "last_updated": 1553564626,
                     "name": "airaria-predictions-dae-ensemble-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -6930,6 +7280,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553564605,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7001,6 +7352,7 @@
                     "last_updated": 1553564481,
                     "name": "yichao-predictions-bert_convlstm-ensemble-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7012,6 +7364,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553564460,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7083,6 +7436,7 @@
                     "last_updated": 1572472172,
                     "name": "sumura95-predictions-xlnet_verify-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7094,6 +7448,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1572471060,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7167,6 +7522,7 @@
                     "last_updated": 1576881093,
                     "name": "jerryeoi-predictions-xlnet-123p-v2-48cutoff-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7178,6 +7534,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1576881013,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7251,6 +7608,7 @@
                     "last_updated": 1552010577,
                     "name": "NearestNeighbor-predictions-bert_ngram_st-ensemble-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7262,6 +7620,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1552010555,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7333,6 +7692,7 @@
                     "last_updated": 1558568977,
                     "name": "zhiliny-predictions-xlnet-results",
                     "remote": "jagupard14.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7344,6 +7704,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1558568783,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7415,6 +7776,7 @@
                     "last_updated": 1569899543,
                     "name": "jerryeoi-run-predictions-v2.0-0930-results",
                     "remote": "jagupard22.stanford.edu(63852)",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7426,6 +7788,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1569899360,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7497,6 +7860,7 @@
                     "last_updated": 1571775666,
                     "name": "sumura-predictions-xlnet_verify-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7508,6 +7872,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1571774179,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7581,6 +7946,7 @@
                     "last_updated": 1567784972,
                     "name": "wac81-predictions-xlnet_verify-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7592,6 +7958,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1567784947,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7663,6 +8030,7 @@
                     "last_updated": 1568401247,
                     "name": "cw01-predictions-single-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7674,6 +8042,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1568401224,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7745,6 +8114,7 @@
                     "last_updated": 1570599488,
                     "name": "guo-predictions_BERT_SP_Single-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7756,6 +8126,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1570598299,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7829,6 +8200,7 @@
                     "last_updated": 1555734379,
                     "name": "Cathy_98-predictions-bert-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-25",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7840,6 +8212,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555734352,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7911,6 +8284,7 @@
                     "last_updated": 1557897550,
                     "name": "AdvanWeg-predictions-bert-ensemble-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -7922,6 +8296,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1557897518,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -7993,6 +8368,7 @@
                     "last_updated": 1600856472,
                     "name": "cwkang0204-predictions-BERTlarge-ensemble-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8004,6 +8380,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600856449,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8077,6 +8454,7 @@
                     "last_updated": 1563906668,
                     "name": "omerlevy-predictions-pair-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8088,6 +8466,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563906633,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8159,6 +8538,7 @@
                     "last_updated": 1571078322,
                     "name": "hraw-predictions-senseforth-xlnet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8170,6 +8550,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1571078300,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8243,6 +8624,7 @@
                     "last_updated": 1553564661,
                     "name": "refractor-predictions-dae-single-model-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8254,6 +8636,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553564648,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8325,6 +8708,7 @@
                     "last_updated": 1561397993,
                     "name": "lxylxyooo-predictions-BNDVensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8336,6 +8720,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1561397974,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8407,6 +8792,7 @@
                     "last_updated": 1600854445,
                     "name": "cwkang0204-predictions-BERTlarge-single-model-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8418,6 +8804,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600854423,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8491,6 +8878,7 @@
                     "last_updated": 1553564583,
                     "name": "yichao-predictions-bert_convlstm-single-model-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8502,6 +8890,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553564562,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8573,6 +8962,7 @@
                     "last_updated": 1568403390,
                     "name": "VerifiedXiaoPAI-predictions-xlnet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8584,6 +8974,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1568403367,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8655,6 +9046,7 @@
                     "last_updated": 1557854627,
                     "name": "AdvanWeg-predictions-bert-single-model-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8666,6 +9058,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1557854602,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8737,6 +9130,7 @@
                     "last_updated": 1560221345,
                     "name": "AdvanWeg-predictions-bertcnn-single-model-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8748,6 +9142,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1560221299,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8819,6 +9214,7 @@
                     "last_updated": 1555734414,
                     "name": "cooelf-predictions-SemBERT-single-model-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8830,6 +9226,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555734391,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8901,6 +9298,7 @@
                     "last_updated": 1561391950,
                     "name": "lxylxyoo-predictions-BNDVnet-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8912,6 +9310,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1561391912,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -8983,6 +9382,7 @@
                     "last_updated": 1551933514,
                     "name": "NearestNeighbor-predictions-bert_ngram_st-single-model-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -8994,6 +9394,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551933494,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9065,6 +9466,7 @@
                     "last_updated": 1555657386,
                     "name": "lxiao2019-predictions-Insight-baseline-single-model-results",
                     "remote": "vm-clws-prod-gpuworker-27",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9076,6 +9478,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555657321,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9147,6 +9550,7 @@
                     "last_updated": 1548309181,
                     "name": "fnwymr-predictions-bert-MMFT-ADA-ensemble-2-results",
                     "remote": "jagupard17.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9158,6 +9562,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1548309049,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9229,6 +9634,7 @@
                     "last_updated": 1561886699,
                     "name": "zw4-predictions-model-results",
                     "remote": "jagupard8.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9240,6 +9646,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1561886566,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9311,6 +9718,7 @@
                     "last_updated": 1567785017,
                     "name": "cicero-predictions-HanvonModel-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9322,6 +9730,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1567784998,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9393,6 +9802,7 @@
                     "last_updated": 1547280331,
                     "name": "jacobdevlin-predictions-bert_selftrain-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9404,6 +9814,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547280218,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9475,6 +9886,7 @@
                     "last_updated": 1573353646,
                     "name": "ICLICL-predictions-ICL-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9486,6 +9898,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1573353609,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9559,6 +9972,7 @@
                     "last_updated": 1622704709,
                     "name": "vutranism-predictions-SemNet-results",
                     "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9570,6 +9984,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1622704659,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9643,6 +10058,7 @@
                     "last_updated": 1563906460,
                     "name": "omerlevy-predictions-no_nsp_random-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9654,6 +10070,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563906432,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9727,6 +10144,7 @@
                     "memory_usage": 0.0,
                     "name": "vutranism-predictions-SynNet-results",
                     "remote": "d648b139eb40-c81a64e618c74316aa93a8695306ffba",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9738,6 +10156,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1622702184,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9815,6 +10234,7 @@
                     "last_updated": 1547082287,
                     "name": "ewrfcas-predictions-PAML_BERT-ensemble-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9826,6 +10246,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547082275,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9897,6 +10318,7 @@
                     "last_updated": 1545096442,
                     "name": "benjamin-predictions-bert-finetune-ensemble-2-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9908,6 +10330,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545096423,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -9979,6 +10402,7 @@
                     "last_updated": 1622075624,
                     "name": "LQ-predictions-mgrc-results",
                     "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -9990,6 +10414,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1622075574,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10063,6 +10488,7 @@
                     "last_updated": 1546387098,
                     "name": "yichaolu-predictions-lunet-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10074,6 +10500,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1546387077,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10145,6 +10572,7 @@
                     "last_updated": 1553337776,
                     "name": "oho-predictions-ensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10156,6 +10584,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553337754,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10227,6 +10656,7 @@
                     "last_updated": 1545137885,
                     "name": "ttxttx1111-predictions-lunet-single-model-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10238,6 +10668,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545137865,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10309,6 +10740,7 @@
                     "last_updated": 1557853642,
                     "name": "refractor-predictions-ATB2.0-single-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10320,6 +10752,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1557853618,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10391,6 +10824,7 @@
                     "last_updated": 1547618853,
                     "name": "fnwymr-predictions-bert-MMFT-ADA-single-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10402,6 +10836,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547618837,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10473,6 +10908,7 @@
                     "last_updated": 1561389983,
                     "name": "Senseforth_AI-predictions-SF-BERT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10484,6 +10920,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1561389960,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10555,6 +10992,7 @@
                     "last_updated": 1563909603,
                     "name": "omerlevy-predictions-random-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10566,6 +11004,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563909576,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10637,6 +11076,7 @@
                     "last_updated": 1547280120,
                     "name": "jacobdevlin-predictions-bert_selftrain-single-model-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10648,6 +11088,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547280102,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10719,6 +11160,7 @@
                     "last_updated": 1551305646,
                     "name": "dishwasher-predictions-ICD-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10730,6 +11172,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551305630,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10801,6 +11244,7 @@
                     "last_updated": 1550374609,
                     "name": "neurquri.ensemble-predictions-bert_neurquri-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10812,6 +11256,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550374587,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10885,6 +11330,7 @@
                     "memory_usage": 0.0,
                     "name": "till0r-predictions-bart-large_qa_squad2_lohfink-rossi-leaveout-results",
                     "remote": "d417e1b8dd93-51864859a5734e4c8b36ac194645e784",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10896,6 +11342,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1628381840,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -10973,6 +11420,7 @@
                     "last_updated": 1550385481,
                     "name": "Ttssxuan-predictions-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -10984,6 +11432,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550385461,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11055,6 +11504,7 @@
                     "last_updated": 1545096018,
                     "name": "ewrfcas-predictions-PAML_BERT-single-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11066,6 +11516,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545095999,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11137,6 +11588,7 @@
                     "last_updated": 1551454380,
                     "name": "neurquri.ensemble.2-predictions-bert_neurquri-ensemble-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11148,6 +11600,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551454361,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11219,6 +11672,7 @@
                     "last_updated": 1552530109,
                     "name": "hjs-predictions-ensemble-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11230,6 +11684,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1552530084,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11301,6 +11756,7 @@
                     "last_updated": 1557852819,
                     "name": "fnwmrc-predictions-qapre-base-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11312,6 +11768,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1557852794,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11383,6 +11840,7 @@
                     "last_updated": 1542849310,
                     "name": "dishwasher-predictions-ABD-ensemble-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11394,6 +11852,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542849149,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11465,6 +11924,7 @@
                     "last_updated": 1551629894,
                     "name": "cooelf-predictions-SJRC-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11476,6 +11936,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551629874,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11547,6 +12008,7 @@
                     "last_updated": 1560113551,
                     "name": "zw10-predictions-model-results",
                     "remote": "jagupard11.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11558,6 +12020,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1560113487,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11629,6 +12092,7 @@
                     "last_updated": 1600856090,
                     "name": "opherl-predictions-pmi-masking-2.4M-base-added-data-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11640,6 +12104,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600856067,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11713,6 +12178,7 @@
                     "last_updated": 1551420490,
                     "name": "andor-predictions-bert-s-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11724,6 +12190,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551420468,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11795,6 +12262,7 @@
                     "last_updated": 1545003783,
                     "name": "benjamin-predictions-bert-finetune-single-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11806,6 +12274,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545003767,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11877,6 +12346,7 @@
                     "last_updated": 1551376227,
                     "name": "refractor-predictions-BERT-large-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11888,6 +12358,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551376208,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -11959,6 +12430,7 @@
                     "last_updated": 1551253576,
                     "name": "dishwasher-predictions-ICD-single-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -11970,6 +12442,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551253555,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12041,6 +12514,7 @@
                     "last_updated": 1550374974,
                     "name": "neurquri.ensemble-predictions-bert_neurquri3-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12052,6 +12526,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550374953,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12123,6 +12598,7 @@
                     "last_updated": 1542672950,
                     "name": "refractor-predictions-ABD-single-model-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12134,6 +12610,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542672832,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12205,6 +12682,7 @@
                     "last_updated": 1553305984,
                     "name": "oho-predictions-single-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12216,6 +12694,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553305966,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12287,6 +12766,7 @@
                     "last_updated": 1552092270,
                     "name": "attention_abc-predictions-single-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12298,6 +12778,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1552092248,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12369,6 +12850,7 @@
                     "last_updated": 1555657313,
                     "name": "lxylxyoo-predictions-BERT_AL-results",
                     "remote": "vm-clws-prod-gpuworker-20",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12380,6 +12862,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555657292,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12451,6 +12934,7 @@
                     "last_updated": 1600854491,
                     "name": "opherl-predictions-pmi-masking-2.4M-base-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12462,6 +12946,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600854468,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12535,6 +13020,7 @@
                     "last_updated": 1547053285,
                     "name": "Ttssxuan-predictions-test-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12546,6 +13032,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547053266,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12617,6 +13104,7 @@
                     "last_updated": 1552530492,
                     "name": "hjs-predictions-single-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12628,6 +13116,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1552530469,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12699,6 +13188,7 @@
                     "last_updated": 1548785116,
                     "name": "neurquri-predictions-bert_inspector-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12710,6 +13200,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1548785082,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12781,6 +13272,7 @@
                     "last_updated": 1563906822,
                     "name": "omerlevy-predictions-google-results",
                     "remote": "vm-clws-prod-gpuworker-5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12792,6 +13284,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563906792,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12863,6 +13356,7 @@
                     "last_updated": 1600873740,
                     "name": "opherl-predictions-pmi-masking-2.4M-added-data-random-baseline-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12874,6 +13368,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600873717,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -12947,6 +13442,7 @@
                     "last_updated": 1550381060,
                     "name": "Ttssxuan-predictions-single-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -12958,6 +13454,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550381038,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13029,6 +13526,7 @@
                     "last_updated": 1547052208,
                     "name": "akhil.kedia-predictions-bert_inspector-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13040,6 +13538,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547052188,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13111,6 +13610,7 @@
                     "last_updated": 1550714716,
                     "name": "anonymous_asdf-predictions-uda-single-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13122,6 +13622,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550714697,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13193,6 +13694,7 @@
                     "last_updated": 1544046410,
                     "name": "cartopy-predictions-PwPBERT-results",
                     "remote": "vm-clws-prod-gpuworker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13204,6 +13706,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1544046274,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13275,6 +13778,7 @@
                     "last_updated": 1555657380,
                     "name": "vinda-predictions-bert_qa-results",
                     "remote": "vm-clws-prod-gpuworker-17",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13286,6 +13790,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555657299,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13357,6 +13862,7 @@
                     "last_updated": 1601159558,
                     "name": "opherl-predictions-pmi-masking-2.4M-pure-pmi-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13368,6 +13874,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1601159470,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13441,6 +13948,7 @@
                     "last_updated": 1555657362,
                     "name": "jihunchoi-predictions-bisan-cc-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13452,6 +13960,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1555657292,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13523,6 +14032,7 @@
                     "last_updated": 1560115056,
                     "name": "Senseforth_AI-predictions-Bert-Single_Model-results",
                     "remote": "jagupard11.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13534,6 +14044,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1560114999,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13605,6 +14116,7 @@
                     "last_updated": 1541925753,
                     "name": "kristout-predictions-BERT-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13616,6 +14128,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541925735,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13687,6 +14200,7 @@
                     "last_updated": 1601159556,
                     "name": "opherl-predictions-pmi-masking-2.4M-added-data-pure-pmi-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13698,6 +14212,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1601159442,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13771,6 +14286,7 @@
                     "last_updated": 1550222535,
                     "name": "zhaoguangxiang-predictions-dev2-ST-gpu-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13782,6 +14298,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550222515,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13853,6 +14370,7 @@
                     "last_updated": 1552093473,
                     "name": "attention_abc-predictions-baseline-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13864,6 +14382,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1552093452,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -13935,6 +14454,7 @@
                     "last_updated": 1551420221,
                     "name": "zhaoguangxiang-predictions-dev2-ST-bl-results",
                     "remote": "vm-clws-prod-worker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -13946,6 +14466,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1551420198,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14017,6 +14538,7 @@
                     "last_updated": 1545096323,
                     "name": "MyeongKyunKang-predictions-NEXYS_BASE-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14028,6 +14550,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545096298,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14099,6 +14622,7 @@
                     "last_updated": 1550222160,
                     "name": "zheyeyou-predictions-bert-finetuning-results",
                     "remote": "vm-clws-prod-gpuworker-3",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14110,6 +14634,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1550222139,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14181,6 +14706,7 @@
                     "last_updated": 1600854468,
                     "name": "opherl-predictions-pmi-masking-2.4M-random-baseline-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14192,6 +14718,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1600854445,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14265,6 +14792,7 @@
                     "last_updated": 1583455630,
                     "name": "cheney-predictions-bert-large-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14276,6 +14804,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1583455557,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14349,6 +14878,7 @@
                     "last_updated": 1553565156,
                     "name": "kevhuang-predictions-RMBertLarge-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14360,6 +14890,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553565138,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14431,6 +14962,7 @@
                     "last_updated": 1541884063,
                     "name": "yichao-predictions-l6net-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14442,6 +14974,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541884042,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14513,6 +15046,7 @@
                     "last_updated": 1553564541,
                     "name": "jhchoi-predictions-BISAN-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14524,6 +15058,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1553564520,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14595,6 +15130,7 @@
                     "last_updated": 1578392170,
                     "name": "cheney-predictions-bert-results",
                     "remote": "vm-clws-prod-gpuworker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14606,6 +15142,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1578392100,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14679,6 +15216,7 @@
                     "last_updated": 1556241218,
                     "name": "infykamal-predictions-KAML-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14690,6 +15228,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1556241198,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14761,6 +15300,7 @@
                     "last_updated": 1596491280,
                     "name": "pengshuai-predictions-AMBERT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14772,6 +15312,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596491252,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14845,6 +15386,7 @@
                     "last_updated": 1547051919,
                     "name": "Ttssxuan-predictions-test-full-results",
                     "remote": "vm-clws-prod-gpuworker-21",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14856,6 +15398,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547051800,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -14927,6 +15470,7 @@
                     "last_updated": 1545004037,
                     "name": "kg_team-predictions-base-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -14938,6 +15482,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545004018,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15009,6 +15554,7 @@
                     "last_updated": 1596491297,
                     "name": "lipengshuai-predictions-BERT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15020,6 +15566,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596491264,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15093,6 +15640,7 @@
                     "last_updated": 1541923296,
                     "name": "wangwei7175878_bert_1-predictions-SLQA-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15104,6 +15652,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541923277,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15175,6 +15724,7 @@
                     "last_updated": 1596492120,
                     "name": "lipengshuai-predictions-AMBERT-S-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15186,6 +15736,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596492095,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15259,6 +15810,7 @@
                     "last_updated": 1596491309,
                     "name": "pengshuai-predictions-AMBERT-H-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15270,6 +15822,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596491282,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15343,6 +15896,7 @@
                     "last_updated": 1547052728,
                     "name": "sssss-predictions-synss-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15354,6 +15908,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1547052709,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15425,6 +15980,7 @@
                     "last_updated": 1621642715,
                     "name": "QL-predictions-mgrc-results",
                     "remote": "767b3995db77-f551c00ac93440da8bd8e28894f21bf2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15436,6 +15992,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1621642647,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15509,6 +16066,7 @@
                     "last_updated": 1617785155,
                     "name": "alex_alex-predictions-BERT-Base-L-results",
                     "remote": "dba1f2111281-846dbd8e4b6b4b5f8799e04d2e4e8c7c",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15520,6 +16078,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1617784994,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15593,6 +16152,7 @@
                     "last_updated": 1546635578,
                     "name": "shashank879-predictions-ARSG-BERT-results",
                     "remote": "vm-clws-prod-gpuworker-21",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15604,6 +16164,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1546635448,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15675,6 +16236,7 @@
                     "last_updated": 1541923615,
                     "name": "dgr1026-predictions-verify-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15686,6 +16248,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541923599,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15757,6 +16320,7 @@
                     "last_updated": 1598831971,
                     "name": "alex_alex-predictions-BERTBaseV-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15768,6 +16332,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1598831947,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15841,6 +16406,7 @@
                     "last_updated": 1596751111,
                     "name": "alex_alex-predictions-BERTBaseDT-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15852,6 +16418,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1596751083,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -15925,6 +16492,7 @@
                     "last_updated": 1614288509,
                     "name": "alex_alex-predictions-BERTBase-DP-results",
                     "remote": "f57ff94d987c-aea503f0b1b34d45b07f7a3a04aefe07",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -15936,6 +16504,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1614288315,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16009,6 +16578,7 @@
                     "last_updated": 1607504821,
                     "name": "alex_alex-predictions-BERT-Base-V2-results",
                     "remote": "18e39ae04192-c76df2da59b04dbea5ced1c88af52ed5",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16020,6 +16590,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1607504561,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16093,6 +16664,7 @@
                     "last_updated": 1597538918,
                     "name": "alex_alex-predictions-BERTBaseAdd-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16104,6 +16676,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1597538791,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16177,6 +16750,7 @@
                     "last_updated": 1558939910,
                     "name": "cwkang24-predictions-BERTbase-results",
                     "remote": "vm-clws-prod-gpuworker-6",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16188,6 +16762,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1558939764,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16259,6 +16834,7 @@
                     "last_updated": 1542091732,
                     "name": "fnwmrc-predictions-nlnet-single-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16270,6 +16846,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542091571,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16341,6 +16918,7 @@
                     "last_updated": 1579673789,
                     "name": "zhijing-predbatch2-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16352,6 +16930,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1579673765,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16425,6 +17004,7 @@
                     "last_updated": 1545635285,
                     "name": "kevhuang-predictions-devtest1-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16436,6 +17016,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545635264,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16507,6 +17088,7 @@
                     "last_updated": 1546223980,
                     "name": "OldBirdAZ-predictions-MMIPN-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16518,6 +17100,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1546223960,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16589,6 +17172,7 @@
                     "last_updated": 1597044240,
                     "name": "alex_alex-predictions-BERTBaseBaseline-results",
                     "remote": "vm-clws-prod-gpuworker-8",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16600,6 +17184,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1597044212,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16673,6 +17258,7 @@
                     "last_updated": 1556216316,
                     "name": "rafaie-predictions-bert-base-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16684,6 +17270,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1556216295,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16755,6 +17342,7 @@
                     "last_updated": 1587958507,
                     "name": "luke-predictions-bert-results",
                     "remote": "vm-clws-prod-gpuworker-9",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16766,6 +17354,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587958474,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16839,6 +17428,7 @@
                     "last_updated": 1587960189,
                     "name": "luke-predictions-BERTBase-results",
                     "remote": "vm-clws-prod-gpuworker-9",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16850,6 +17440,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587960156,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -16923,6 +17514,7 @@
                     "last_updated": 1542061147,
                     "name": "arafat.sultan-predictions-yarcs-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -16934,6 +17526,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542061114,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17005,6 +17598,7 @@
                     "last_updated": 1542395884,
                     "name": "PingAnTechnology-Modified-BERT-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17016,6 +17610,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542395857,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17087,6 +17682,7 @@
                     "last_updated": 1541903088,
                     "name": "airaria-predictions-RNANet-ensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17098,6 +17694,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541903070,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17169,6 +17766,7 @@
                     "last_updated": 1541921848,
                     "name": "lyli_4785-predictions-Unet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17180,6 +17778,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541921833,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17251,6 +17850,7 @@
                     "last_updated": 1619404405,
                     "name": "nguyenhathanh-predictions-HYDRA_BERT-results",
                     "remote": "f2ec06b3e127-ebe1f078c5ac4f91a921eb3d9d67366b",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17262,6 +17862,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1619404231,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17335,6 +17936,7 @@
                     "last_updated": 1548023486,
                     "name": "kevhuang-predictions-BertPytorch-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17346,6 +17948,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1548023359,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17417,6 +18020,7 @@
                     "last_updated": 1541901575,
                     "name": "wangwei7175878_7-predictions-SLQA-single-model-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17428,6 +18032,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541901551,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17499,6 +18104,7 @@
                     "last_updated": 1556235623,
                     "name": "greenfly-predictions-greenfly-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17510,6 +18116,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1556235603,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17581,6 +18188,7 @@
                     "last_updated": 1542123977,
                     "name": "huminghao16_163-reader_elmo_verifier.json-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17592,6 +18200,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542123942,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17663,6 +18272,7 @@
                     "last_updated": 1541923916,
                     "name": "nlpfarmer05-predictions-SAN-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17674,6 +18284,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541923896,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17745,6 +18356,7 @@
                     "last_updated": 1541904770,
                     "name": "airaria-predictions-RNANet-single-model-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17756,6 +18368,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541904751,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17827,6 +18440,7 @@
                     "last_updated": 1541882167,
                     "name": "hpk23-predictions-MLAF-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17838,6 +18452,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541882146,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17909,6 +18524,7 @@
                     "last_updated": 1541901436,
                     "name": "ysx666-predictions-Unet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -17920,6 +18536,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541901412,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -17991,6 +18608,7 @@
                     "last_updated": 1542098091,
                     "name": "chezhu-predictions-FUSIONNET-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18002,6 +18620,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542098054,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18073,6 +18692,7 @@
                     "last_updated": 1545544984,
                     "name": "sai.chetan-predictions-docqa_inspector-results",
                     "remote": "vm-clws-prod-gpuworker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18084,6 +18704,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1545544917,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18155,6 +18776,7 @@
                     "last_updated": 1541899956,
                     "name": "mandar90-predictions-pair2vec-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18166,6 +18788,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541899940,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18237,6 +18860,7 @@
                     "last_updated": 1541903692,
                     "name": "nlpfarmer04-predictions-SAN-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18248,6 +18872,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541903672,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18319,6 +18944,7 @@
                     "last_updated": 1541916305,
                     "name": "yimmon-predictions-ARRR-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18330,6 +18956,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541916289,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18401,6 +19028,7 @@
                     "last_updated": 1541882100,
                     "name": "parkce_knu-predictions-vs3-net-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18412,6 +19040,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541882077,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18483,6 +19112,7 @@
                     "last_updated": 1542092646,
                     "name": "dgr1026-predictions-KACTEIL-MRC_GFN-NET-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18494,6 +19124,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542092481,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18565,6 +19196,7 @@
                     "last_updated": 1546546822,
                     "name": "jeonsworld-predictions-EBB-Net-results",
                     "remote": "vm-clws-prod-gpuworker-21",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18576,6 +19208,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1546546686,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18647,6 +19280,7 @@
                     "last_updated": 1541902334,
                     "name": "heuristic.085-predictions-KakaoNet2-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18658,6 +19292,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541902311,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18729,6 +19364,7 @@
                     "last_updated": 1541905682,
                     "name": "TONYZHOU96-predictions-abcNet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18740,6 +19376,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541905663,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18811,6 +19448,7 @@
                     "last_updated": 1541881543,
                     "name": "mandar90-predictions-bidaf_baseline-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18822,6 +19460,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541881525,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18893,6 +19532,7 @@
                     "last_updated": 1541999575,
                     "name": "RachelK-predictions-bsaeVerb-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18904,6 +19544,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541999556,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -18975,6 +19616,7 @@
                     "last_updated": 1541905402,
                     "name": "liu4lin-predictions-eeAttNet-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -18986,6 +19628,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541905383,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19057,6 +19700,7 @@
                     "last_updated": 1541924805,
                     "name": "robinjia-elmo-pred.json-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19068,6 +19712,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541924787,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19139,6 +19784,7 @@
                     "last_updated": 1543742217,
                     "name": "Griffin-predictions-tree-lstm-results",
                     "remote": "vm-clws-prod-worker-2",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19150,6 +19796,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1543742187,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19221,6 +19868,7 @@
                     "last_updated": 1541905293,
                     "name": "robinjia-docqa-pred.json-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19232,6 +19880,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541905273,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19303,6 +19952,7 @@
                     "last_updated": 1542067757,
                     "name": "robinjia-bna-pred.json-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19314,6 +19964,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1542067369,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19385,6 +20036,7 @@
                     "last_updated": 1560288145,
                     "name": "Simon-predictions-BNA_SoftDrop-results",
                     "remote": "jagupard12.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19396,6 +20048,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1560288023,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19467,6 +20120,7 @@
                     "last_updated": 1560269331,
                     "name": "Simon-predictions-BNA_HardDrop-results",
                     "remote": "jagupard11.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19478,6 +20132,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1560269227,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19549,6 +20204,7 @@
                     "last_updated": 1582514428,
                     "name": "cooelf12345-predictions-results",
                     "remote": "vm-clws-prod-gpuworker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19560,6 +20216,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1582514360,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19633,6 +20290,7 @@
                     "last_updated": 1558655465,
                     "name": "Simon-predictions-foo-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19644,6 +20302,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1558655431,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19715,6 +20374,7 @@
                     "last_updated": 1594932511,
                     "name": "baokui-predictions-sentence-results",
                     "remote": "vm-clws-prod-gpuworker-6",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19726,6 +20386,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1594932485,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19799,6 +20460,7 @@
                     "last_updated": 1563977794,
                     "name": "w82318029-predictions-LLX-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19810,6 +20472,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1563977774,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19881,6 +20544,7 @@
                     "last_updated": 1567755194,
                     "name": "never-predictions-tsan-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19892,6 +20556,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1567755166,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -19963,6 +20628,7 @@
                     "last_updated": 1548663151,
                     "name": "NMC-predictions-NReader-results",
                     "remote": "jagupard17.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -19974,6 +20640,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1548663114,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20045,6 +20712,7 @@
                     "last_updated": 1541924617,
                     "name": "kg_team-predictions-CHECK-results",
                     "remote": "vm-clws-prod-worker-0",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20056,6 +20724,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541924600,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20127,6 +20796,7 @@
                     "last_updated": 1568220967,
                     "name": "cklsoft-predictions-5cls_v1-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20138,6 +20808,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1568220838,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20210,6 +20881,7 @@
                     "last_updated": 1541982292,
                     "name": "TONYZHOU96-predictions-FSNet-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20221,6 +20893,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1541982275,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20288,6 +20961,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0x4fdf52b9cfd14ca7a75675cc7dbcbbc1 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "lxiao-predictions-Insight-baseline-single-model-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20297,6 +20971,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "1d",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -20368,6 +21043,7 @@
                     "last_updated": 1564627566,
                     "name": "omerlevy-new-results",
                     "remote": "jagupard23.stanford.edu",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "4g",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20379,6 +21055,7 @@
                     "request_time": "1d",
                     "run_status": "Finished",
                     "started": 1564627543,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20446,6 +21123,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0xf36241f6f70b496b92be194ca912000f (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "mst-squad-new-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20455,6 +21133,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -20521,6 +21200,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0x86811e9db35c43d6ae04175d4ddeefbb (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "mst-squad-run-predictions-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20530,6 +21210,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -20598,6 +21279,7 @@
                     "last_updated": 1569105971,
                     "name": "mingdachen-predictions-albert-ensemble-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20609,6 +21291,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1569105959,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20678,6 +21361,7 @@
                     "last_updated": 1569034649,
                     "name": "mingdachengoogle-predictions-albert-results",
                     "remote": "vm-clws-prod-worker-1",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20689,6 +21373,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1569034640,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20756,6 +21441,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0x5e294874a3654093aaf71b34a49cb309 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "essex2016-predictions-xlnet_verify-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20765,6 +21451,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -20833,6 +21520,7 @@
                     "last_updated": 1569924411,
                     "name": "guo-predictions_BERT_SP_Single-results",
                     "remote": "jagupard22.stanford.edu(63852)",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20844,6 +21532,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1569923966,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -20911,6 +21600,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0x41262ddd6f404f3ea94013aab20d0456 (Please use the --allow-failed-dependencies flag to depend on results fo failed or killed bundles)",
                     "name": "icl_check-predictions-BERT_Multiple_CNN-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20920,6 +21610,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -20986,6 +21677,7 @@
                     "exclude_patterns": [],
                     "failure_message": " Parent bundles failed: 0x2a6b59ee438440479ac4a80595227eb3 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
                     "name": "thunthersine88-predictions-single-results",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -20995,6 +21687,7 @@
                     "request_priority": 0,
                     "request_queue": "",
                     "request_time": "",
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ]
@@ -21066,6 +21759,7 @@
                     "last_updated": 1587951996,
                     "name": "luke-predictions-single-results",
                     "remote": "vm-clws-prod-gpuworker-9",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -21077,6 +21771,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1587951961,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -21153,6 +21848,7 @@
                     "memory_usage": 0.0,
                     "name": "rika114516-run-predictions-results",
                     "remote": "6b0eac8ad036-ea99e35eb6a144e6b740f72b33595a04",
+                    "remote_history": [],
                     "request_cpus": 1,
                     "request_disk": "",
                     "request_docker_image": "codalab/ubuntu:1.9",
@@ -21164,6 +21860,7 @@
                     "request_time": "",
                     "run_status": "Finished",
                     "started": 1632973523,
+                    "store": "",
                     "tags": [
                         "nurdauqs-test-eval-shuf"
                     ],
@@ -21196,7 +21893,84 @@
                 "public": true,
                 "user_name": "rika114516"
             }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x0d7df970be0e4c4984bc2b10c366e5a6 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "data_hash": null,
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x4381d1aabbc04c1b9c2976595091156b",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x4381d1aabbc04c1b9c2976595091156b",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x4381d1aabbc04c1b9c2976595091156b",
+                        "parent_name": "davidkim205-predictions-LA-Net-predict",
+                        "parent_path": "",
+                        "parent_uuid": "0x0d7df970be0e4c4984bc2b10c366e5a6"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x4381d1aabbc04c1b9c2976595091156b",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "created": 1646938538,
+                    "description": "",
+                    "exclude_patterns": [],
+                    "failure_message": " Parent bundles failed: 0x0d7df970be0e4c4984bc2b10c366e5a6 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles)",
+                    "name": "davidkim205-predictions-LA-Net-results",
+                    "remote_history": [],
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": false,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "store": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ]
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "failed",
+                "uuid": "0x4381d1aabbc04c1b9c2976595091156b"
+            },
+            "scores": {
+                "exact_match": null,
+                "f1": null
+            },
+            "submission": {
+                "created": 1646938538,
+                "description": "",
+                "num_period_submissions": 0,
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
+            }
         }
     ],
-    "updated": 1633368592.9927692
+    "updated": 1653499518.9581418
 }
