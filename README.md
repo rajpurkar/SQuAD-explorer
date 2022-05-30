@@ -20,3 +20,24 @@ cl mimic <official_squad_dev_set_uuid> <model_submission_uuid> <uuid_of_your_dat
 The official SQuAD development set UUIDs are:
 * `0x8f29fe78ffe545128caccab74eb06c57` for SQuAD 1.1
 * `0xb30d937a18574073903bb38b382aab03` for SQuAD 2.0
+
+
+
+
+# Build website only
+
+Install dependencies
+
+```bash
+npm install  
+```
+
+Build web
+```bash
+npm run build
+```
+
+Start web
+```bash
+npm run serve
+```

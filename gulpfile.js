@@ -24,7 +24,7 @@ var rankEntries = function (entries) {
     var f1Diff = Math.sign(b.f1 - a.f1)
     var emDiff = Math.sign(b.em - a.em)
     return f1Diff + emDiff
-  }) 
+  })
   */
 
   for (var i = 0; i < entries.length; i++) {
@@ -141,8 +141,8 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./' + build_dir + 'javascripts/'))
 })
 
-gulp.task('copy_dataset', function () {
-  gulp
+gulp.task('copy_dataset', async function () {
+  return await gulp
     .src('dataset/*')
     .pipe(gulp.dest('./' + build_dir + 'dataset/'))
 })
@@ -169,16 +169,16 @@ gulp.task('scrape_website', function (cb) {
   })
 })
 
-gulp.task('copy_models', function () {
-  gulp
+gulp.task('copy_models', async function () {
+  return await gulp
     .src('models/*/*.json')
     .pipe(gulp.dest('./' + build_dir + 'models/'))
 })
 
-gulp.task('connect', function () {
-  connect.server({
+gulp.task('connect', async function () {
+  await connect.server({
     host: '0.0.0.0',
-    root: '.'
+    root: './SQuAD-explorer'
   })
 })
 
@@ -239,21 +239,21 @@ filepaths.forEach(function (filename) {
   })
 })
 
-gulp.task('process_comp_output', function (cb) {
+gulp.task('process_comp_output',  function (cb) {
   var jsonfile = require('jsonfile')
   var entries1 = parseCompEntries('./out-v1.1.json')
   var entries2 = parseCompEntries('./out-v2.0.json')
-  jsonfile.writeFile('./results1.1.json', entries1, function (err){
+  jsonfile.writeFile('./results1.1.json', entries1,  function (err) {
     if (err) return cb(err)
-    jsonfile.writeFile('./results2.0.json', entries2, cb)
+   jsonfile.writeFile('./results2.0.json', entries2, cb)
   })
 })
 
-gulp.task('generate_index', ['process_comp_output'], function () {
+gulp.task('generate_index', async function () {
   var test_1 = require('./results1.1.json')
   var test_2 = require('./results2.0.json')
   var moment = require('moment')
-  return gulp.src('views/index.pug')
+  return await gulp.src('views/index.pug')
       .pipe(data(function () {
         return { 'test1': test_1,
           'test2': test_2,
@@ -263,23 +263,28 @@ gulp.task('generate_index', ['process_comp_output'], function () {
     .pipe(gulp.dest('./' + build_dir))
 })
 
-gulp.task('correct_link_paths', ['generate'], function () {
+
+gulp.task('css', async function () {
+  return  await gulp.src('./views/styles/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./' + build_dir + 'stylesheets'))
+})
+
+gulp.task('deploy', async function () {
+  return gulp.src('./' + build_dir + '**/*')
+    .pipe(ghPages())
+})
+
+gulp.task('generate_exploration', gulp.series(exploration_tasks))
+gulp.task('generate', gulp.series('bower', 'generate_exploration',  'process_comp_output', 'generate_index',))
+
+gulp.task('correct_link_paths', gulp.series('generate'), async function () {
   return gulp.src('./' + build_dir + '**/*.html')
     .pipe(replace(/([^-](?:href|src)=[\'\"]\/)([^\'\"]*)([\'\"])/g, '$1' + build_dir + '$2$3'))
     .pipe(gulp.dest('./' + build_dir))
 })
 
-gulp.task('css', function () {
-  return gulp.src('./views/styles/*.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('./' + build_dir + 'stylesheets'))
-})
 
-gulp.task('deploy', function () {
-  return gulp.src('./' + build_dir + '**/*')
-    .pipe(ghPages())
-})
+gulp.task('default', gulp.series('generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset', 'copy_models'))
 
-gulp.task('generate_exploration', exploration_tasks)
-gulp.task('generate', ['bower', 'generate_exploration', 'generate_index', 'process_comp_output'])
-gulp.task('default', ['generate', 'correct_link_paths', 'image', 'js', 'css', 'copy_dataset', 'copy_models'])
+
