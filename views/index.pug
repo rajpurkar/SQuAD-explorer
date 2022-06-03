@@ -20,6 +20,9 @@ mixin squad_2_model_display(group, is_test)
       th Model
       th EM
       th F1
+      th Extra Col 1
+      th Extra Col 2
+      th ExtraCol 3
     - var human_em = 86.831
     - var human_f1 = 89.452
     - var largest_em = Math.max.apply(null, group.map(function (model) { return model.em; }))
