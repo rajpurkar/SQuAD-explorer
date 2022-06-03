@@ -178,7 +178,7 @@ gulp.task('copy_models', async function () {
 gulp.task('connect', async function () {
   await connect.server({
     host: '0.0.0.0',
-    root: './SQuAD-explorer'
+    root: './spanish-benchmark'
   })
 })
 
