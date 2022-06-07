@@ -111,7 +111,21 @@ block content
   .cover#contentCover
     .container
       .row
-        .col-md-5
+        .col-md-15
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 Leaderboard
+              p SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.
+              +squad_2_model_display(test2, true)
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 SQuAD1.1 Leaderboard 
+              p 
+                |  Here are the ExactMatch (EM) and F1 scores evaluated on the test set of SQuAD v1.1.
+              +squad_1_model_display(test1, true)
+        .col-md-15
           .infoCard
             .infoBody
               .infoHeadline
@@ -170,10 +184,6 @@ block content
               p Once you have a built a model that works to your expectations on the dev set, you submit it to get official scores on the dev and a hidden test set. To preserve the integrity of test results, we do not release the test set to the public. Instead, we require you to submit your model so that we can run it on the test set for you. Here's a tutorial walking you through official evaluation of your model:
               a.btn.actionBtn.inverseBtn(href="https://worksheets.codalab.org/worksheets/0x8212d84ca41c4150b555a075b19ccc05/")
                 | Submission Tutorial
-              p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
-              p To keep up to date with major changes to the dataset, please subscribe:
-              include includes/mailchimp
-              .infoHeadline
                 h2 Have Questions?
               p 
                 | Ask us questions at our   
@@ -184,17 +194,3 @@ block content
             .infoSubheadline
               include includes/tweet
               include includes/github
-        .col-md-7
-          .infoCard
-            .infoBody
-              .infoHeadline
-                h2 Leaderboard
-              p SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.
-              +squad_2_model_display(test2, true)
-          .infoCard
-            .infoBody
-              .infoHeadline
-                h2 SQuAD1.1 Leaderboard 
-              p 
-                |  Here are the ExactMatch (EM) and F1 scores evaluated on the test set of SQuAD v1.1.
-              +squad_1_model_display(test1, true)
