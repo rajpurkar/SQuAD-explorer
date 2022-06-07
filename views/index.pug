@@ -107,11 +107,26 @@ mixin squad_1_model_display(group, is_test)
             b #{model.f1.toPrecision(5)}
           else
             | #{model.f1.toPrecision(5)}
+
 block content
   .cover#contentCover
     .container
       .row
-        .col-md-5
+        .col-md-15
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 Leaderboard
+              p SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.
+              +squad_2_model_display(test2, true)
+          .infoCard
+            .infoBody
+              .infoHeadline
+                h2 SQuAD1.1 Leaderboard 
+              p 
+                |  Here are the ExactMatch (EM) and F1 scores evaluated on the test set of SQuAD v1.1.
+              +squad_1_model_display(test1, true)
+        .col-md-15
           .infoCard
             .infoBody
               .infoHeadline
@@ -173,28 +188,3 @@ block content
               p Because SQuAD is an ongoing effort, we expect the dataset to evolve.
               p To keep up to date with major changes to the dataset, please subscribe:
               include includes/mailchimp
-              .infoHeadline
-                h2 Have Questions?
-              p 
-                | Ask us questions at our   
-                a(href="https://groups.google.com/forum/#!forum/squad-stanford-qa") google group
-                |  or at 
-                a(href="mailto:robinjia@stanford.edu") robinjia@stanford.edu
-                | .
-            .infoSubheadline
-              include includes/tweet
-              include includes/github
-        .col-md-7
-          .infoCard
-            .infoBody
-              .infoHeadline
-                h2 Leaderboard
-              p SQuAD2.0 tests the ability of a system to not only answer reading comprehension questions, but also abstain when presented with a question that cannot be answered based on the provided paragraph.
-              +squad_2_model_display(test2, true)
-          .infoCard
-            .infoBody
-              .infoHeadline
-                h2 SQuAD1.1 Leaderboard 
-              p 
-                |  Here are the ExactMatch (EM) and F1 scores evaluated on the test set of SQuAD v1.1.
-              +squad_1_model_display(test1, true)
