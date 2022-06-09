@@ -184,7 +184,6 @@ gulp.task('connect', async function () {
 
 var dataset_folder = './dataset/'
 var filepaths = [
-  dataset_folder + 'dev-v1.1.json',
   dataset_folder + 'dev-v2.0.json',
 ]
 
