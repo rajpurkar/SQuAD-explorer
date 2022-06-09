@@ -22,7 +22,7 @@ mixin squad_2_model_display(group, is_test)
       th F1
       th Extra Col 1
       th Extra Col 2
-      th ExtraCol 3
+      th Extra Col 3
     - var human_em = 86.831
     - var human_f1 = 89.452
     - var largest_em = Math.max.apply(null, group.map(function (model) { return model.em; }))
@@ -35,6 +35,9 @@ mixin squad_2_model_display(group, is_test)
           a(href="http://arxiv.org/abs/1606.05250") (Rajpurkar & Jia et al. '18)
         td #{human_em}
         td #{human_f1}
+        td
+        td
+        td
     each model in group
       tr
         if is_test
@@ -59,6 +62,9 @@ mixin squad_2_model_display(group, is_test)
             b #{model.f1.toPrecision(5)}
           else
             | #{model.f1.toPrecision(5)}
+        td
+        td
+        td
 
 mixin squad_1_model_display(group, is_test)
   table.table.performanceTable
