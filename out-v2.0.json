@@ -10198,6 +10198,105 @@
         },
         {
             "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x31cd083775c2414bbf650569b2fc79f9 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-network",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0xc4497ce3904e4621b983e4ea05d97abd",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0xc4497ce3904e4621b983e4ea05d97abd",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0xc4497ce3904e4621b983e4ea05d97abd",
+                        "parent_name": "sidarora1990-predictions-parallel-adapter-squad-predict",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0x31cd083775c2414bbf650569b2fc79f9"
+                    }
+                ],
+                "frozen": null,
+                "id": "0xc4497ce3904e4621b983e4ea05d97abd",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1696268802,
+                    "data_size": 4527,
+                    "description": "{\"submit_id\": \"0xe710f452ebdb479294375cb64b095880\", \"submitter_id\": \"0xf5f114134f694cf5aec6dd82de5d1487\", \"predict_id\": \"0x31cd083775c2414bbf650569b2fc79f9\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1696270718,
+                    "memory_usage": 0.0,
+                    "name": "sidarora1990-predictions-parallel-adapter-squad-results",
+                    "on_preemptible_worker": false,
+                    "remote": "host-27d1c70cc600470caa39935faca4d41f",
+                    "remote_history": [
+                        "6b1594ca94dc"
+                    ],
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": true,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "staged_status": "Bundle's dependencies are all ready. Waiting for the bundle to be assigned to a worker to be run.",
+                    "started": 1696270598,
+                    "store": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.312319,
+                    "time_cleaning_up": 5.36334228515625,
+                    "time_preparing": 94.06521129608154,
+                    "time_running": 5.024706840515137,
+                    "time_system": 0.0,
+                    "time_uploading_results": 10.236135005950928,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "state_details": "Bundle command has finished executing successfully, and results have been uploaded to the server.",
+                "uuid": "0xc4497ce3904e4621b983e4ea05d97abd"
+            },
+            "scores": {
+                "exact_match": 84.12322274881517,
+                "f1": 87.01264499009646
+            },
+            "submission": {
+                "created": 1696000895,
+                "description": "RoberTa Parallel Adapters Single",
+                "num_period_submissions": 0,
+                "num_total_submissions": 3,
+                "public": true,
+                "user_name": "sidarora1990"
+            }
+        },
+        {
+            "bundle": {
                 "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x070429e9ee0a4b10801bd2491d0ccd73 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-disk 4g --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-time 1d",
                 "bundle_type": "run",
                 "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
@@ -15624,6 +15723,105 @@
                 "num_total_submissions": 3,
                 "public": true,
                 "user_name": "yichao"
+            }
+        },
+        {
+            "bundle": {
+                "args": "run evaluate-v2.0.py:0x6b567e1cf2e041ec80d7098f031c5c9e data.json:0xe738d3daf6cd48668e6c4a210577b209 predictions.json:0x1f957fcb15d146ab9e3697d959d84293 \"python evaluate-v2.0.py data.json predictions.json -o eval.json\" --request-cpus 1 --request-docker-image codalab/ubuntu:1.9 --request-memory 2g --request-network",
+                "bundle_type": "run",
+                "command": "python evaluate-v2.0.py data.json predictions.json -o eval.json",
+                "dependencies": [
+                    {
+                        "child_path": "evaluate-v2.0.py",
+                        "child_uuid": "0x9d5d2cdde9784d7ea8bf5700d5823213",
+                        "parent_name": "evaluate-v2.0.py",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0x6b567e1cf2e041ec80d7098f031c5c9e"
+                    },
+                    {
+                        "child_path": "data.json",
+                        "child_uuid": "0x9d5d2cdde9784d7ea8bf5700d5823213",
+                        "parent_name": "test-v2.0.json",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0xe738d3daf6cd48668e6c4a210577b209"
+                    },
+                    {
+                        "child_path": "predictions.json",
+                        "child_uuid": "0x9d5d2cdde9784d7ea8bf5700d5823213",
+                        "parent_name": "sidarora1990-predictions-fusion-adapter-squad-predict",
+                        "parent_path": "",
+                        "parent_state": "ready",
+                        "parent_uuid": "0x1f957fcb15d146ab9e3697d959d84293"
+                    }
+                ],
+                "frozen": null,
+                "id": "0x9d5d2cdde9784d7ea8bf5700d5823213",
+                "is_anonymous": false,
+                "metadata": {
+                    "actions": [],
+                    "allow_failed_dependencies": false,
+                    "cpu_usage": 0.0,
+                    "created": 1696268813,
+                    "data_size": 4527,
+                    "description": "{\"submit_id\": \"0x58c26fe960d64576af4013b3fe94ef51\", \"submitter_id\": \"0xf5f114134f694cf5aec6dd82de5d1487\", \"predict_id\": \"0x1f957fcb15d146ab9e3697d959d84293\"}",
+                    "docker_image": "codalab/ubuntu@sha256:a8369aaa7afdb4d242104d85aa660c034a7bf89e438963bf73ba197fe3731be0",
+                    "exclude_patterns": [],
+                    "exitcode": 0,
+                    "last_updated": 1696271754,
+                    "memory_usage": 0.0,
+                    "name": "sidarora1990-predictions-fusion-adapter-squad-results",
+                    "on_preemptible_worker": false,
+                    "remote": "host-8ec9eb42b0d8452ab09a9ac5bc569e11",
+                    "remote_history": [
+                        "c27c04f90c05"
+                    ],
+                    "request_cpus": 1,
+                    "request_disk": "",
+                    "request_docker_image": "codalab/ubuntu:1.9",
+                    "request_gpus": 0,
+                    "request_memory": "2g",
+                    "request_network": true,
+                    "request_priority": 0,
+                    "request_queue": "",
+                    "request_time": "",
+                    "run_status": "Finished",
+                    "staged_status": "Bundle's dependencies are all ready. Waiting for the bundle to be assigned to a worker to be run.",
+                    "started": 1696271630,
+                    "store": "",
+                    "tags": [
+                        "nurdauqs-test-eval-shuf"
+                    ],
+                    "time": 1.428194,
+                    "time_cleaning_up": 0.03482699394226074,
+                    "time_preparing": 97.07424426078796,
+                    "time_running": 8.03143048286438,
+                    "time_system": 0.0,
+                    "time_uploading_results": 10.21451210975647,
+                    "time_user": 0.0
+                },
+                "owner": {
+                    "id": "20891",
+                    "type": "users"
+                },
+                "permission": 2,
+                "permission_spec": "all",
+                "state": "ready",
+                "state_details": "Bundle command has finished executing successfully, and results have been uploaded to the server.",
+                "uuid": "0x9d5d2cdde9784d7ea8bf5700d5823213"
+            },
+            "scores": {
+                "exact_match": 78.93252087564883,
+                "f1": 81.86287612060057
+            },
+            "submission": {
+                "created": 1696006062,
+                "description": "Fusion Adapters TriviaQA NQ Single",
+                "num_period_submissions": 0,
+                "num_total_submissions": 3,
+                "public": true,
+                "user_name": "sidarora1990"
             }
         },
         {
@@ -22981,7 +23179,7 @@
                     "actions": [],
                     "allow_failed_dependencies": false,
                     "created": 1691870234,
-                    "description": "{\"submit_id\": \"0xdd286395e6504612a6dd4fcd5184c74b\", \"submitter_id\": \"0xf5f114134f694cf5aec6dd82de5d1487\", \"predict_id\": \"0xc1dfe5a81c8648c6be1addd846c36665\"}",
+                    "description": "",
                     "exclude_patterns": [],
                     "failure_message": "Parent bundles failed: 0xc1dfe5a81c8648c6be1addd846c36665 (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles) ",
                     "name": "sidarora1990-predictions-adapter_model-results",
@@ -23015,12 +23213,12 @@
                 "f1": null
             },
             "submission": {
-                "created": 1688045166,
-                "description": "Adapter (Single Model) (QSTD))",
+                "created": 1691870234,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
-                "public": true,
-                "user_name": "sidarora1990"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         },
         {
@@ -23061,7 +23259,7 @@
                     "actions": [],
                     "allow_failed_dependencies": false,
                     "created": 1693842537,
-                    "description": "{\"submit_id\": \"0x5e0ce57800414011854ecf9ad41dca3a\", \"submitter_id\": \"0xf5f114134f694cf5aec6dd82de5d1487\", \"predict_id\": \"0xffd4da909db4488eaa4c1ba18fce19fe\"}",
+                    "description": "",
                     "exclude_patterns": [],
                     "failure_message": "Parent bundles failed: 0xffd4da909db4488eaa4c1ba18fce19fe (Please use the --allow-failed-dependencies flag to depend on results of failed or killed bundles) ",
                     "name": "sidarora1990-predictions-adapter-trivia-squad-results",
@@ -23095,14 +23293,14 @@
                 "f1": null
             },
             "submission": {
-                "created": 1693753351,
-                "description": "Adapter-TriviaQA-Single-Pre-trained",
+                "created": 1693842537,
+                "description": "",
                 "num_period_submissions": 0,
-                "num_total_submissions": 3,
-                "public": true,
-                "user_name": "sidarora1990"
+                "num_total_submissions": 0,
+                "public": null,
+                "user_name": null
             }
         }
     ],
-    "updated": 1695276958.8271956
+    "updated": 1696691059.7815244
 }
