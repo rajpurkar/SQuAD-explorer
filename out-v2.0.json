@@ -10288,7 +10288,7 @@
             },
             "submission": {
                 "created": 1696000895,
-                "description": "RoberTa Parallel Adapters Single",
+                "description": "RoberTa Parallel Adapters Single (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -15817,7 +15817,7 @@
             },
             "submission": {
                 "created": 1696006062,
-                "description": "Fusion Adapters TriviaQA NQ Single",
+                "description": "RoberTa Fusion Adapters Single (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -16531,7 +16531,7 @@
             },
             "submission": {
                 "created": 1695019511,
-                "description": "TriviaQA Adapter Single Tuned",
+                "description": "RoberTa Adapter Single (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -23302,5 +23302,5 @@
             }
         }
     ],
-    "updated": 1696691059.7815244
+    "updated": 1696896105.4632692
 }
