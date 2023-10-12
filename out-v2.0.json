@@ -10288,7 +10288,7 @@
             },
             "submission": {
                 "created": 1696000895,
-                "description": "RoberTa Parallel Adapters Single (Quant Studio)",
+                "description": "RoberTa+Parallel+Adapters (single model) (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -15817,7 +15817,7 @@
             },
             "submission": {
                 "created": 1696006062,
-                "description": "RoberTa Fusion Adapters Single (Quant Studio)",
+                "description": "RoberTa+Fusion+Adapters (single model) (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -16531,7 +16531,7 @@
             },
             "submission": {
                 "created": 1695019511,
-                "description": "RoberTa Adapter Single (Quant Studio)",
+                "description": "RoberTa+Adapter (single model) (Quant Studio)",
                 "num_period_submissions": 0,
                 "num_total_submissions": 3,
                 "public": true,
@@ -23302,5 +23302,5 @@
             }
         }
     ],
-    "updated": 1696896105.4632692
+    "updated": 1697137750.6356642
 }
